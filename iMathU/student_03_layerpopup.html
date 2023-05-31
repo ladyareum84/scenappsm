@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="title" content="HTML5 Video Player">
+		<meta name="keywords" content="">
+		<meta name="Description" content="">		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">		
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no"/> 
+		<title>개념원리</title>
+		<link rel="stylesheet" type="text/css" href="./resource/font/NotoSans/notosans.css">
+		<link rel="stylesheet" type="text/css" href="./resource/css/common.css">	
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	
+	<body class="problem_solving">
+		<div class="wrapper">
+			<div class="header_bar">
+				<div class="container">
+					<h2 class="content_heading">
+						<span class="name">홍길동님 </span>
+						<span class="mathematical-problem">개념원리 온라인 자기주도형 코칭 </span>
+					</h2>
+				</div>
+			</div>
+			<div class="container">
+				<section class="math-problem_contents">
+					<article class="content_box">	
+						<div class="content-header">
+							<h3 class="content_heading">수강중인 강의 > 강의보기</h3>
+						</div>
+						<div class="table-style_lecture">
+							<div class="btn-box">
+								<button type="submit" class="btn btn-orange btn-sm" onclick="go_popup()">강의보기</button>
+								<button type="submit" class="btn btn-primary btn-sm" onclick="go_popup_timecheck()">타임체크</button>
+							</div>
+						</div>
+						
+						<!-- 팝업 시작 -->
+						<div id="popup" class="layer-popup-style01">	
+							<div class="layer-popup-content popup-video-player" style="height: auto; width: auto;">
+								<div class="popup-header-area">
+							  	    <h3 class="popup-header">강의보기 - 중1-1 [전과정]</h3>
+							  	    <div class="btn-area">
+									 	<button type="button" class="btn-close b-close" name="close">
+									 		<span class="close icon-close"></span>
+									 	</button>
+								 	</div>
+								</div>
+								<div class="popup-content video-content">
+									<div class="video-player-list">
+										<div class="video-player embed-responsive embed-responsive-16by9">
+											<iframe id="video" src="https://v.kr.kollus.com/jnr7Ht9B" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+										</div>
+										<div class="playlist">
+											<div class="list-header">
+												<div class="list_option fl-r">
+													<div class="checkbox_repeat">
+														<label class="checkbox-img"><input type="checkbox" name="" value=""><i class="icon-repeat"></i></label>
+													</div>
+												</div>
+											</div>
+											<div class="list_video">
+												<ul>
+													<li class="video_title active">
+														<span class="list_name" title="01. 집합의 뜻과 표현">01. 집합의 뜻과 표현</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="02. 집합 사이의 포함 관계 - 집합의 포함관계">02. 집합 사이의 포함 관계 - 집합의 포함관계</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="02. 집합 사이의 포함 관계 - 부분집합의 개수">02. 집합 사이의 포함 관계 - 부분집합의 개수</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="01. 집합의 연산 - 집합의 연산 기호(합,교,차,여)">01. 집합의 연산 - 집합의 연산 기호(합,교,차,여)</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="01. 집합의 연산 - 집합의 연산 성질">01. 집합의 연산 - 집합의 연산 성질</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="02. 집합의 연산 법칙">02. 집합의 연산 법칙</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="특강! 배수의 집합의 연산 / 대칭 차집합 확인체크 54-55">특강! 배수의 집합의 연산 / 대칭 차집합 확인체크 54-55</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="03. 유한집합의 원소의 개수">03. 유한집합의 원소의 개수</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="01. 명제와 조건">01. 명제와 조건</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="02. 명제 p → q">02. 명제 p → q</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="01. 집합의 뜻과 표현">01. 집합의 뜻과 표현</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="02. 집합 사이의 포함 관계 - 집합의 포함관계">02. 집합 사이의 포함 관계 - 집합의 포함관계</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="02. 집합 사이의 포함 관계 - 부분집합의 개수">02. 집합 사이의 포함 관계 - 부분집합의 개수</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="01. 집합의 연산 - 집합의 연산 기호(합,교,차,여)">01. 집합의 연산 - 집합의 연산 기호(합,교,차,여)</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="01. 집합의 연산 - 집합의 연산 성질">01. 집합의 연산 - 집합의 연산 성질</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="02. 집합의 연산 법칙">02. 집합의 연산 법칙</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="특강! 배수의 집합의 연산 / 대칭 차집합 확인체크 54-55">특강! 배수의 집합의 연산 / 대칭 차집합 확인체크 54-55</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="03. 유한집합의 원소의 개수">03. 유한집합의 원소의 개수</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="01. 명제와 조건">01. 명제와 조건</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="02. 명제 p → q">02. 명제 p → q</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+												</ul>
+											</div>
+											<div class="totla_time">
+												<span  class="">총 강의시간</span><span class="font_num"> 0:43:26</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> <!-- //팝업 끝 -->
+						
+						<!-- 중간 썸네일 삽입 팝업 시작 -->
+						<div id="popupTimeCheck" class="layer-popup-style01">	
+							<div class="layer-popup-content popup-video-player" style="height: auto; width: auto;">
+								<div class="popup-header-area">
+							  	    <h3 class="popup-header">강의보기 - 중1-1 [전과정]</h3>
+							  	    <div class="btn-area">
+									 	<button type="button" class="btn-close b-close" name="close">
+									 		<span class="close icon-close"></span>
+									 	</button>
+								 	</div>
+								</div>
+								<div class="popup-content video-content">
+									<div class="video-player-list">
+										<div class="video-player embed-responsive embed-responsive-16by9">
+											<iframe id="video" src="https://v.kr.kollus.com/jnr7Ht9B" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+											<div class="video-layer">
+												<div class="thum_time-check">
+													<img src="./resource/images/player_timecheck.png">
+												</div>
+												<div class="timer">
+													<span class="font_num timer-text">5:00</span>
+												</div>
+											</div>
+										</div>
+										
+										<div class="playlist">
+											<div class="list-header">
+												<div class="list_option fl-r">
+													<div class="checkbox_repeat">
+														<label class="checkbox-img"><input type="checkbox" name="" value=""><i class="icon-repeat"></i></label>
+													</div>
+												</div>
+											</div>
+											<div class="list_video">
+												<ul>
+													<li class="video_title active">
+														<span class="list_name" title="01. 집합의 뜻과 표현">01. 집합의 뜻과 표현</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="02. 집합 사이의 포함 관계 - 집합의 포함관계">02. 집합 사이의 포함 관계 - 집합의 포함관계</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="02. 집합 사이의 포함 관계 - 부분집합의 개수">02. 집합 사이의 포함 관계 - 부분집합의 개수</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="01. 집합의 연산 - 집합의 연산 기호(합,교,차,여)">01. 집합의 연산 - 집합의 연산 기호(합,교,차,여)</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="01. 집합의 연산 - 집합의 연산 성질">01. 집합의 연산 - 집합의 연산 성질</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="02. 집합의 연산 법칙">02. 집합의 연산 법칙</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="특강! 배수의 집합의 연산 / 대칭 차집합 확인체크 54-55">특강! 배수의 집합의 연산 / 대칭 차집합 확인체크 54-55</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="03. 유한집합의 원소의 개수">03. 유한집합의 원소의 개수</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="01. 명제와 조건">01. 명제와 조건</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="02. 명제 p → q">02. 명제 p → q</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="01. 집합의 뜻과 표현">01. 집합의 뜻과 표현</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="02. 집합 사이의 포함 관계 - 집합의 포함관계">02. 집합 사이의 포함 관계 - 집합의 포함관계</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="02. 집합 사이의 포함 관계 - 부분집합의 개수">02. 집합 사이의 포함 관계 - 부분집합의 개수</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="01. 집합의 연산 - 집합의 연산 기호(합,교,차,여)">01. 집합의 연산 - 집합의 연산 기호(합,교,차,여)</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="01. 집합의 연산 - 집합의 연산 성질">01. 집합의 연산 - 집합의 연산 성질</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="02. 집합의 연산 법칙">02. 집합의 연산 법칙</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="특강! 배수의 집합의 연산 / 대칭 차집합 확인체크 54-55">특강! 배수의 집합의 연산 / 대칭 차집합 확인체크 54-55</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="03. 유한집합의 원소의 개수">03. 유한집합의 원소의 개수</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="01. 명제와 조건">01. 명제와 조건</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+													<li class="video_title">
+														<span class="list_name" title="02. 명제 p → q">02. 명제 p → q</span>
+														<span class="video-time font_num fl-r"> 0:11:46</span>
+													</li>
+												</ul>
+											</div>
+											<div class="totla_time">
+												<span  class="">총 강의시간</span><span class="font_num"> 0:43:26</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> <!-- //팝업 끝 -->
+					</article>
+				</section>
+			</div>
+		</div>
+	</body>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+	<script src="./resource/js/common.js"></script>
+	<script src="./resource/js/jquery.bpopup.min.js"></script>
+	<script>
+	    //Layer Popup
+		function go_popup() {	   
+		  $('#popup').bPopup({
+			  modalClose: false,
+			  easing: 'easeOutBack', //uses jQuery easing plugin
+		      speed: 450,
+		      transition: 'slideDown'
+		  });	   
+		};
+	</script>
+	<script>
+	    //Layer Popup
+		function go_popup_timecheck() {	   
+		  $('#popupTimeCheck').bPopup({
+			  modalClose: false,
+			  easing: 'easeOutBack', //uses jQuery easing plugin
+		      speed: 450,
+		      transition: 'slideDown'
+		  });	   
+		};
+	</script>
+	
+</html>

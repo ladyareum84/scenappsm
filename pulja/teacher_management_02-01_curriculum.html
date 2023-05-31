@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="title" content="">
+		<meta name="keywords" content="">
+		<meta name="Description" content="">		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">		
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no"/> 
+		<title>개념원리 풀자</title>
+		<link rel="stylesheet" type="text/css" href="./resource/font/NotoSans/notosans.css">
+		<link rel="stylesheet" type="text/css" href="./resource/css/common.css">	
+		<link rel="stylesheet" type="text/css" href="./resource/css/jquery.datetimepicker.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="shortcut icon" href="./resource/images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="./resource/images/favicon.ico" type="image/x-icon">
+	</head>
+	
+	<body>
+		<div class="wrapper wrap_teacher">
+			<!-- 코치모드 로그인 후  -->
+			<header class="header_style03 header_coach">
+			    <div class="gnb">
+			        <div class="inner">
+                        <a href="#" class="gnb-logo">
+                            <img src="./resource/images/header-logo.png" width="104" alt="개념원리">
+                        </a>
+                        <div class="nav_category">
+							<ul class="menu-list">
+								<li class="list-item "><a href="#">내 학생정보</a></li>
+								<li class="list-item active"><a href="#">학습관리</a></li>
+								<li class="list-item"><a href="#">내 수익</a></li>
+								<li class="list-item"><a href="#">학습자료실</a></li>
+							</ul>
+						</div>
+                        <div class="navbar-right">
+                            <div class="top_nav">
+                                <span>
+                                    <a class="about-style" href="#">About 풀자</a>
+                                </span>
+                                <span class="divi-vertical"></span>
+                                <span>
+                                    <a href="#">온라인서점</a>
+                                </span>
+                                <span class="divi-vertical"></span>
+                                <span>
+                                    <a href="#">고객센터</a>
+                                </span>  
+                            </div> 
+                            <div class="personal_area login hide">
+                                <ul class="login personal-list">
+                                    <li class="list-item">
+                                        <a href="#">로그인</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#">회원가입</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="personal_area logout">
+		                    	<ul class="personal-list">
+		                    		<li class="list-item">
+		                    			<div class="user-info">
+		                    				<img class="img-profile" src="./resource/images/img_reviewer.png">
+			                               <span class="user-id">이순신님 <i class="icon-arr arr-down"></i></span>
+			                                <div class="layer_box">
+			                                	<ul class=" user-list">
+				                            		<li class="list-text"><a href="#" class="">나의 정보</a></li>
+				                            		<li class="list-text"><a href="#" class="">프로필 정보</a></li>
+				                            		<li class="list-text"><a href="#" class="">로그아웃</a></li>
+				                            	</ul>
+			                                </div>
+			                            </div>
+		                    		</li>
+		                    	</ul>
+		                    </div>
+                        </div>
+                    </div>
+				</div>
+			</header>
+			
+			<div class="container">
+				<section class="coach_contents">
+					<div class="contents-header">
+						<h2 class="contents_heading">학습관리</h2>
+					</div>
+					<article class="content_box">
+						<div class="content-item">
+							<div class="row">
+								<div class="col-md-4 col-xs-12">
+									<div class="content-header">
+										<h3 class="content_heading"><span class="weight-500_medium">홍길동</span> 님의 커리큘럼 관리</h3>
+										<div class="option-area fl-r">
+											<a href="#" class="btn btn-brand_outline btn-sm" onclick="curriculum_popup_create()">커리큘럼 만들기</a>
+											<a href="#" class="btn btn-default btn-sm" onclick="curriculum_popup_create()">삭제</a>
+										</div>
+									</div>
+									<form role="form" class="form-horizontal curriculum_setting">
+										<div class="form-contents">
+											<div class="form-info-box">
+												<div class="content-item">
+													<div class="sub-header">
+														<h4 class="content_heading sub_heading">
+															<span class="sub_title">커리큘럼 설정 </span>
+															
+														</h4>
+													</div>
+													<div class="form-group">
+														<div class="row-contents">
+															<div class="label-control col-4">커리큘럼</div>
+															<div class="col-md-9">
+																<label class="form_selectbox">
+								                                    <select name="readTime" class="form-control select-style" disabled="disabled">
+								                                        <option value="">코치 직접 설정</option>
+								                                        <option value="">수학(상)4주 완성(주6회 일일 2시간 기준)</option>
+								                                        <option value="">수학(상)4주 완성(주6회 일일 2시간 기준)</option>
+								                                        <option value="">수학Ⅱ</option>
+								                                        <option value="">확률과통계</option>
+								                                        <option value="">미적분</option>
+								                                        <option value="">기하</option>
+								                                    </select>
+								                                </label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="row-contents">
+															<div class="label-control col-4">커리큘럼명</div>
+															<div class="col-md-9">
+																<div class="input-group">
+		                                                            <input type="text" id="curriculumName" class="form-control" placeholder="홍길동 학생 수학(상) 1학기">
+		                                                            <span class="btn_input-group">
+																		<button type="button" class="btn btn-default btn-sm">변경</button>
+																	</span>
+		                                                        </div>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="row-contents">
+															<div class="label-control col-4">과목</div>
+															<div class="col-md-9">
+																<label class="form_selectbox"> 
+								                                    <select name="subject" class="form-control select-style" disabled="disabled">
+								                                        <option value="">수학(상)</option>
+								                                        <option value="">수학(하)</option>
+								                                        <option value="">수학Ⅰ</option>
+								                                        <option value="">수학Ⅱ</option>
+								                                        <option value="">확률과통계</option>
+								                                        <option value="">미적분</option>
+								                                        <option value="">기하</option>
+								                                    </select>
+								                                </label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="row-contents">
+															<div class="label-control col-4">범위</div>
+															<div class="col-md-9">
+																<div class="input-text disabled">부분범위</div>
+															</div>
+														</div>
+													</div>
+													
+												</div>
+												
+												<div class="content-item">
+													<div class="sub-header">
+														<h4 class="content_heading sub_heading">
+															<span class="sub_title">수업 설정 </span>
+														</h4>
+													</div>
+													<div class="form-group">
+														<div class="row-contents">
+															<div class="label-control col-4">시작일</div>
+															<div class="col-md-9">
+																<div class="input-group mb-n">
+																	<input type="text" id="datetimepicker" class="datepicker_control input-width-xs font_num" value="날짜 선택">
+																	<span><a href="#" class="link-text">현재일 기준으로 재배치</a></span>
+																</div>
+																
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="row-contents">
+															<div class="label-control col-4">시작요일</div>
+															<div class="col-md-9">
+																<div class="m-checkbox-inline">
+																	<label class="m-checkbox"> 
+									                                    <input type="checkbox" value="mon">월
+									                                        <span></span>
+									                                </label>
+									                                <label class="m-checkbox"> 
+									                                    <input type="checkbox" value="tue">화
+									                                        <span></span>
+									                                </label>
+									                                <label class="m-checkbox"> 
+									                                    <input type="checkbox" value="wed">수
+									                                        <span></span>
+									                                </label>
+									                                <label class="m-checkbox"> 
+									                                    <input type="checkbox" value="thu">목
+									                                        <span></span>
+									                                </label>
+									                                <label class="m-checkbox"> 
+									                                    <input type="checkbox" value="fri">금
+									                                        <span></span>
+									                                </label>
+									                                <label class="m-checkbox"> 
+									                                    <input type="checkbox" value="sat">토
+									                                        <span></span>
+									                                </label>
+									                                <label class="m-checkbox"> 
+									                                    <input type="checkbox" value="sun">일
+									                                        <span></span>
+									                                </label>
+								                                </div>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="row-contents">
+															<div class="label-control col-4">수업시간</div>
+															<div class="col-md-9">
+																<label class="form_selectbox">
+								                                    <select name="studyTime" class="form-control select-style font_num">
+								                                    	<option value="">시간 선택</option>
+								                                        <option value="">30분</option>
+								                                        <option value="">1시간</option>
+								                                        <option value="">1시간 30분</option>
+								                                        <option value="">2시간</option>
+								                                        <option value="">2시간 30분</option>
+								                                        <option value="">3시간</option>
+								                                        <option value="">3시간 30분</option>
+								                                        <option value="">4시간</option>
+								                                        <option value="">4시간 30분</option>
+								                                        <option value="">5시간</option>
+								                                        <option value="">5시간 30분</option>
+								                                        <option value="">6시간</option>
+								                                    </select>
+								                                </label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="content-item list-info">
+													<div class="sub-header">
+														<h4 class="content_heading sub_heading">
+															<span class="sub_title">수업 일수</span>
+														</h4>
+													</div>
+													<div class="days-class">
+														<ul>
+															<li><span class="font_num state_day">24</span>일</li>
+															<li>주 <span class="font_num state_day">00</span>회</li>
+															<li>총 <span class="font_num state_day">00</span>주</li>
+														</ul>
+													
+													</div>	
+												</div>
+												<div class="content-item list-info level_list_info">
+													<div class="sub-header">
+														<h4 class="content_heading sub_heading">
+															<span class="sub_title">총 문제 난이도 정보</span>
+														</h4>
+													</div>
+													<div class="form-group level_list">
+														<table class="table_board-list mb-n">
+															<caption>난이도</caption>
+															<thead>
+																<tr>
+																	<th scope="col" class="font_num">1</th>
+																	<th scope="col" class="font_num">2</th>
+																	<th scope="col" class="font_num">3</th>
+																	<th scope="col" class="font_num">4</th>
+																	<th scope="col" class="font_num">5</th>
+																	<th scope="col" class="font_num">6</th>
+																	<th scope="col" class="font_num">7</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr class="font_num">
+																	<td>
+																		<div class="state_level">24</div>
+																		<div>문제</div>
+																	</td>
+																	<td>
+																		<div class="state_level">24</div>
+																		<div>문제</div>
+																	</td>
+																	<td>
+																		<div class="state_level">24</div>
+																		<div>문제</div>
+																	</td>
+																	<td>
+																		<div class="state_level">24</div>
+																		<div>문제</div>
+																	</td>
+																	<td>
+																		<div class="state_level">24</div>
+																		<div>문제</div>
+																	</td>
+																	<td>
+																		<div class="state_level">24</div>
+																		<div>문제</div>
+																	</td>
+																	<td>
+																		<div class="state_level">24</div>
+																		<div>문제</div>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="col-md-8 col-xs-12">
+									<div class="content-header">
+										<div class="option-area fl-r">
+											<a href="#" class="btn btn-brand_outline btn-sm" onclick="curriculum_popup_add()">강의추가</a>
+											<a href="#" class="btn btn-default btn-sm">설정 저장</a>
+										</div>
+									</div>
+									<div class="form-contents curriculum_setting">
+										<div class="list_table list_lecture">
+											<div class="list_thead">
+												<div class="list_th lecture_date">수업일자</div>
+												<div class="list_th lecture_title">강의명</div>
+												<div class="list_th lecture_time">강의시간</div>
+												<div class="list_th lecture_btn">문제학습</div>
+												<div class="list_th learn_state">학습상태</div>
+											</div>
+											<div class="list_tbody">
+												<div class="list-tr">
+													<div class="list_td font_num lecture_date">2021.02.01<br />(월)</div>
+													<div class="list-group">
+														<div class="list-item"> <!-- 드래그앤 드롭 가능한 클래스 입니다.  -->
+															<div class="list_td font_num lecture_title">
+																<div class="text-unit">1 다항식 &gt; 02 항등식과 나머지정리 00강</div>  
+																<div class="ellipsis">[항등식에서  미정계수  구하기  –  수치대입범]</div>
+															</div>
+															<div class="list_td font_num lecture_time">1분 1초</div>
+															<div class="list_td lecture_btn">
+																<div class="btn-box">
+																	<a href="#" class="btn btn-brand_outline btn-table btn-width font_num" onclick="curriculum_popup_change()">3문제</a>
+																	<a href="#" class="btn btn-default btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
+																</div>
+															</div>
+															<div class="list_td font_num learn_state">
+																<div class="state_complete">학습완료</div>
+																<div class="state_date">2021.02.01</div>
+															</div>
+														</div>
+														<div class="list-item">
+															<div class="list_td font_num lecture_title">
+																<div class="text-unit">1 다항식 &gt; 01다항식의 연산 00강</div>  
+																<div class="ellipsis">[다항식의 연산 덧셈과 뻴셈]</div>
+															</div>
+															<div class="list_td font_num lecture_time">2분 25초</div>
+															<div class="list_td lecture_btn">
+																<div class="btn-box">
+																	<a href="#" class="btn btn-brand_outline btn-table btn-width font_num" onclick="curriculum_popup_change()">3문제</a>
+																	<a href="#" class="btn btn-default btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
+																</div>
+															</div>
+															<div class="list_td font_num learn_state">
+																<div class="state_ing">학습중</div>
+																<div class="state_date">2021.02.01</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="list-tr">
+													<div class="list_td font_num lecture_date">2021.02.02<br />(화)</div>
+													<div class="list-group">
+														<div class="list-item"> <!-- 드래그앤 드롭 가능한 클래스 입니다.  -->
+															<div class="list_td font_num lecture_title">
+																<div class="text-unit">1 다항식 &gt; 02 항등식과 나머지정리 00강</div>  
+																<div class="ellipsis">항등식에서  미정계수  구하기  –  계수비교법]</div>
+															</div>
+															<div class="list_td font_num lecture_time">0분 0초</div>
+															<div class="list_td lecture_btn">
+																<div class="btn-box">
+																	<a href="#" class="btn btn-brand_outline btn-table btn-width font_num" onclick="curriculum_popup_change()">3문제</a>
+																	<a href="#" class="btn btn-default btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
+																</div>
+															</div>
+															<div class="list_td font_num learn_state">
+																<div class="state_complete">학습완료</div>
+																<div class="state_date">2021.02.01</div>
+															</div>
+														</div>
+													</div>
+												</div>	
+												<div class="list-tr">
+													<div class="list_td font_num lecture_date">2021.02.03<br />(수)</div>
+													<div class="list-group">
+														<div class="list-item list_empty"> <!-- 드래그앤 드롭 가능한 클래스 입니다.  -->
+															<div class="list_td font_num">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="list-tr">
+													<div class="list_td font_num lecture_date">2021.02.04<br />(목)</div>
+													<div class="list-group">
+														<div class="list-item list_fixed"> <!-- 고정일때  -->
+															<div class="list_td font_num lecture_title">
+																<div class="text-unit text-fixed">대단원 테스트</div>   <!-- 고정일때  -->
+																<div class="ellipsis">1. 다항식</div>
+															</div>
+															<div class="list_td font_num lecture_time"></div>
+															<div class="list_td lecture_btn">
+																<div class="btn-box">
+																	<a href="#" class="btn btn-brand_outline btn-table btn-width font_num" onclick="curriculum_popup_change()">3문제</a>
+																	<a href="#" class="btn btn-default btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
+																</div>
+															</div>
+															<div class="list_td font_num learn_state">
+																<div class="state_complete">학습완료</div>
+																<div class="state_date">2021.02.01</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="list-tr">
+													<div class="list_td font_num lecture_date">2021.02.05<br />(금)</div>
+													<div class="list-group">
+														<div class="list-item"> <!-- 드래그앤 드롭 가능한 클래스 입니다.  -->
+															<div class="list_td font_num lecture_title">
+																<div class="text-unit">1 다항식 &gt; 02 항등식과 나머지정리 00강</div>  
+																<div class="ellipsis">[항등식에서  미정계수  구하기  –  수치대입범]</div>
+															</div>
+															<div class="list_td font_num lecture_time">46분 37초</div>
+															<div class="list_td lecture_btn">
+																<div class="btn-box">
+																	<a href="#" class="btn btn-brand_outline btn-table btn-width font_num" onclick="curriculum_popup_change()">3문제</a>
+																	<a href="#" class="btn btn-default btn-table btn-width" onclick="curriculum_popup_level()">난이도</a>
+																</div>
+															</div>
+															<div class="list_td font_num learn_state">
+																<div class="state_complete">학습완료</div>
+																<div class="state_date">2021.02.01</div>
+															</div>
+														</div>
+													</div>
+												</div>	
+											</div>
+											<!-- 플로팅 삭제버튼 -->
+											<div class="folat-box">
+												<div class="btn_round">
+													<button class="btn-delete">
+														<span class="material-icons icon-delete">delete_forever</span>
+													</button>
+												</div>
+											</div>
+											<!-- //플로팅 삭제버튼 -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+						<!-- 팝업 시작 강의 추가 -->
+						<div id="popupAdd" class="layer-popup-style01">	
+							<div class="layer-popup-content popup-test-question" style="height: auto; width: auto;">
+								<div class="popup-header-area">
+							  	    <h3 class="popup-header">강의 추가</h3>
+							  	    <div class="btn-area">
+									 	<button type="button" class="btn-close b-close" name="close">
+									 		<span class="close icon-close"></span>
+									 	</button>
+								 	</div>
+								</div>
+								<div class="popup-content">
+									<div class="content_box">
+										<div class="filter-area">
+											<div class="form-input-area">
+												<label class="form_selectbox">
+													<select name="level" class="form-control select-style input-width-lg">
+														<option value="all">과목</option>
+														<option value="mathematic_class1-1">수학(상)</option>
+														<option value="mathematic_class1-2">수학(하)</option>
+														<option value="mathematic_class2-1">수학Ⅰ</option>
+														<option value="mathematic_class2-2">수학Ⅱ</option>
+														<option value="ProbabilityandStatistics">확률과통계</option>
+														<option value="Calculus">미적분</option>
+														<option value="Geometry">기하</option>
+													</select>
+												</label>
+											    <label class="form_selectbox">
+													<select name="level" class="form-control select-style input-width-lg">
+														<option value="all">대단원</option>
+														<option value="level1">Level 1</option>
+														<option value="level2">Level 2</option>
+														<option value="level3">Level 3</option>
+													</select>
+												</label>
+											    <label class="form_selectbox">
+													<select name="readTime" class="form-control select-style input-width-lg">
+														<option value="all">중단원</option>
+														<option value="One">1회독</option>
+														<option value="two">2회독</option>
+														<option value="three">3회독</option>
+													</select>
+												</label>							    
+											</div>
+										</div>
+									</div>
+									<div class="content_box">
+										<div class="content-list_grid">
+											<div class="row-contents">
+												<div class="col-2 grid-item">
+													<div class="sub-header">
+														<h2 class="content_heading sub_heading">
+															<span class="sub_title">전체 강의 리스트 </span>
+														</h2>
+													</div>	
+													<div class="panel_content">
+														<div class="form-group board_list">
+															<form role="form">
+																<table class="table_board-list table-style_lecture table_select-list">
+																	<caption>전체 강의 리스트</caption>
+																	<thead>
+																		<tr>
+																			<th scope="col" class="">강의명</th>
+																			<th scope="col" class="date" style="width:16%;">강의시간</th>
+																			<th scope="col" class="state" style="width:14%;">학습상태</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr class="list">
+																			<td class="ta-l">
+																				<div class="ellipsis2" title="수학(상) 진단 테스트">수학(상) 진단 테스트</div>
+																			</td>
+																			<td class="font_num">54분</td>
+																			<td class="learn_state">
+																				<div class="state_complete">학습완료</div>
+																			</td>
+																		</tr>
+																		<tr class="list">
+																			<td class="ta-l">
+																				<div class="ellipsis2" title="1강 수학(하) Level2 집합의뜻과포함관계>집합의뜻과표">1강 수학(하) Level2 집합의뜻과포함관계>집합의뜻과표현</div>
+																			</td>
+																			<td class="font_num">54분</td>
+																			<td class="learn_state">
+																				<div class="state_complete">학습완료</div>
+																			</td>
+																		</tr>
+																		<tr class="list">
+																			<td class="ta-l">
+																				<div class="ellipsis2" title="2강 수학(하) Level2 집합의뜻과포함관계>집합사이의 포함관계">2강 수학(하) Level2 집합의뜻과포함관계>집합사이의 포함관계</div>
+																			</td>
+																			<td class="font_num"></td>
+																			<td class="learn_state">
+																				<div class="state_complete">학습완료</div>
+																			</td>
+																		</tr>
+																		<tr class="list">
+																			<td class="ta-l">
+																				<div class="ellipsis2" title="3강 수학(하) Level2 집합의연산>집합의 연산(1)-집합의 연산기호 3강 수학(하) Level2 집합의연산>집합의 연산(1)-집합의 연산기호">3강 수학(하) Level2 집합의연산>집합의 연산(1)-집합의 연산기호 3강 수학(하) Level2 집합의연산>집합의 연산(1)-집합의 연산기호</div>
+																			</td>
+																			<td class="font_num">54분</td>
+																			<td class="learn_state">
+																				<div class="state_complete">학습완료</div>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</form>
+														</div>
+													</div>
+												</div>
+												<div class="col-9">
+													<div class="panel_btn-box">
+														<div class="box">
+														<button type="button" id="multiselect_rightSelected" class="btn-move btn-default"><span class="icon_add"></span></button>
+														<button type="button" id="multiselect_leftSelected" class="btn-move btn-default"><span class="icon_remove"></span></button>
+														</div>
+													</div>
+												</div>
+												<div class="col-2 grid-item">	
+													<div class="sub-header">
+														<h2 class="content_heading sub_heading">
+															<span class="sub_title">선택된 강의 리스트</span>
+														</h2>
+													</div>	
+													<div class="panel_content">
+														<div class="form-group board_list">
+															<form role="form">
+																<table class="table_board-list table-style_lecture table_select-list">
+																	<caption>선택된 출제 리스트 </caption>
+																	<thead>
+																		<tr>
+																			<th scope="col" class="select_data">날짜 선택</th>
+																			<th scope="col" class="">강의명</th>
+																			<th scope="col" class="date">강의시간</th>
+																			<th scope="col" class="state" style="width:14%;">학습상태</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr class="list">
+																			<td>
+																				<div class="form-input-area">
+																					<input type="text" id="datetimepicker" class="datepicker_control font_num" value="날짜 선택">
+																				</div>
+																			</td>
+																			<td class="ta-l">
+																				<div class="ellipsis2" title="3강 수학(하) Level2 집합의연산>집합의 연산(1)-집합의 연산기호 3강 수학(하) Level2 집합의연산>집합의 연산(1)-집합의 연산기호">3강 수학(하) Level2 집합의연산>집합의 연산(1)-집합의 연산기호 3강 수학(하) Level2 집합의연산>집합의 연산(1)-집합의 연산기호</div>
+																			</td>
+																			<td class="font_num">54분</td>
+																			<td class="learn_state">
+																				<div class="state_complete">학습완료</div>
+																				<div class="state_date">2021.02.01</div>
+																			</td>
+																		</tr>
+																		<tr class="list">
+																			<td>
+																				<div class="form-input-area">
+																					<input type="text" id="datetimepicker" class="datepicker_control font_num" value="날짜 선택">
+																				</div>
+																			</td>
+																			<td class="ta-l">
+																				<div class="ellipsis2" title="3강 수학(하) Level2 집합의연산>집합의 연산(1)-집합의 연산기호 3강 수학(하) Level2 집합의연산>집합의 연산(1)-집합의 연산기호">3강 수학(하) Level2 집합의연산>집합의 연산(1)-집합의 연산기호 3강 수학(하) Level2 집합의연산>집합의 연산(1)-집합의 연산기호</div>
+																			</td>
+																			<td class="font_num">54분</td>
+																			<td class="learn_state">
+																				<div class="state_complete">학습완료</div>
+																				<div class="state_date">2021.02.01</div>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>							
+										</div>
+										<div class="btn-actions">
+											<button type="submit" class="btn btn-default btn-sm b-close">확인</button>	
+											<button type="submit" class="btn btn-default btn-sm b-close">취소</button>
+										</div>	
+									</div>
+								</div>
+							</div>
+						</div> 
+						<!-- // 팝업 끝 강의 추가 -->	
+                        <!-- 팝업 시작 범위 선택 -->
+						<div id="popupCreate" class="layer-popup-style01">	
+							<div class="layer-popup-content popup-width-sm" style="height: auto; width: auto;">
+								<div class="popup-header-area">
+							  	    <h3 class="popup-header">커리큘럼 만들기</h3>
+							  	    <div class="btn-area">
+									 	<button type="button" class="btn-close b-close" name="close">
+									 		<span class="close icon-close"></span>
+									 	</button>
+								 	</div>
+								</div>
+								<div class="popup-content">
+									<div class="content_box">
+										<div class="filter-area vertical-area">
+											<div class="form-group">
+												<div class="row-contents">
+													<div class="col-4">
+														<span class="label-control">커리큘럼</span>
+													</div>
+													<div class="col-9">
+														<label class="form_selectbox">
+						                                    <select name="readTime" class="form-control select-style input-width-lg">
+						                                        <option value="">코치 직접 설정</option>
+						                                        <option value="">수학(상)4주 완성(주6회 일일 2시간 기준)</option>
+						                                        <option value="">수학(상)4주 완성(주6회 일일 2시간 기준)</option>
+						                                        <option value="">수학Ⅱ</option>
+						                                        <option value="">확률과통계</option>
+						                                        <option value="">미적분</option>
+						                                        <option value="">기하</option>
+						                                    </select>
+						                                </label>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="row-contents">
+													<div class="col-4">
+														<span class="label-control">커리큘럼명</span>
+													</div>
+													<div class="col-9">
+														<div class="input-group">
+		                                                    <input type="text" id="curriculumName" class="form-control input-width-lg" placeholder="커리큘럼명">
+		                                                </div>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="row-contents">
+													<div class="col-4">
+														<span class="label-control">과목</span>
+													</div>
+													<div class="col-9">
+														<label class="form_selectbox">
+						                                    <select name="subject" class="form-control select-style input-width-lg">
+						                                        <option value="">수학(상)</option>
+						                                        <option value="">수학(하)</option>
+						                                        <option value="">수학Ⅰ</option>
+						                                        <option value="">수학Ⅱ</option>
+						                                        <option value="">확률과통계</option>
+						                                        <option value="">미적분</option>
+						                                        <option value="">기하</option>
+						                                    </select>
+						                                </label>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="row-contents">
+													<div class="col-4">
+														<span class="label-control">범위</span>
+													</div>
+													<div class="col-9">
+														<div class="m-radio-inline" style="padding-top: 3px;">												
+															<label class="m-radio"> 
+																<input type="radio" name="payment" id="rangeAll" value="rangeAll" data-parsley-multiple="range"> 전체범위 
+																<span></span>
+															</label> 
+															<label class="m-radio"> 
+																<input type="radio" name="payment" id="rangePrat" value="rangePrat" checked="checked" data-parsley-multiple="range"> 부분범위
+																<span></span>
+															</label> 
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="content_box">
+										<div class="form-group">
+											<form role="form">
+												<table class="table_board-list table-style_lecture table-style_merge">
+													<caption>범위 선택</caption>
+													<colgroup>
+														<col width="">
+														<col width="">
+													</colgroup>
+													<thead>
+														<tr>
+															<th scope="col" class="">대단원</th>
+															<th scope="col" class="">중단원</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+														    <td rowspan="3" class="ta-l border_merge">
+														    	<label class="m-checkbox">
+																	<input type="checkbox" name="check" value="">
+																	<span></span>
+																</label>
+																01 다항식
+														    </td>
+															<td class="ta-l">
+																<label class="m-checkbox">
+																	<input type="checkbox" name="check" value="">
+																	<span></span>
+																</label>
+																01 다항식의 연산
+															</td>
+														</tr>
+														<tr>
+															<td class="ta-l">
+																<label class="m-checkbox">
+																	<input type="checkbox" name="check" value="">
+																	<span></span>
+																</label>
+																02 항등식과 나머지정리
+															</td>
+														</tr>
+														<tr>
+															<td class="ta-l">
+																<label class="m-checkbox">
+																	<input type="checkbox" name="check" value="">
+																	<span></span>
+																</label>
+																03 인수분해
+															</td>
+														</tr>
+														
+														<tr>
+														    <td rowspan="6" class="ta-l border_merge">
+														    	<label class="m-checkbox">
+																	<input type="checkbox" name="check" value="">
+																	<span></span>
+																</label>
+																02 방정식과 부등식
+														    </td>
+															<td class="ta-l">
+																<label class="m-checkbox">
+																	<input type="checkbox" name="check" value="">
+																	<span></span>
+																</label>
+																04 복소수
+															</td>
+														</tr>
+														<tr>
+															<td class="ta-l">
+																<label class="m-checkbox">
+																	<input type="checkbox" name="check" value="">
+																	<span></span>
+																</label>
+																05 이차방정식
+															</td>
+														</tr>
+														<tr>
+															<td class="ta-l">
+																<label class="m-checkbox">
+																	<input type="checkbox" name="check" value="">
+																	<span></span>
+																</label>
+																06 이차방정식과 이차함수
+															</td>
+														</tr>
+														<tr>
+															<td class="ta-l">
+																<label class="m-checkbox">
+																	<input type="checkbox" name="check" value="">
+																	<span></span>
+																</label>
+																07 여러 가지 방정식
+															</td>
+														</tr>
+														<tr>
+															<td class="ta-l">
+																<label class="m-checkbox">
+																	<input type="checkbox" name="check" value="">
+																	<span></span>
+																</label>
+																08 연립일차부등식
+															</td>
+														</tr>
+														<tr>
+															<td class="ta-l">
+																<label class="m-checkbox">
+																	<input type="checkbox" name="check" value="">
+																	<span></span>
+																</label>
+																09 이차부등식과 연립이차부등식
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</form>
+										</div>
+										<div class="btn-actions">
+											<button type="submit" class="btn btn-default btn-sm">확인</button>	
+											<button type="submit" class="btn btn-default btn-sm b-close">취소</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- // 팝업 끝 범위 선택 -->
+						<!-- 팝업 시작 문제학습 변경 -->
+						<div id="popupChange" class="layer-popup-style01">	
+							<div class="layer-popup-content popup-problem" style="height: auto; width: auto;">
+								<div class="popup-header-area">
+							  	    <h3 class="popup-header">출제 문제 변경</h3>
+							  	    <div class="btn-area">
+									 	<button type="button" class="btn-close b-close" name="close">
+									 		<span class="close icon-close"></span>
+									 	</button>
+								 	</div>
+								</div>
+								<div class="popup-content math-problem_contents">
+									<div class="content_box">
+										<div class="content-list_grid">
+											<div class="row-contents">
+												<div class="col-2 grid-item">
+													<div class="sub-header">
+														<h2 class="content_heading sub_heading">
+															<span class="sub_title">출제 문제 </span>
+														</h2>
+													</div>	
+													<div class="panel_content">
+														<div class="question_item answer_item">
+															<div class="question_num answer_x answer_o">1.</div>
+															<div class="question_area">
+																<span class="question_img hidden">
+																	<img src="">
+																</span>
+																<div class="question_text">
+																	<span>다음 중 거듭제곱을 사용하여 나타낸 것이 옳지 않은 것은?</span>
+																</div>
+															</div>
+															<div class="objective_item">
+																<ol class="multiple-choice">
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_1-1">
+																			<span>①</span>
+																		</div>
+																		<p class="answer_text">exmple_1</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num checked" id="answer_num_1-2">
+																			<span>②</span>
+																			<strong class="mine_choice">내가 선택한 답</strong>
+																		</div>
+																		<p class="answer_text">exmple_2</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_1-3">
+																			<span>③</span>
+																		</div>
+																		<p class="answer_text">exmple_3</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_1-4">
+																			<span>④</span>
+																		</div>
+																		<p class="answer_text">exmple_4</p>
+																	</li>
+																</ol>
+															</div>
+														</div>
+													
+														<div class="question_item answer_item">
+															<div class="question_num answer_x answer_o">2.</div>
+															<div class="question_area">
+																<span class="question_img ">
+																	<img src="./resource/images/img_math_problem_01.jpg">
+																</span>
+																<div class="question_text hidden">
+																	<span>다음 중 거듭제곱을 사용하여 나타낸 것이 옳지 않은 것은?</span>
+																</div>
+															</div>
+															<div class="objective_item">
+																<ol class="multiple-choice">
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_2-1">
+																			<span>①</span>
+																		</div>
+																		<p class="answer_text">2</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_2-2">
+																			<span>②</span>
+																		</div>
+																		<p class="answer_text">4</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_2-3">
+																			<span>③</span>
+																		</div>
+																		<p class="answer_text">6</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num checked" id="answer_num_2-4">
+																			<span>④</span>
+																			<strong class="mine_choice">내가 선택한 답</strong>
+																		</div>
+																		<p class="answer_text">8</p>
+																	</li>
+																</ol>
+															</div>
+														</div>
+														
+														<div class="question_item answer_item">
+															<div class="question_num answer_x answer_o">3.</div>
+															<div class="question_area">
+																<span class="question_img hidden">
+																	<img src="">
+																</span>
+																<div class="question_text ">
+																	<span>다음 중 2³ 대한 설명으로 옳지 않은 것은?</span>
+																</div>
+															</div>
+															<div class="objective_item">
+																<ol class="multiple-choice">
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_2-1">
+																			<span>①</span>
+																		</div>
+																		<p class="answer_text">8과 같다.</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_2-2">
+																			<span>②</span>
+																		</div>
+																		<p class="answer_text">밑은 2이다.</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_2-3">
+																			<span>③</span>
+																		</div>
+																		<p class="answer_text">지수는 3이다.</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num checked" id="answer_num_2-4">
+																			<span>④</span>
+																			<strong class="mine_choice">내가 선택한 답</strong>
+																		</div>
+																		<p class="answer_text">2+2+2를 나타낸 것이다.</p>
+																	</li>
+																</ol>
+															</div>
+														</div>
+														
+														<div class="question_item">
+															<div class="question_num answer_x answer_o">4.</div>
+															<div class="question_area">
+																<div class="question_text ">
+																	<span>다음을 10의 거듭제곱으로 나타내어라.</span>
+																	<p>1000000</p>
+																</div>
+															</div>
+															<!-- 주관식일 때 -->
+															<div class="subjective_item">
+																<form>
+																	<textarea class="form-control textarea-style" name="text" readonly placeholder="">10⁴</textarea>
+																</form>
+															</div>
+															<!-- // 주관식일 때 -->
+														</div>
+														
+													</div>
+												</div>
+												<div class="col-2 grid-item">	
+													<div class="sub-header">
+														<h2 class="content_heading sub_heading">
+															<span class="sub_title">출제 변경</span>
+														</h2>
+													</div>	
+													<div class="panel_content">
+														<div class="form-group">
+															<form role="form">
+																<table class="table_board-list table-style_lecture">
+																	<caption>출제 변경</caption>
+																	<thead>
+																		<tr>
+																			<th scope="col" class="num">번호</th>
+																			<th scope="col" class="level">난이도</th>
+																			<th scope="col" class="questions-change">출제변경</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td class="font_num">1</td>
+																			<td class="font_num">3</td>
+																			<td>
+																				<label class="m-checkbox mb-n">
+																					<input type="checkbox" name="exclude" value="exclude">출제 제외하기
+																					<span></span>
+																				</label>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="font_num">2</td>
+																			<td class="font_num">4</td>
+																			<td>
+																				<label class="m-checkbox mb-n">
+																					<input type="checkbox" name="exclude" value="exclude">출제 제외하기
+																					<span></span>
+																				</label>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="font_num">3</td>
+																			<td class="font_num">7</td>
+																			<td>
+																				<label class="m-checkbox mb-n">
+																					<input type="checkbox" name="exclude" value="exclude">출제 제외하기
+																					<span></span>
+																				</label>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>							
+										</div>
+										<div class="btn-box btn-actions">
+											<button type="submit" class="btn btn-default btn-sm">확인</button>	
+											<button type="submit" class="btn btn-default btn-sm b-close">취소</button>
+										</div>						
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- // 팝업 끝 문제학습 변경 -->
+						
+						<!-- 팝업 시작 난이도  -->
+						<div id="popupLevel" class="layer-popup-style01">	
+							<div class="layer-popup-content popup-width-sm" style="height: auto; width: auto;">
+								<div class="popup-header-area">
+							  	    <h3 class="popup-header">난이도</h3>
+							  	    <div class="btn-area">
+									 	<button type="button" class="btn-close b-close" name="close">
+									 		<span class="close icon-close"></span>
+									 	</button>
+								 	</div>
+								</div>
+								<div class="popup-content">
+									<div class="content_box">
+										<div class="form-group level_list">
+											<form role="form">
+												<table class="table_board-list">
+													<caption>난이도</caption>
+													<thead>
+														<tr>
+															<th scope="col" class="font_num">1</th>
+															<th scope="col" class="font_num">2</th>
+															<th scope="col" class="font_num">3</th>
+															<th scope="col" class="font_num">4</th>
+															<th scope="col" class="font_num">5</th>
+															<th scope="col" class="font_num">6</th>
+															<th scope="col" class="font_num">7</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="font_num">
+															<td>
+																<div class="state_level">0</div>
+																<div>문제</div>
+															</td>
+															<td>
+																<div class="state_level">0</div>
+																<div>문제</div>
+															</td>
+															<td>
+																<div class="state_level">1</div>
+																<div>문제</div>
+															</td>
+															<td>
+																<div class="state_level">1</div>
+																<div>문제</div>
+															</td>
+															<td>
+																<div class="state_level">0</div>
+																<div>문제</div>
+															</td>
+															<td>
+																<div class="state_level">0</div>
+																<div>문제</div>
+															</td>
+															<td>
+																<div class="state_level">1</div>
+																<div>문제</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</form>
+										</div>
+										<div class="btn-box btn-actions">
+											<button type="submit" class="btn btn-default btn-sm">확인</button>	
+											<button type="submit" class="btn btn-default btn-sm b-close">취소</button>
+										</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- // 팝업 끝 난이도  -->
+					</article>
+				</section>
+			
+			</div>
+		</div>
+	</body>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+	<script src="./resource/js/common.js"></script>
+	<script src="./resource/js/jquery.bpopup.min.js"></script>
+	<script src="./resource/js/jquery.datetimepicker.full.min.js"></script>
+	<script>
+	    //Layer Popup
+		function curriculum_popup_create() {	   
+		  $('#popupCreate').bPopup({
+			  modalClose: false,
+			  easing: 'easeOutBack', //uses jQuery easing plugin
+		      speed: 450,
+		      transition: 'slideDown'
+		  });	   
+		};
+	</script>
+	<script>
+	    //Layer Popup
+		function curriculum_popup_change() {	   
+		  $('#popupChange').bPopup({
+			  modalClose: false,
+			  easing: 'easeOutBack', //uses jQuery easing plugin
+		      speed: 450,
+		      transition: 'slideDown'
+		  });	   
+		};
+	</script>
+	<script>
+	    //Layer Popup
+		function curriculum_popup_level() {	   
+		  $('#popupLevel').bPopup({
+			  modalClose: false,
+			  easing: 'easeOutBack', //uses jQuery easing plugin
+		      speed: 450,
+		      transition: 'slideDown'
+		  });	   
+		};
+	</script>
+	<script>
+	    //Layer Popup
+		function curriculum_popup_add() {	   
+		  $('#popupAdd').bPopup({
+			  modalClose: false,
+			  easing: 'easeOutBack', //uses jQuery easing plugin
+		      speed: 450,
+		      transition: 'slideDown'
+		  });	   
+		};
+	</script>
+	<script>
+	    $.datetimepicker.setLocale('kr');
+	    $('#datetimepicker').datetimepicker({
+	    	format:'Y/m/d',
+	    	timepicker:false
+	    });
+    </script>
+	<footer class="footer">
+		<article class="container">
+			<div class="row footer_contents company_polices">
+				<div class="col-1">
+					<ul class="footer-list">
+						<li class="pl-n"><a href="#">회사소개</a></li>
+						<li class=""><a href="#">이용약관</a></li>
+						<li class=""><a href="#">개인정보처리방침</a></li>
+						<li class="weight-500_medium text-default"><a href="#">코치지원센터</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="row footer_contents_small company_info">
+				<div class="col-10">
+					<address>
+                    (주) 개념원리 | 대표이사: 고사무열 | 주소: 서울특별시 강남구 강남대로 262 캠코타워 14층 (주) 개념원리 | 고객센터 : <a href="tel:16441248">1644-1248</a> &nbsp; <a href="mailto:wonri_with@wonriedu.com">wonri_with@wonriedu.com</a><br>
+                    사업자등록번호: 220-86-64126 | 통신판매업 신고번호: 제 2017-서울강남-03043호 <a class="notify" href="http://www.ftc.go.kr/www/bizCommView.do?key=232&amp;apv_perm_no=2017322016230203043&amp;pageUnit=10&amp;searchCnd=wrkr_no&amp;searchKrwd=2208664126&amp;pageIndex=1" target="_blank">정보확인</a><br>
+                    학원설립 운영등록번호: 제 10106호 개념원리원격학원 <a class="notify" href="javascript:void(0)" onclick="window_notify('/design/images/footer/institute_license.png','개념원리 학원 운용 등록증', '490', '700');">정보확인</a> | 신고기관명: 서울특별시 강남교육지원청<br>
+                    개인정보관리책임자: 이영훈 | 개인정보관리담당자: 남정우 | 호스팅 서비스 사업자 : Amazon Web Services<br>
+					</address>
+					<div class="copyright">Copyright(c) by ㈜개념원리 All Right Reserved</div>
+				</div>
+				<div class="col-6 hide">
+					<a href="http://escrow1.kbstar.com/quics?page=B009111&amp;cc=b010807%3Ab008491&amp;mHValue=b6c60b92b63b709a76b8782609d50d04201711201716188" target="_blank" class="escrow">
+						<img src="./resource/images/img_kbescrw.png" alt="KB에스크로" title="">
+					</a>
+				</div>
+			</div>
+		</article>
+	</footer>
+</html>

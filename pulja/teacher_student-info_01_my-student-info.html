@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="title" content="">
+		<meta name="keywords" content="">
+		<meta name="Description" content="">		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">		
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no"/> 
+		<title>개념원리 풀자</title>
+		<link rel="stylesheet" type="text/css" href="./resource/font/NotoSans/notosans.css">
+		<link rel="stylesheet" type="text/css" href="./resource/css/common.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="shortcut icon" href="./resource/images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="./resource/images/favicon.ico" type="image/x-icon">
+	</head>
+	
+	<body>
+		<div class="wrapper wrap_teacher">
+			<!--	로그인 전 header   -->
+			<header class="header_style03 hide">
+                <div class="gnb">
+			        <div class="inner">
+                        <a href="#" class="gnb-logo">
+                            <img src="./resource/images/header-logo.png" width="104" alt="개념원리">
+                        </a>
+                        <div class="navbar-right">
+                            <div class="top_nav">
+                                <span>
+                                    <a class="about-style" href="#">About 풀자</a>
+                                </span>
+                                <span class="divi-vertical"></span>
+                                <span>
+                                    <a href="#">온라인서점</a>
+                                </span>
+                                <span class="divi-vertical"></span>
+                                <span>
+                                    <a href="#">고객센터</a>
+                                </span>  
+                            </div> 
+                            <div class="personal_area">
+                                <ul class="login personal-list">
+                                    <li class="list-item">
+                                        <a href="#">로그인</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#">회원가입</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</header>
+			<!-- 코치모드 로그인 후  -->
+			<header class="header_style03 header_coach">
+			    <div class="gnb">
+			        <div class="inner">
+                        <a href="#" class="gnb-logo">
+                            <img src="./resource/images/header-logo.png" width="104" alt="개념원리">
+                        </a>
+                        <div class="nav_category">
+							<ul class="menu-list">
+								<li class="list-item active"><a href="#">내 학생정보</a></li>
+								<li class="list-item"><a href="#">학습관리</a></li>
+								<li class="list-item"><a href="#">내 수익</a></li>
+								<li class="list-item"><a href="#">학습자료실</a></li>
+							</ul>
+						</div>
+                        <div class="navbar-right">
+                            <div class="top_nav">
+                                <span>
+                                    <a class="about-style" href="#">About 풀자</a>
+                                </span>
+                                <span class="divi-vertical"></span>
+                                <span>
+                                    <a href="#">온라인서점</a>
+                                </span>
+                                <span class="divi-vertical"></span>
+                                <span>
+                                    <a href="#">고객센터</a>
+                                </span>  
+                            </div> 
+                            <div class="personal_area login hide">
+                                <ul class="login personal-list">
+                                    <li class="list-item">
+                                        <a href="#">로그인</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#">회원가입</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="personal_area logout">
+		                    	<ul class="personal-list">
+		                    		<li class="list-item">
+		                    			<div class="user-info">
+		                    				<img class="img-profile" src="./resource/images/img_reviewer.png">
+			                               <span class="user-id">이순신님 <i class="icon-arr arr-down"></i></span>
+			                                <div class="layer_box">
+			                                	<ul class=" user-list">
+				                            		<li class="list-text"><a href="#" class="">나의 정보</a></li>
+				                            		<li class="list-text"><a href="#" class="">프로필 정보</a></li>
+				                            		<li class="list-text"><a href="#" class="">로그아웃</a></li>
+				                            	</ul>
+			                                </div>
+			                            </div>
+		                    		</li>
+		                    	</ul>
+		                    </div>
+                        </div>
+                    </div>
+				</div>
+			</header>
+			
+			<div class="container">
+				<section class="coach_contents my-studyroom my-student">
+					<div class="contents-header">
+						<h2 class="contents_heading">내 학생정보</h2>
+					</div>	
+					<article class="content_box">
+						<div class="content-item">
+							<div class="content-header">
+								<h3 class="content_heading"><span class="weight-700_bold font_num">총 32명</span>의 학생을 담당하고 있습니다.</h3>
+								<div class="option-area fl-r">
+									<div class="sorting form-input-area">
+										<label class="form_selectbox">
+											<select class="form-control select-style input-width-xs font_num">
+												<option value="date" selected>시간순</option>
+												<option value="name">이름순</option>
+											</select>
+										</label>
+										<div class="inline">
+											<div class="search-input">
+												<input type="text" id="id" class="form-control search-form" required="required" placeholder="이름검색">
+												<button class="btn search-icon"><i class="icon-search"></i></button>
+											</div>	
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group board_list">
+								<form role="form">
+									<table class="table_board-list table-style_lecture ">
+										<caption>내 학생정보</caption>
+										<colgroup>
+											<col width="110" />
+											<col width="150" />
+											<col width="150" />
+											<col width="140" />
+											<col width="140" />
+											<col width="140" />
+											<col width="240" />
+										</colgroup> 
+										<thead>
+											<tr>
+												<th scope="col"class="">이름</th>
+												<th scope="col" class="">수강 내역</th>
+												<th scope="col" colspan="4" >학습 진척도</th>
+												<th scope="col" class="">학습관리</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<div class="name_student">홍길동</div>
+													<div class="link_consult"><a href="./teacher_student-info_02_consult-record.html">[상담카드관리]</a> </div>
+													<div class="state_course">
+														<span class="state_ing">수강중</span>
+													</div>
+												</td>
+												<td class="fa-l">
+													<div class="course_info font_num">
+														<div class="course_product">1개월 수강권</div>
+														<div class="course_date">2021.02.01~2021.02.28</div>
+														<div class="course_guide">수강 마감일이 7일 남았습니다.</div>
+													</div>
+												</td>
+												<td>
+													<div class="learning_progress">
+														<div class="state_title">커리큘럼 개념 진행률</div>
+														<div class="state_progress">
+															<span class="state_percent font_num">5강</span><span class="font_num"> / 총 20강</span>
+														</div>
+														<div class="count_box">
+															<span class="count_header">미학습 강의</span><span class="counting font_num"> 02</span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="learning_progress">
+														<div class="state_title">총 학습시간</div>
+														<div class="state_progress">
+															<span class="state_percent font_num">50시간 50분</span>
+														</div>
+														<div class="count_box">
+															<span class="count_header">주간 학습 전달사항</span><span class="counting font_num"> <span class="icon material-icons">radio_button_unchecked</span></span>
+														</div>
+													</div>	
+												</td>
+												<td>
+													<div class="learning_progress">
+														<div class="state_title">영상학습(개념학습) </div>
+														<div class="state_progress">
+															<span class="state_percent font_num">20%</span>
+														</div>
+														<div class="count_box">
+															<span class="count_header">코칭 피드백</span><span class="counting font_num"><span class="icon material-icons">close</span></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="learning_progress">
+														<div class="state_title">문제학습</div>
+														<div class="state_progress">
+															<span class="state_percent font_num">50%</span>
+														</div>
+														<div class="count_box">
+															<span class="count_header">질문 답변</span><span class="counting font_num"> 01</span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="btn-area">
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">학생강의실</a>
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">커리큘럼 관리</a>
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">오답노트</a>
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">일정/코칭 관리</a>
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">학습관리</a>
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">화상코칭 들어가기</a>
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">보고서</a>
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">질문과 답변</a>
+													</div>
+												</td>
+											</tr>
+											
+											<tr>
+												<td>
+													<div class="name_student">심청이</div>
+													<div class="link_consult"><a href="./teacher_student-info_02_consult-record.html">[상담카드관리]</a> </div>
+													<div class="state_course">
+														<span class="state_stop">수강중지</span>
+													</div>
+												</td>
+												<td class="fa-l">
+													<div class="course_info font_num">
+														<div class="course_product">1개월 수강권</div>
+														<div class="course_date">2021.02.01~2021.02.28</div>
+														<div class="course_guide">수강 마감일이 1일 남았습니다.</div>
+													</div>
+												</td>
+												<td>
+													<div class="learning_progress">
+														<div class="state_title">커리큘럼 개념 진행률</div>
+														<div class="state_progress">
+															<span class="state_percent font_num">5강</span><span class="font_num"> / 총 20강</span>
+														</div>
+														<div class="count_box">
+															<span class="count_header">미학습 강의</span><span class="counting font_num"> 02</span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="learning_progress">
+														<div class="state_title">총 학습시간</div>
+														<div class="state_progress">
+															<span class="state_percent font_num">50시간 50분</span>
+														</div>
+														<div class="count_box">
+															<span class="count_header">주간 학습 전달사항</span><span class="counting font_num"> <span class="icon material-icons">radio_button_unchecked</span></span>
+														</div>
+													</div>	
+												</td>
+												<td>
+													<div class="learning_progress">
+														<div class="state_title">영상학습(개념학습) </div>
+														<div class="state_progress">
+															<span class="state_percent font_num">20%</span>
+														</div>
+														<div class="count_box">
+															<span class="count_header">코칭 피드백</span><span class="counting font_num"><span class="icon material-icons">close</span></span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="learning_progress">
+														<div class="state_title">문제학습</div>
+														<div class="state_progress">
+															<span class="state_percent font_num">50%</span>
+														</div>
+														<div class="count_box">
+															<span class="count_header">질문 답변</span><span class="counting font_num"> 01</span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<div class="btn-area">
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">학생강의실</a>
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">커리큘럼 관리</a>
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">오답노트</a>
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">일정/코칭 관리</a>
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">학습관리</a>
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">화상코칭 들어가기</a>
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">보고서</a>
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">질문과 답변</a>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</form>
+								<div class="board-pagination">
+									<div class="pagination">
+										<label class="form_selectbox">
+                                            <select name="page-show" class="form-control select-style">
+                                                <option value="" selected="">10</option>
+                                                <option value="">20</option>
+                                                <option value="">30</option>
+                                                <option value="">50</option>
+                                                <option value="">100</option>
+                                            </select>
+                                        </label> 
+										<ul class="previous">
+											<li><a href="">이전</a></li>
+										</ul>
+										<ul class="pages">
+											<li class="active"><a href="">1</a></li>
+											<li><a href="">2</a></li>
+											<li><a href="">3</a></li>
+											<li><a href="">4</a></li>
+											<li><a href="">5</a></li>
+											<li><a href="">6</a></li>
+											<li><a href="">7</a></li>
+											<li><a href="">8</a></li>
+											<li><a href="">9</a></li>
+											<li><a href="">10</a></li>
+										</ul>
+										<ul class="next">
+											<li><a href="">다음</a></li>
+										</ul>
+									</div>	
+								</div>
+							</div>
+						</div><!-- // 수강중인 강의 -->
+					</article>
+					<!-- 컨텐츠가 없을때, 테이블 버전 -->
+					<article class="content_box">
+						<div class="content-item">
+							<div class="content-header">
+								<h3 class="content_heading"><span class="weight-700_bold font_num">총 0명</span>의 학생을 담당하고 있습니다.</h3>
+								<div class="option-area fl-r">
+									<div class="sorting form-input-area">
+										<label class="form_selectbox">
+											<select class="form-control select-style input-width-xs font_num">
+												<option value="date" selected>시간순</option>
+												<option value="name">이름순</option>
+											</select>
+										</label>
+										<div class="inline">
+											<div class="search-input">
+												<input type="text" id="id" class="form-control search-form" required="required" placeholder="이름검색">
+												<button class="btn search-icon"><i class="icon-search"></i></button>
+											</div>	
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group board_list">
+								<form role="form">
+									<table class="table_board-list table-style_lecture">
+										<caption>내 학생정보</caption>
+										<colgroup>
+											<col width="9%" />
+											<col width="10%" />
+											<col width="14%" />
+											<col width="14%" />
+											<col width="14%" />
+											<col width="14%" />
+											<col width="24%" />
+										</colgroup> 
+										<thead>
+											<tr>
+												<th scope="col"class="">이름</th>
+												<th scope="col" class="">수강 내역</th>
+												<th scope="col" colspan="4" >학습 진척도</th>
+												<th scope="col" class="">학습관리</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<!-- 해당 영역만 가져다 쓰시면 됩니다. -->
+												<td class="table_empty" colspan="7">
+													<div class="list-empty">
+													    <span>아직 배정된 학생이 없습니다.</span>
+													</div>
+												</td>
+												<!-- // 해당 영역만 가져다 쓰시면 됩니다. -->
+											</tr>
+										</tbody>
+									</table>
+								</form>
+							</div>
+							
+						</div>	
+					</article>
+				</section>
+			
+			</div>
+		</div>
+	</body>
+	<footer class="footer">
+		<article class="container">
+			<div class="row footer_contents company_polices">
+				<div class="col-1">
+					<ul class="footer-list">
+						<li class="pl-n"><a href="#">회사소개</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#">개인정보처리방침</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="row footer_contents_small company_info">
+				<div class="col-10">
+					<address>
+					(주) 개념원리 | 대표이사: 고사무열 | 주소: 서울특별시 강남구 강남대로 262 캠코타워 14층 (주) 개념원리 | 고객센터 : <a href="tel:16441248">1644-1248</a> &nbsp; <a href="mailto:wonri_with@wonriedu.com">wonri_with@wonriedu.com</a><br>
+					사업자등록번호: 220-86-64126 | 통신판매업 신고번호: 제 2017-서울강남-03043호 <a class="notify" href="http://www.ftc.go.kr/www/bizCommView.do?key=232&amp;apv_perm_no=2017322016230203043&amp;pageUnit=10&amp;searchCnd=wrkr_no&amp;searchKrwd=2208664126&amp;pageIndex=1" target="_blank">정보확인</a><br>
+					학원설립 운영등록번호: 제 10106호 개념원리원격학원 <a class="notify" href="javascript:void(0)" onclick="window_notify('/design/images/footer/institute_license.png','개념원리 학원 운용 등록증', '490', '700');">정보확인</a> | 신고기관명: 서울특별시 강남교육지원청<br>
+					개인정보관리책임자: 이영훈 | 개인정보관리담당자: 남정우 | 호스팅 서비스 사업자 : Amazon Web Services<br>
+					</address>
+					<div class="copyright">Copyright(c) by ㈜개념원리 All Right Reserved</div>
+				</div>
+				<div class="col-6">
+					<a href="http://escrow1.kbstar.com/quics?page=B009111&amp;cc=b010807%3Ab008491&amp;mHValue=b6c60b92b63b709a76b8782609d50d04201711201716188" target="_blank" class="escrow">
+						<img src="./resource/images/img_kbescrw.png" alt="KB에스크로" title="">
+					</a>
+				</div>
+			</div>
+		</article>
+	</footer>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+	<script src="./resource/js/common.js"></script>
+</html>

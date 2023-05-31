@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="title" content="HTML5 Video Player">
+		<meta name="keywords" content="">
+		<meta name="Description" content="">		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">		
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no"/> 
+		<title>VREZ CINEMA</title>
+		<link rel="stylesheet" href="./css/common.css">	
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="main-mneu">
+					<div class="container">
+						<div class="nav-bar">
+							<a href="#" class="header-logo">
+								<img src="./images/header-logo.png">
+							</a>
+							<div class="menu-nav">
+								<ul class="menu-list">
+									<li><a href="#movie">영화</a></li>
+									<li><a href="#review">리뷰</a></li>
+									<li><a href="#news">소식</a></li>
+								</ul>
+							</div>
+							<div class="pull-right personal-area">
+								<div class="btn-longin hide">
+									<div class="btn-area">
+										<a href="#" class="btn btn-corner"><span></span>로그인</a>
+									</div>
+								</div>
+								<div class="personal-info ">
+									<a href="#" class="profile-img">
+										<img src="./images/profile-img.png" class="img-pf">
+									</a>
+								</div>															
+							</div>								
+						</div>
+						<div class="layer_personal-info">
+							<ul class="info-list">
+								<li class="info-item item-header">
+									<div class="profile-img">
+									    <img src="./images/profile-img.png" class="img-pf">
+									</div>
+									<div class="item-content user-info">
+										<div class="nickname ellipsis"><a href="" class="">My Nickname</a></div>
+										<div class="item-text">vrezcustom@email.com</div>
+									</div>
+								</li>
+								<li class="info-item serial-number">
+									<span class="info-heading">기기번호</span>
+									<span class="item-right">1234-56-7890</span>
+								</li>
+								<li class="info-item membership">
+									<span class="info-heading">멤버십</span>
+									<span class="item-right">월 회원</span>
+								</li>
+								<li class="info-item point">
+									<span class="info-heading">포인트</span>
+									<span class="item-right">999,999 P</span>
+								</li>
+								<li class="info-item item-footer">
+									<span class="item-text"><a href="link-text">마이페이지</a></span>
+									<span class="item-right"><a href="link-text">로그아웃</a></span>
+								</li>
+							</ul>							
+						</div>										
+					</div>
+				</div>
+				<div class="sub-menu hide">
+					<div class="container">
+						<ul class="menu-list_2depth">
+							<li class="list-item active"><a href="#">MY THEATER</a></li>
+							<li class="list-item"><a href="#">최신</a></li>
+							<li class="list-item"><a href="#">인기</a></li>
+							<li class="list-item"><a href="#">추천</a></li>
+							<li class="list-item"><a href="#">장르</a></li>
+							<li id="searchBar" class="list-item fl-r">
+								<div class="search-btn"><i class="icon icon-search"></i></div>
+							</li>
+						</ul>
+						<div class="search-bar_area">
+							<div class="form_search-bar">
+								<form>
+									<span class="search-icon"><i class="icon icon-search"></i></span>
+									<input type="search" class="search-field" placeholder="Search for..">
+								</form>							
+							</div>
+							<div class="close-btn">
+								<i class="icon icon-close"></i>
+							</div>
+							
+						</div>
+					</div>
+				</div>	
+			</header>
+			<div class="container">
+				<section class="contents">
+					<article class="content-box content-policy">
+						<div class="content-header header_line-style">
+							<h3 class="content_heading point-color">서비스 이용 약관</h3>
+							<div class="option-area fl-r">
+								<button class="btn btn-print"><i class="material-icons">print</i></button>
+							</div>
+						</div>
+						<div class="rule-style">
+							<div class="content-text">
+								<h2 class="heading">제1장 총칙</h2>
+								<h3 class="sub-title">제1조(목적 및 적용)</h3>								
+								<ol class="style_decimal">
+									<li>본 약관은 브이알이지이노베이션(이하 ‘회사’라 합니다)가 제공하는 VREZ시네마 서비스(이하 ’서비스‘)의 이용과 관련하여 이용조건, 절차 등 기타 필요한 사항을 규정하는 것을 목적으로 합니다.</li>
+									<li>본 약관에서 정하지 아니한 사항은 전기통신기본법, 전기통신사업법, 정보통신망 이용촉진 및 정보보호 등에 관한 법률, 전자상거래 등에서의 소비자보호에 관한 법률, 콘텐츠산업진흥법, 콘텐츠 이용자 보호지침, 기타 관계법령을 적용합니다.</li>
+								</ol>	
+							</div>
+							<div class="content-text">
+								<h3 class="sub-title">제2조(용어의 정의)</h3>	
+								<p>본 약관에서 사용하는 용어의 정의는 다음과 같습니다.</p>
+								<ol class="style_decimal">
+									<li>VREZ시네마 서비스(이하 ‘서비스’)라 함은 ‘회사’가 제공하는 콘텐츠 및 개인 맞춤형 서비스를 VR기기를 통해 이용할 수 있는 ‘회사’의 서비스를 말합니다.</li>
+									<li>Application(이하 ‘애플리케이션’)라 함은 ‘서비스’를 이용하기 위하여 VR기기에 설치되는 소프트웨어로, ‘회사’가 제공하는 것을 말합니다.</li>
+									<li>‘이용자’라 함은 ‘당사의 VR기기를 구매하여 본 약관에 따라 ‘회사’가 제공하는 ‘서비스를’ 이용하는 ‘회원’ 및 ‘비회원’을 말합니다.</li>
+									<li>‘회원’이라 함은 ‘회사’와 이용계약을 체결하고 아이디(ID)를 부여받은 ‘이용자’로서 ‘회사’가 제공하는 ‘서비스’를 지속적으로 이용할 수 있는 자를 말합니다.</li>
+									<li>‘비회원’이라 함은 ‘회원’이 아니면서 ‘회사’가 제공하는 서비스를 이용하는 자를 말합니다.</li>
+									<li>‘계정'이라 함은 ‘회원’의 식별과 서비스 이용을 위하여 ‘회원’이 정하고 ‘회사’가 승인하는 문자 또는 숫자의 조합을 말합니다.</li>
+									<li>‘비밀번호(PASSWORD)'라 함은 ’회원‘이 부여받은 '계정’과 일치되는 ‘회원’임을 확인하고 비밀보호를 위해 ‘회원’이 스스로 정한 문자 또는 숫자의 조합을 말합니다.</li>
+									<li>‘콘텐츠’라 함은 서비스를 통해 ‘회사’가 제공하는 이미지, 영상물, 텍스트 등(이들의 복합체를 포함한다)의 정보로서, 전자적 형태로 제작 또는 처리된 것을 말한다.</li>
+									<li>‘선택상품’이라 함은 ‘회원’이 개별 기호나 필요에 따라 추가로 선택하여 이용할 수 있는 유료 콘텐츠 상품을 말합니다.</li>
+									<li>‘휴면상태’란 서비스의 회원이 ‘회사’ 혹은 서비스를 6개월동안 미이용 상태로, 휴면계정으로 분류된 상태를 말합니다.</li>
+									<li>‘게시물’이라 함은 회사 또는 회원이 일반에게 공개할 목적으로 본 서비스 내에 게재한 부호(URL포함), 문자, 소리, 이미지(사진 포함), 영상(동영상 포함), 평점 및 각종 파일 등의 제반 정보를 말합니다.</li>
+								</ol>
+							</div>
+							<div class="content-text">
+								<h3 class="sub-title">제3조(약관의 게시와 개정)</h3>
+								<ol class="style_decimal">
+									<li>회사는 본 약관의 내용을 회원이 쉽게 알 수 있도록 애플리케이션 초기 화면에 게시합니다.</li>
+									<li>회사는 약관의 규제에 관한 법률, 전자상거래 등에서의 소비자보호에 관한 법률, 정보통신망 이용촉진 및 정보보호 등에 관한 법률, 콘텐츠산업진흥법 등 관련 법률을 위배하지 않는 범위에서 본 약관을 개정할 수 있습니다.</li>
+									<li>회사는 약관을 변경할 경우에는 적용일자 및 변경사유를 명시하여 서비스 초기 화면에 그 적용일자 최소한 10일 (이용자에게 불리하거나 중대한 사항의 변경의 경우에는 30일) 이전부터 적용일후 10일간 공지합니다.</li>
+									<li>회사가 동조 제3항에 따라 개정된 약관을 공지하면서, 공지 기간내에 회원이 명시적으로 거부의 의사표시를 하지 않으면 개정약관에 동의한 것으로 간주한다는 뜻을 명확하게 공지 또는 통지하였음에도 회원이 명시적으로 거부의 의사표시를 하지 아니한 경우 회원이 개정약관에 동의한 것으로 간주합니다.</li>
+									<li>회원이 동조 제4항에 따라 개정약관의 적용에 동의하지 않는 경우 ‘회원’은 서비스 이용계약을 해지할 수 있습니다.</li>
+								</ol>
+							</div>
+							<div class="content-text">
+								<h2 class="heading">제2장 회원가입</h2>
+								<h3 class="sub-title">제4조 (회원가입)</h3>		
+								<p>본 약관에서 사용하는 용어의 정의는 다음과 같습니다.</p>									
+								<ol class="style_decimal">
+									<li>서비스 회원가입은 이용자가 본 약관의 내용에 대하여 동의를 하여 회원가입 신청을 한 후 회사가 이러한 신청에 대하여 승낙함으로써 체결됩니다.</li>
+									<li>서비스 회원가입 시에는 다음과 같은 사항을 기재하여야 합니다.
+										<div class="list-2deth">
+											<p>1) 회원 계정과 비밀번호</p>
+											<p>2) 회원의 성명과 생년월일, 성별, 거주국가</p>
+											<p>3) 단말기 정보, 결제정보</p>
+											<p>4) 기타 회사가 필요하다고 인정하는 사항</p>
+										</div>	
+									</li>
+									<li>회사는 동조 제2항의 사항을 정확히 기재한 이용자의 신청에 대하여 회원 가입을 승낙합니다. 다만, 다음 각 호와 같은 사유가 있는 경우, 이용자의 신청에 대한 승낙을 유보하거나 신청을 불허할 수 있습니다.
+										<div class="list-2deth">
+											<p>1) 타인 명의를 도용하거나 허위 정보를 기재한 경우</p>
+											<p>2) 가입신청자가 본 약관에 의하여 이전에 회원자격을 상실한 적이 있는 경우</p>
+											<p>3) 회사에 서비스 이용료 등을 납부하지 아니하여 이용계약이 해지된 자가 체납된 이용료를 납부하지 아니한 경우</p>
+											<p>4) 설비에 여유가 없거나 기술상 서비스 제공이 어려운 경우</p>
+											<p>5) 신용정보의 이용 및 보호에 관한 법률, 신용정보집중기관의 신용정보관리규약, 신용정보사의 신용정보 공통관리규약 등에 따라 채무불이행 정보 (정보통신요금 체납자로 등록된 경우 포함), 공공기록정보, 금융질서 문란자 정보 등에 등록되어 있는 경우)</p>
+											<p>6) 이용자의 귀책사유로 인하여 승인이 불가능하거나 기타 제반 사항을 위반한 경우</p>
+										</div>	
+									</li>
+									<li>회사가 서비스 이용신청의 승낙을 유보하거나 신청을 불허한 경우, 회사는 신청이용자에게 승낙 유보 또는 신청 불허에 대한 사유 및 승낙에 필요한 추가 요청 정보 등을 신청이용자에게 알려야 합니다.</li>
+									<li>회원가입의 성립 시기는 회사의 승낙이 이용자에게 도달한 시점으로 합니다.</li>
+									<li>만 14세 미만의 이용자는 개인정보의 수집 및 이용목적에 대하여 충분히 숙지하고 부모 등 법정대리인의 동의를 얻은 후에 회원가입을 신청하고 본인의 개인정보를 제공하여야 합니다.</li>
+									<li>회사는 부모 등 법정대리인의 동의에 대한 확인절차를 거치지 않은 14세 미만 이용자에 대하여는 가입을 취소 또는 불허할 수 있습니다. </li>
+									<li>만 14세 미만이용자의 부모 등 법정대리인은 아동에 대한 개인정보의 열람, 정정, 갱신을 요청하거나 회원가입에 대한 동의를 철회할 수 있으며, 이러한 경우에 회사는 지체 없이 필요한 조치를 취해야 합니다.</li>									
+								</ol>
+							</div>
+							<div class="content-text">
+								<h3 class="sub-title">제5조 (회원정보의 변경 및 탈퇴)</h3>								
+								<ol class="style_decimal">
+									<li>회원은 개인정보 관리화면을 통하여 자신의 개인정보를 열람하고 수정할 수 있습니다.</li>
+									<li>회원은 회원가입신청 시 기재한 사항이 변경되었을 경우 개인정보 관리화면을 통해서 수정하거나 전자우편, 전화 등의 방법으로 회사에 변경 사항을 알려야 합니다.</li>
+									<li>동조 제2항의 변경사항을 회사에 알리지 않아 발생한 불이익에 대하여 회사는 책임을 지지 않습니다.</li>
+								</ol>
+							</div>
+							<div class="content-text">
+								<h2 class="heading">제3장 계약의 성립과 서비스 이용</h2>
+								<h3 class="sub-title">제6조 (이용 신청)</h3>	
+								<ol class="style_decimal">
+									<li>이용자는 회사가 제공하는 다음 또는 이와 유사한 절차에 의하여 이용신청을 합니다. 회사는 계약체결 전에 각 호의 사항에 관하여 이용자가 정확하게 이해하고 실수 또는 착오 없이 거래할 수 있도록 정보를 제공합니다.
+										<div class="list-2deth">
+											<p>1) 콘텐츠 목록의 열람 및 선택 또는 ‘서비스’ 상품의 선택</p>
+											<p>2) 성명, 휴대전화번호, 전자우편주소 등의 입력</p>
+											<p>3) 약관내용, 청약철회가 불가능한 콘텐츠에 대한 확인</p>
+											<p>4) 이용신청에 관한 확인 또는 회사의 확인에 대한 동의</p>
+											<p>5) 결제방법의 정보</p>
+										</div>
+									</li>
+								</ol>
+							</div>
+							<div class="content-text">
+								<h3 class="sub-title">제7조 (이용신청확인통지, 이용신청 변경 및 취소)</h3>	
+								<ol class="style_decimal">
+									<li>회사는 이용자의 이용신청이 있는 경우 이용자에게 SMS 또는 애플리케이션 화면을 통해 이용신청확인통지를 하며, 이용신청확인통지에는 이용자의 이용신청에 대한 확인 및 이용승낙, 서비스제공가능여부, 이용신청의 정정, 취소에 관한 정보가 포함됩니다.</li>
+									<li>이용신청확인통지를 받은 이용자는 의사표시의 불일치 등이 있는 경우에는 이용신청확인통지를 받은 후 즉시 이용신청 변경 및 취소를 요청할 수 있고, 회사는 서비스 제공전에 이용자의 요청이 있는 경우에는 지체없이 그 요청에 따라 처리하여야 합니다.</li>
+								</ol>									
+							</div>
+							<div class="content-text">
+								<h3 class="sub-title">제8조 (서비스의 이용)</h3>	
+								<ol class="style_decimal">
+									<li>회사는 이용자의 이용신청을 승낙하여 이용신청확인통지를 고객에게 통지하고 제7조 2항에 따른 이용자의 변경 혹은 취소가 없는 한 즉시 서비스를 개시합니다.</li>
+									<li>회사는 무료로 제공하는 서비스의 일부 또는 전부를 회사의 정책과 운영 필요상 유료화, 중단, 변경할 수 있으며, 이에 대하여 관련법에 특별한 규정이 없는 한 이용자에게 별도의 보상을 하지 않습니다.</li>
+									<li>회사는 서비스를 제공함에 있어 필요한 경우 이용자에게 애플리케이션 및 별도의 프로그램을 설치하도록할 수 있으며, 이용자는 원하지 않을 경우 그 설치를 거부할 수 있습니다. 다만, 이용자가 애플리케이션 및 별도 프로그램의 설치를 거부하는 경우 서비스 이용이 제한될 수 있습니다.</li>
+									<li>회사는 이용자에 대하여 영화 및 비디오물의 진흥에 관한 법률, 청소년보호법 및 기타 관련법령에 따른 등급 및 연령 준수를 위하여 이용제한이나 등급별 제한, 기타 필요한 조치를 취할 수 있습니다.</li>
+								</ol>							
+							</div>
+							<div class="content-text">
+								<h3 class="sub-title">제9조 (정보의 제공 및 광고의 게재)</h3>	
+								<ol class="style_decimal">
+									<li>회사는 이용자가 서비스 이용 중 필요하다고 인정되는 다양한 정보를 공지사항이나 전자우편 등의 방법으로 이용자에게 제공할 수 있습니다. 광고가 게재된 전자우편 등을 수신한 이용자는 언제든지 회사에게 수신 거절을 할 수 있습니다.</li>
+									<li>회사는 서비스의 운영과 관련하여 서비스 화면, 홈페이지 등에 광고(이용자 정보를 이용한 맞춤형 광고 포함)를 게재할 수 있습니다.</li>
+								</ol>															
+							</div>
+							<div class="content-text">
+								<h3 class="sub-title">제10조 (회사의 의무)</h3>								
+								<ol class="style_decimal">
+									<li>회사는 이용자가 콘텐츠 이용 및 요금 내역을 확인할 수 있도록 조치합니다.</li>
+									<li>회사는 회원의 정보를 사전 동의 없이 타인에게 누설 또는 배포할 수 없으며 사전에 회원에게 고지 또는 이용약관에 명시하여 동의를 얻은 목적 이외의 목적으로 사용할 수 없습니다. 다만, 관계법령에 의한 수사, 재판 상의 목적으로 관계기관으로부터 요구받은 경우에는 그러하지 아니합니다. </li>
+									<li>회사는 청소년 보호 등 법령상 의무 이행을 위하여 이용자의 개인정보를 활용한 맞춤형 서비스를 제공합니다.</li>
+								</ol>								
+							</div>
+							<div class="content-text">
+								<h3 class="sub-title">제11조 (이용자의 의무)</h3>	
+								<ol class="style_decimal">
+									<li>이용자는 약관 및 관계법령에서 규정하는 사항을 준수하여야 합니다. 단, 이용자의 행위가 다음 각 호에 해당하는 경우에는 회사는 서비스의 일부 또는 전부의 이용을 제한할 수 있습니다.
+										<div class="list-2deth">
+											<p>1) 이용자가 임의로 다운로드, 저장, 무단 복제 및 배포를 하는 등 타인의 지적재산권을 침해하는 경우</p>
+											<p>2) 이용자가 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 관계법령을 위반하거나 타인의 명예를 훼손하는 등 선략한 풍속 기타 사회질서에 반하는 행위를 하는 경우</p>
+											<p>3) 타인의 명의로 가입하거나 이용 계약 정보를 부정하게 사용하는 경우</p>
+											<p>4) 회사가 제공하는 콘텐츠를 공공장소에서 시연하는 등 사적인 이용을 벗어난 범위에서 이용하는 행위</p>
+											<p>5) 기타 불법적인 행위</p>
+										</div>
+									</li>
+									<li>서비스를 통해 제공되는 모든 콘텐츠는 저작권법의 보호를 받으며 회원이 임의로 다운로드, 저장, 무단 복제 및 배포할 경우에는 관련법령에 의해 처벌받을 수 있습니다.</li>
+								</ol>								
+							</div>
+							<div class="content-text">
+								<h3 class="sub-title">제12조 (서비스의 제공 및 변경,중단)</h3>	
+								<ol class="style_decimal">
+									<li>서비스는 연중무휴, 1일 24시간 제공함을 원칙으로 합니다.</li>
+									<li>회사의 업무상, 기술상의 이유로 서비스가 일시 중지될 수 있으며, 이러한 경우에 회사는 사전에 이를 공지하되 사전 공지가 어려운 경우에는 사후에 공지하여야 합니다.</li>
+									<li>회사는 서비스의 제공에 필요한 경우 정기점검을 실시할 수 있으며, 정기점검 동안 서비스 제공을 일시적으로 중단할 수 있습니다. 정기점검시간은 서비스 제공화면에 공지합니다.</li>
+									<li>회사는 상당한 이유가 있는 경우에 운영상,기술상의 필요에 따라 제공하고 있는 서비스의 전부 또는 일부를 변경할 수 있으며, 이 경우 회사는 변경될 서비스의 내용 및 제공일자를 변경일 전 10일전에 회원에게 공지합니다.
+										<div class="list-2deth">
+											<p>1) 신규 채널을 추가로 제공하는 경우</p>
+											<p>2) 회사와 채널 제공 사업자와의 계약 변경으로 더 이상 해당 채널을 제공할 수 없는 경우</p>
+											<p>3) 회사의 귀책사유 없이 채널 사업자의 부도, 폐업, 방송 송출중단 또는 이에 준하는 사유로 채널을 제공받지 못하는 경우</p>
+										</div>
+									</li>
+								</ol>							
+							</div>
+							<div class="content-text">
+								<h3 class="sub-title">제13조 (서비스 이용중지)</h3>	
+								<ol class="style_decimal">
+									<li>회사는 회원이 요금납기일로부터 1개월 이상 이용요금을 체납한 경우 서비스의 일부 또는 전부의 이용을 정지할 수 있습니다.</li>
+									<li>회사는 동조 제1항의 이용중지 사유가 해소되는 즉시 서비스를 이용할 수 있도록 조치하여야 합니다.</li>
+									<li>서비스의 회원이 ‘유휴상태’일 경우, 재인증을 통해 ‘서비스’의 이용 및 해지가 가능합니다.</li>
+								</ol>						
+							</div>
+							<div class="content-text">
+								<h2 class="heading">제4장 요금의 청구 및 납부</h2>
+								<h3 class="sub-title">제14조 (요금의 납부방법 및 납기일)</h3>	
+								<ol class="style_decimal">
+									<li>월정액으로 부과되는 요금은 1개월(30일) (이하 '서비스 이용 기간’) 동안의 서비스 이용요금을 결제하고, 결제한 서비스 이용 기간 동안 서비스를 이용하는 것으로서 회원이 정해진 절차에 따라 회사에 해지 의사를 밝히지 않을 경우 매월 계약이 갱신되는 것으로 간주되어 지속적으로 요금이 청구됩니다.</li>
+									<li>월정액 상품은 결제 시점에 매월 정기결제 동의 후 가입 가능하며, 요금은 이용요금을 미리 납부한 경우 매월 결제일 기준으로 자동 결제됩니다.</li>
+									<li>월정액 해지로 인한 서비스 이용 기간 만료일은 이용요금을 미리 납부한 경우 해지가 발생한 당월 말일까지이고, 익월 이후부터는 자동 결제가 중단됩니다.</li>
+									<li>분실, 기타의 사유로 정기결제가 이루어지지 않을 경우 반드시 회사에 이를 통지하여야 서비스 이용이 정지됩니다.</li>
+									<li>회사는 요금 등의 납기일을 사회적 제반 여건을 고려하여 지정합니다.</li>
+									<li>회원의 이용요금 미납 등 귀책사유로 인한 정기결제중지 및 이에 따른 서비스 이용정지로 인한 손해에 대해 회사는 책임을 지지 않습니다.</li>
+								</ol>						
+							</div>
+							<div class="content-text">
+								<h3 class="sub-title">제15조 (요금의 이의신청)</h3>	
+								<ol class="style_decimal">
+									<li>이용자 또는 요금납부자는 청구된 요금에 이의가 있는 경우 청구일로부터 6개월 이내에 이의신청할 수 있습니다. 단, 회사의 귀책사유로 과오납이 발생한 경우에는 이의신청 기간에 제한을 두지 않습니다.</li>
+									<li>회사는 동조 제1항의 이의신청 접수 후 타당성 여부를 조사하여 10일 이내에 처리결과를 통지합니다. 다만, 부득이한 사유로 기간 내 통지할 수 없는 경우에는 처리기간을 다시 지정하여 통지합니다.</li>
+									<li>회사는 이용자의 이의신청이 타당한 경우 과오납된 금액을 정시 정산하여 환불합니다. 다만, 이용자의 요청이 있는 경우에는 차기요금에서 이를 정산할 수 있습니다.</li>
+								</ol>						
+							</div>
+							<div class="content-text">
+								<h2 class="heading">제5장 계약의 종료</h2>
+								<h3 class="sub-title">제16조 (계약의 해지)</h3>	
+								<ol class="style_decimal">
+									<li>회원은 서비스 개통 후 언제든지 서비스 이용계약을 해지할 수 있으며, 회사는 회원의 이용계약 해지 요청이 있는 경우 신속히 이를 처리하여야 합니다.</li>
+									<li>회원이 서비스 이용계약을 해지하고자 할 경우 본인이 회사의 홈페이지를 통해 해지신청을 하여야 합니다.</li>
+									<li>회원이 다음 각 호의 사유에 해당하거나 본 약관상의 의무를 이행하지 않은 경우 회사는 회원을 자격을 제한 또는 정지하거나 서비스 이용계약을 해지할 수 있습니다.
+										<div class="list-2deth">
+											<p>1) 이용신청 시 타인의 명의를 도용하거나 허위 내용을 등록한 경우</p>
+											<p>2) 회사의 시스템 등에 심각한 장애를 초래하거나 운용을 방해한 경우</p>
+											<p>3) 타인의 저작권을 침해하거나, 본 서비스를 사적인 용도외에 상업적인 목적으로 이용하거나 제 3자에게 임의로 제공하는 경우</p>
+											<p>4) 기타 관련법령을 위반한 경우</p>
+										</div>
+									</li>
+								</ol>						
+							</div>
+							<div class="content-text">
+								<h3 class="sub-title">제17조 (서비스의 종료 및 이용의 제한)</h3>	
+								<ol class="style_decimal">
+									<li>회사는 다음 각호의 하나에 해당하는 사유가 발생하는 경우, 서비스를 종료할 수 있으며, 서비스 종료시 종료 사유 및 종료 일자 등을 60일 전에 애플리케이션 화면을 통해 이용자에게 통지하여야 합니다.
+										<div class="list-2deth">
+											<p>1) 사업환경의 변화 또는 기술 발전 등으로 인하여 서비스를 제공하는 것이 현저히 곤란한 경우</p>
+											<p>2) 관련법규의 제정/변경, 행정기관의 행정처분이나 법원의 판결, 결정 등으로 인하여 서비스를 계속 제공할 수 없는 경우</p>
+											<p>3) 전시, 천재지변, 기타 불가항력적 사유로 서비스를 제공하는 것이 현저히 곤란한 경우</p>
+										</div>
+									</li>
+									<li>국가비상사태, 법령의 규정, 행정기관의 명령 등의 경우에는 서비스 이용의 일부 또는 전부가 제한될 수 있습니다.</li>
+									<li>회사는 동조 제2항에 의하여 서비스 이용이 제한되는 경우 그 사유, 일시 및 기간을 회원에게 사전 또는 사후에 서비스 홈페이지를 통하여 고지하여야 합니다.</li>
+									<li>회원이 본 약관, 이용지침, 이용안내 등 회사가 정한 규정을 위반하는 경우 회사는 경고, 서비스 이용제한, 일시 이용정지, 영구 이용정지(향후 가입 신청 승인 거절) 등으로 회원의 본 서비스 이용을 제한할 수 있습니다.</li>
+									<li>회원이 이용 계약을 해지할 때 게시물은 삭제되지 않으므로 해당 게시물은 이용계약을 해지하기 전에 삭제해야 하며, 이용계약 해지 후 삭제를 원하면 개별적으로 회사에 삭제를 요청해야 합니다.</li>
+								</ol>						
+							</div>
+							<div class="content-text">
+								<h2 class="heading">제6장 기타사항</h2>
+								<h3 class="sub-title">제18조 (지적재산권)</h3>	
+								<ol class="style_decimal">
+									<li>회사가 작성한 저작물에 대한 저작권 등 제반 지적재산권은 회사에 귀속합니다.</li>
+									<li>회사가 제공하는 서비스 중 제휴계약에 의해 제공되는 저작물에 대한 저작권 또는 기타 지적재산권은 회사 또는 해당 제공업체에 귀속합니다.</li>
+									<li>이용자는 회사가 제공하는 서비스를 이용함으로써 얻은 정보 중 회사 또는 제공업체에 지적재산권이 귀속된 정보를 회사 또는 제공업체의 사전승낙없이 복제, 전송, 출판, 배포, 방송, 기타 방법에 의하여 영리목적으로 이용하거나 제3자에게 이용하게 하여서는 안됩니다.</li>
+									<li>이용자가 타인의 저작권 등 지적재산권을 침해하였음을 이유로 타인으로부터 손해배상청구, 형사고소 등을 받은 경우 이용자는 그로 인해 발생하는 모든 손해를 배상하여야 하며 회사가 이로 인하여 입게되는 손해(변호사 비용포함)를 변상하여야 합니다.</li>
+									<li>회원은 자신이 본 서비스 내에 게시한 게시물을 회사가 국내외에서 다음 각호의 목적으로 사용하는 것을 허락합니다.
+										<div class="list-2deth">
+											<p>1) 본 서비스(제 3자가 운영하는 서비스 또는 회사가 제공하는 다른 서비스의 일정 영역 내에 입점하여 본 서비스가 제공되는 경우 포함) 내에서 게시물을 사용하기 위하여 게시물의 크기를 변환하거나 단순화하는 등의 방식으로 수정하는 것.</p>
+											<p>2) 회사에서 운영하는 다른 사이트에 게시물을 복제•전송•전시하는 것.</p>
+											<p>3) 회사의 본 서비스를 홍보할 목적으로 미디어, 통신사 등에 게시물의 내용을 보도, 방영하게 하는 것.</p>
+											<p>4) 전 항의 규정에도 불구하고 회사가 게시물을 전 항 각 호에 기재된 목적 이외의 상업적 목적으로 사용할 때에는 미리 전화, 메일 등의 방법으로 회원의 동의를 얻습니다.</p>
+											<p>5) 회원이 본 서비스 내에 게시물을 게재하는 것은 다른 회원이 게시물을 본 서비스 내에서 사용하거나 회사가 검색결과로 사용하는 것을 허락하는 것으로 봅니다.</p>
+											<p>6) 회사는 본 서비스 운영 정책 상 필요하거나 회사가 운영하는 사이트 통합할 때에 게시물의 내용을 변경하지 않고 게시물의 게재 위치를 변경, 이전하거나 사이트 간 공유로 하여 게시물을 서비스할 수 있습니다.</p>
+										</div>
+									</li>
+								</ol>						
+							</div>
+							<div class="content-text">
+								<h3 class="sub-title">제19조 (회원 정보보호)</h3>	
+								<ol class="style_decimal">
+									<li>회원의 개인정보 보호 및 취급에 관하여는 회사 인터넷 홈페이지를 통해 공시된 개인정보취급 방침에 따릅니다.</li>
+								</ol>						
+							</div>
+							<div class="content-text">
+								<h3 class="sub-title">제20조 (손해배상 및 면책)</h3>	
+								<ol class="style_decimal">
+									<li>회사는 콘텐츠 하자 등에 의한 이용자 피해보상의 기준, 범위, 방법 및 절차에 관한 사항을 콘텐츠 이용자보호지침에 따라 처리합니다.</li>
+									<li>동조 제1항의 규정에도 불구하고, 회사는 다음 중 하나에 해당하는 경우 손해배상의 책임이 면제됩니다.
+										<div class="list-2deth">
+											<p>1) 전시, 천재지변, 법령의 변경 기타 이에 준하는 불가항력 사유에 의한 경우</p>
+											<p>2) 서비스를 제공할 당시 과학기술 수준으로 서비스의 결함 존재를 발견할 수 없었거나, 법령이 정하는 기준을 준수하였음에도 서비스 장애 등의 이유로 서비스를 이용하지 못한 경우</p>
+											<p>3) 이용자의 귀책사유로 인하여 서비스가 불가한 경우</p>
+											<p>4) 서비스의 효율적 제공을 위해 이용자에게 사전에 통지한 경우</p>
+										</div>
+									</li>
+									<li>회사는 이용자가 서비스 제공으로부터 기대되는 이익을 얻지 못하였거나 서비스 자료에 대한 취사선택 또는 이용으로 발생하는 손해 등에 대해서는 그 책임이 면제됩니다.</li>
+									<li>회사는 이용자 상호간 또는 이용자와 제 3자 상호간에 서비스를 매개로 하여 물품거래 등을 한 경우에는 그 책임이 면제됩니다.</li>
+								</ol>						
+							</div>
+							<div class="content-text">
+								<h3 class="sub-title">제21조 (게시물에 대한 책임)</h3>	
+								<ol class="style_decimal">
+									<li>회사는 회원이 게시한 본 서비스 내의 게시물이 다음 각 호에 해당한다고 판단되면 사전 통지 없이 게시 등을 중단할 수 있으며, 이에 대해 회사는 어떠한 책임도 지지 않습니다.
+										<div class="list-2deth">
+											<p>1) 회사, 다른 회원, 제 3자를 비방하거나 명예를 손상하는 내용의 경우</p>
+											<p>2) 공공질서 및 미풍양속을 위반하는 내용의 게시물에 해당하는 경우</p>
+											<p>3) 범죄 행위에 결부된다고 인정되는 내용인 경우</p>
+											<p>4) 회사의 저작권, 제 3자의 저작권 등 타인의 권리를 침해하는 내용인 경우</p>
+											<p>5) 회사에서 제공하는 본 서비스와 관련 없는 내용이거나 타인의 서비스 이용을 방해하는 경우</p>
+											<p>6) 불필요하거나 승인되지 않는 광고, 판촉물을 게재하는 경우</p>
+											<p>7) 타인의 아이디, 명의 등을 무단으로 사용하여 작성한 내용이거나, 타인의 입력한 정보를 무단으로 위•변조한 내용인 경우</p>
+											<p>8) 같은 내용을 중복하여 다수 게시하는 등 게시의 목적에 어긋나는 경우</p>
+											<p>9) 기타 관계 법령과 회사의 개별 서비스 이용 지침 등에 위반된다고 판단되는 경우</p>
+										</div>
+									</li>
+								</ol>						
+							</div>
+							<span class="summary" style="margin:30px 0;">&#45;  부&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;칙   &#45;</span>
+							<div class="content-text">
+								<p>(시행일) 이 약관은 2018년 12월 14일부터 적용됩니다.</p>						
+							</div>
+						</div>	
+					</article>
+				</section>			
+			</div>
+		</div>
+	</body>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+	<script src="./js/common.js"></script>
+	<footer class="footer">
+		<article class="container">
+			<div class="row footer-contents">
+				<div class="col-2">
+					<ul class="footer-list">
+						<li class="pl-n"><a href="#">회사소개</a></li>
+						<li class=""><a href="#">이용약관</a></li>
+						<li class=""><a href="#">개인정보처리방침</a></li>
+						<li class="">support@verz.com</li>
+					</ul>
+				</div>
+				<div class="col-2">
+					<ul class="footer-list fl-r">
+						<li class=""><a href="#">공지사항</a></li>
+						<li class=""><a href="#">1:1문의</a></li>
+						<li class=""><a href="#">FAQ</a></li>
+						<li class="pr-n">
+							<label class="lang_select">
+								<select class="form-control select-style">
+									<option value="kr" selected>한국어</option>
+									<option value="en">ENGLISH</option>
+									<option value="jp">日本語</option>
+								</select>
+							</label>						
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="copyright">2018©VREZ INNOVATION INC. All rights reservedv</div>
+		</article>
+		
+	</footer>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="title" content="HTML5 Video Player">
+		<meta name="keywords" content="">
+		<meta name="Description" content="">		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">		
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+		<meta name="format-detection" content="telephone=no"/> 
+		<title>VREZ CINEMA</title>		
+		<link rel="stylesheet" href="./css/common.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<style>
+			.list-pagelink{margin-bottom:60px;}
+			.list-pagelink .content-header{margin-bottom: 5px;}
+			.list-pagelink .content_heading{font-size:18px;}
+			.list-pagelink ul li{font-size: 16px; line-height: 1.6; border-bottom: 1px solid #222e3b; padding: 10px 20px;}
+			.list-pagelink ul li a:hover{color: #42d281; text-decoration: none;}
+		</style>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="main-mneu">
+					<div class="container">
+						<div class="nav-bar">
+							<a href="#" class="header-logo">
+								<img src="./images/header-logo.png" class="img-normal" alt="normal image">
+								<img src="./images/header-logo@2x.png" class="img-retina"  alt="retina image">
+							</a>
+							<div class="menu-nav">
+								<ul class="menu-list">
+									<li class="active"><a href="#movie">영화</a></li>
+									<li><a href="#review">리뷰</a></li>
+									<li><a href="#news">소식</a></li>
+								</ul>
+							</div>
+							<div class="pull-right personal-area">
+								<div class="btn-longin hide">
+									<div class="btn-area">
+										<a href="#" class="btn btn-corner"><span></span>로그인</a>
+									</div>
+								</div>
+								<div class="personal-info ">
+									<a href="#" class="profile-img">
+										<img src="./images/profile-img.png" class="img-pf">
+									</a>
+								</div>															
+							</div>								
+						</div>
+						<div class="layer_personal-info">
+							<ul class="info-list">
+								<li class="info-item item-header">
+									<div class="profile-img">
+									    <img src="./images/profile-img.png" class="img-pf">
+									</div>
+									<div class="item-content user-info">
+										<div class="nickname ellipsis"><a href="" class="">My Nickname</a></div>
+										<div class="item-text">vrezcustom@email.com</div>
+									</div>
+								</li>
+								<li class="info-item serial-number">
+									<span class="info-heading">기기번호</span>
+									<span class="item-right">1234-56-7890</span>
+								</li>
+								<li class="info-item membership">
+									<span class="info-heading">멤버십</span>
+									<span class="item-right">월 회원</span>
+								</li>
+								<li class="info-item point">
+									<span class="info-heading">포인트</span>
+									<span class="item-right">999,999 P</span>
+								</li>
+								<li class="info-item item-footer">
+									<span class="item-text"><a href="link-text">마이페이지</a></span>
+									<span class="item-right"><a href="link-text">로그아웃</a></span>
+								</li>
+							</ul>							
+						</div>										
+					</div>
+				</div>
+				<div class="sub-menu hide">
+					<div class="container">
+						<ul class="menu-list_2depth">
+							<li class="list-item active"><a href="#">실시간 리뷰</a></li>
+							<li class="list-item"><a href="#">나의 리뷰</a></li>
+							<li class="list-item"><a href="#">관심리뷰</a></li>
+							<li id="searchBar" class="list-item fl-r hide">
+								<div class="search-btn"><i class="icon icon-search"></i></div>
+							</li>
+						</ul>
+						<div class="search-bar_area">
+							<div class="form_search-bar">
+								<form>
+									<span class="search-icon"><i class="icon icon-search"></i></span>
+									<input type="search" class="search-field" placeholder="Search for..">
+								</form>							
+							</div>
+							<div class="close-btn">
+								<i class="icon icon-close"></i>
+							</div>
+							
+						</div>
+					</div>
+				</div>	
+			</header>
+			<div class="container">
+				<section class="contents">
+					<article class="content-box">
+						<div class="content-header">
+						    <h3 class="content_heading">VREZ 페이지 링크</h3>
+						</div>
+						<div class="list-pagelink">
+							<div class="content-header header_line-style">
+								<h3 class="content_heading">소개페이지</h3>
+							</div>
+							<ul>
+								<li><a href="./01_default_cinema.html" target="_blank">서비스 소개</a></li>	
+								<li><a href="./01_default_hmd.html" target="_blank">HMD 소개</a></li>		
+								<li><a href="./01_default_contents.html" target="_blank">콘텐츠 소개 (숨김처리)</a></li>			
+							</ul>						
+						</div>
+						<div class="list-pagelink">
+							<div class="content-header header_line-style">
+								<h3 class="content_heading">공통 홈 / 푸터</h3>
+							</div>
+							<ul>
+								<li><a href="./01_default_cinema.html" target="_blank">메인페이지 (소개페이지)</a></li>								
+								<li><a href="./default_notice_01_list.html" target="_blank">공지사항 리스트</a></li>
+								<li><a href="./default_notice_02_list-detail.html" target="_blank">공지사항 상세보기</a></li>
+								<li><a href="./default_faq_list.html" target="_blank">FAQ_리스트</a></li>
+								<li><a href="./default_inquiry_01_list.html" target="_blank">1:1문의 리스트</a></li>
+								<li><a href="./default_inquiry_02_list-detail.html" target="_blank">1:1문의 상세보기</a></li>
+								<li><a href="./default_inquiry_03_write.html" target="_blank">1:1문의하기</a></li>
+								<li><a href="./policy_privacy.html" target="_blank">개인 정보 처리 방침</a></li>
+								<li><a href="./policy_tos.html" target="_blank">이용약관</a></li>
+							</ul>						
+						</div>
+						<div class="list-pagelink">
+							<div class="content-header header_line-style">
+								<h3 class="content_heading">로그인 / 비밀번호 찾기</h3>
+							</div>
+							<ul>
+								<li><a href="./login_01_login.html" target="_blank">로그인</a></li>
+								<li><a href="./login_02_password-find.html" target="_blank">비밀번호 찾기</a></li>
+								<li><a href="./login_03_confirm_page.html" target="_blank">설정 URL 발송 완료</a></li>
+								<li><a href="./login_04_password-reset.html" target="_blank">비밀전호 재설정</a></li>
+							</ul>						
+						</div>
+						<div class="list-pagelink">
+							<div class="content-header header_line-style">
+								<h3 class="content_heading">회원가입</h3>
+							</div>
+							<ul>
+								<li><a href="./join_01_email-authentication.html" target="_blank">이메일 가입</a></li>
+								<li><a href="./join_02_password-set.html" target="_blank">비밀번호 설정</a></li>
+								<li><a href="./join_03_hmd-num.html" target="_blank">헤드셋 등록</a></li>
+								<li><a href="./join_04_apply_membership.html" target="_blank">멤버십 등록</a></li>
+								<li><a href="./join_05_apply_payment.html" target="_blank">결제 정보 등록</a></li>
+								<li><a href="./join_06_apply_profile.html" target="_blank">프로필 등록</a></li>
+								<li><a href="./join_07_confirm_page.html" target="_blank">가입완료</a></li>
+							</ul>						
+						</div>
+						<div class="list-pagelink">
+							<div class="content-header header_line-style">
+								<h3 class="content_heading">정회원 > 영화</h3>
+							</div>
+							<ul>
+								<li><a href="./detail-view.html" target="_blank">상세 페이지</a></li>
+								<li><a href="./detail-view_popup_payment.html" target="_blank">영화 > 결제하기(구매하기)</a></li>	
+								<li><a href="./detail-view_popup_payment-select.html" target="_blank">영화 > 결제수단(이니시스 결제심사)</a></li>	
+								<li><a href="./movie_01_mytheater_poster-ratio.html" target="_blank">시청 중인 영화</a></li>
+								<li><a href="./movie_01_mytheater_popup_cancel-purchase.html" target="_blank">영화 > 구매 취소</a></li>								
+								<li><a href="./movie_02_latest.html" target="_blank">최신 영화</a></li>
+								<li><a href="./movie_03_popular.html" target="_blank">인기 영화</a></li>
+								<li><a href="./movie_04_recommend.html" target="_blank">추천 영화</a></li>
+								<li><a href="./movie_05_genre.html" target="_blank">장르별 영화</a></li>
+								<li><a href="./movie_06_search-result.html" target="_blank">검색결과</a></li>								
+							</ul>						
+						</div>
+						<div class="list-pagelink">
+							<div class="content-header header_line-style">
+								<h3 class="content_heading">정회원 > 리뷰</h3>
+							</div>
+							<ul>
+								<li><a href="./review_01_real-time.html" target="_blank">실시간 리뷰</a></li>
+								<li><a href="./review_02_my.html" target="_blank">나의 리뷰</a></li>
+								<li><a href="./review_03_interest.html" target="_blank">관심리뷰</a></li>
+							</ul>						
+						</div>
+						<div class="list-pagelink">
+							<div class="content-header header_line-style">
+								<h3 class="content_heading">정회원 > 소식</h3>
+							</div>
+							<ul>
+								<li><a href="./news.html" target="_blank">나에게 온 소식</a></li>
+							</ul>						
+						</div>
+						<div class="list-pagelink">
+							<div class="content-header header_line-style">
+								<h3 class="content_heading">마이페이지</h3>
+							</div>
+							<ul>
+								<li><a href="./mypage_01_myinfo.html" target="_blank">마이페이지</a></li>
+								<li><a href="./mypage_02_unregister.html" target="_blank">회원탈퇴 안내페이지</a></li>
+								<li><a href="./mypage_03_apply_membership.html" target="_blank">내 정보 관리 > 멤버십 > 멤버십 신청</a></li>
+								<li><a href="./mypage_03_popup_cancel-membership.html" target="_blank">내 정보 관리 > 멤버십 > 멤버십 해지</a></li>
+								<li><a href="./mypage_04_payment-edit.html" target="_blank">내 정보 관리 > 결제 정보 > 결제 정보 수정</a></li>								
+							</ul>						
+						</div>
+						<div class="list-pagelink">
+							<div class="content-header header_line-style">
+								<h3 class="content_heading">팝업 레이어</h3>
+							</div>
+							<ul>
+								<li><a href="./popup_defult.html" target="_blank">레이어 기본 화면</a></li>
+								<li><a href="./popup_large.html" target="_blank">레이어 큰 화면</a></li>
+							</ul>						
+						</div>
+						<div class="list-pagelink">
+							<div class="content-header header_line-style">
+								<h3 class="content_heading">기타</h3>
+							</div>
+							<ul>
+								<li><a href="./mailing.html" target="_blank">메일링</a></li>
+							</ul>						
+						</div>
+					</article>
+				</section>
+			
+			</div>
+		</div>
+	</body>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+	<script src="./js/common.js"></script>
+	<footer class="footer">
+		<article class="container">
+			<div class="row footer-contents">
+				<div class="col-2">
+					<ul class="footer-list">
+						<li class="pl-n"><a href="#">회사소개</a></li>
+						<li class=""><a href="#">이용약관</a></li>
+						<li class=""><a href="#">개인정보처리방침</a></li>
+						<li class="">support@verz.com</li>
+					</ul>
+				</div>
+				<div class="col-2">
+					<ul class="footer-list fl-r">
+						<li class=""><a href="#">공지사항</a></li>
+						<li class=""><a href="#">1:1문의</a></li>
+						<li class=""><a href="#">FAQ</a></li>
+						<li class="pr-n">
+							<label class="lang_select">
+								<select class="form-control select-style">
+									<option value="kr" selected>한국어</option>
+									<option value="en">ENGLISH</option>
+									<option value="jp">日本語</option>
+								</select>
+							</label>						
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="copyright">2018©VREZ INNOVATION INC. All rights reservedv</div>
+		</article>
+		
+	</footer>
+</html>

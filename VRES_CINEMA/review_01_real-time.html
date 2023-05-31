@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="title" content="HTML5 Video Player">
+		<meta name="keywords" content="">
+		<meta name="Description" content="">		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">		
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no"/> 
+		<title>VREZ CINEMA</title>
+		<link rel="stylesheet" href="./css/common.css">	
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="main-mneu">
+					<div class="container">
+						<div class="nav-bar">
+							<a href="#" class="header-logo">
+								<img src="./images/header-logo.png">
+							</a>
+							<div class="menu-nav">
+								<ul class="menu-list">
+									<li><a href="#movie">영화</a></li>
+									<li class="active"><a href="#review">리뷰</a></li>
+									<li><a href="#news">소식</a></li>
+								</ul>
+							</div>
+							<div class="pull-right personal-area">
+								<div class="btn-longin hide">
+									<div class="btn-area">
+										<a href="#" class="btn btn-corner"><span></span>로그인</a>
+									</div>
+								</div>
+								<div class="personal-info ">
+									<a href="#" class="profile-img">
+										<img src="./images/profile-img.png" class="img-pf">
+									</a>
+								</div>															
+							</div>								
+						</div>
+						<div class="layer_personal-info">
+							<ul class="info-list">
+								<li class="info-item item-header">
+									<div class="profile-img">
+									    <img src="./images/profile-img.png" class="img-pf">
+									</div>
+									<div class="item-content user-info">
+										<div class="nickname ellipsis"><a href="" class="">My Nickname</a></div>
+										<div class="item-text">vrezcustom@email.com</div>
+									</div>
+								</li>
+								<li class="info-item serial-number">
+									<span class="info-heading">기기번호</span>
+									<span class="item-right">1234-56-7890</span>
+								</li>
+								<li class="info-item membership">
+									<span class="info-heading">멤버십</span>
+									<span class="item-right">월 회원</span>
+								</li>
+								<li class="info-item point">
+									<span class="info-heading">포인트</span>
+									<span class="item-right">999,999 P</span>
+								</li>
+								<li class="info-item item-footer">
+									<span class="item-text"><a href="link-text">마이페이지</a></span>
+									<span class="item-right"><a href="link-text">로그아웃</a></span>
+								</li>
+							</ul>							
+						</div>										
+					</div>
+				</div>
+				<div class="sub-menu menu_style01">
+					<div class="container">
+						<ul class="menu-list_2depth">
+							<li class="list-item active"><a href="#">실시간 리뷰</a></li>
+							<li class="list-item"><a href="#">나의 리뷰</a></li>
+							<li class="list-item"><a href="#">관심리뷰</a></li>
+							<li id="searchBar" class="list-item fl-r hide">
+								<div class="search-btn"><i class="icon icon-search"></i></div>
+							</li>
+						</ul>
+						<div class="search-bar_area">
+							<div class="form_search-bar">
+								<form>
+									<span class="search-icon"><i class="icon icon-search"></i></span>
+									<input type="search" class="search-field" placeholder="Search for..">
+								</form>							
+							</div>
+							<div class="close-btn">
+								<i class="icon icon-close"></i>
+							</div>
+							
+						</div>
+					</div>
+				</div>	
+			</header>
+			<div class="container">
+				<section class="main-contents">
+					<article class="content-box content-review">
+						<div class="content-header">
+							<h3 class="content_heading">실시간 리뷰</h3>
+						</div>						
+						<div class="content-list_list review-item">
+							<div class="list-item">
+								<div class="movie-info-area">
+									<figure class="thumbnail_ratio list-thumb">
+									    <a href="#" class="link-img">
+									    	<div class="poster_ratio">
+									    		<div class="poster_img">
+									    			<img src="http://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/201810/13319_103_1.jpg">
+									    		</div>
+									    	</div>
+									    </a>										
+									</figure>
+									<div class="content-info">
+									    <div class="content-title"><a href="#">보헤미안 랩소디 (Bohemian Rhapsody, 2018)</a></div>
+									    <div class="info-box">
+									        <span class="rate-area">
+									            <span class="average-rate">
+									                <i class="icon icon-star"></i>
+									                <span class="grade">8.1</span>
+									            </span>														
+									            <span class="movie-rate">
+									                <span class="rating r-all hidden">All</span>
+									                <span class="rating r-12">+12</span>
+									                <span class="rating r-15 hidden">+15</span>
+									                <span class="rating r-19 hidden">+19</span>
+									            </span>												
+									        </span>											 
+									    </div>
+									    <div class="info-box">
+									    	<span class="movie-info divi-vertical pl-n"><span class="link-area"><a href="#">드라마</a>, <a href="#">드라마</a></span></span>
+									        <span class="movie-info divi-vertical br-last"><span>134min</span></span>									        	
+									    </div>
+									    <div class="meta-info">
+									        <span class="area-block buy-date">구매 일시 <span class="meta-text">2018.10.15</span></span>
+									        <span class="area-block Remaining-time">시청 일시 <span class="meta-text">2018.10.15</span></span>
+									    </div>
+									</div>
+								</div>
+								<div class="comment-area">
+									<div class="comment-list">
+										<div class="comment-item">
+											<div class="profile-img">
+												<img src="./images/profile-img.png" class="img-pf">
+											</div>
+											<div class="comment-content">
+												<div class="user-info-area">
+													<div class="user-info">
+														<span class="nickname"><a href="" class="">My Nickname</a></span>
+														<span class="rating-area review-rating">																							
+															<span class="star-rating">
+																<fieldset class="rating">
+																    <input type="radio" id="star5" name="rating" value="5" />
+																    <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+																    <input type="radio" id="star4half" name="rating" value="4 and a half" />
+																    <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+																    <input type="radio" id="star4" name="rating" value="4" />
+																    <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+																    <input type="radio" id="star3half" name="rating" value="3 and a half" />
+																    <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+																    <input type="radio" id="star3" name="rating" value="3" />
+																    <label class = "full" for="star3" title="Meh - 3 stars"></label>
+																    <input type="radio" id="star2half" name="rating" value="2 and a half" />
+																    <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+																    <input type="radio" id="star2" name="rating" value="2" />
+																    <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+																    <input type="radio" id="star1half" name="rating" value="1 and a half" />
+																    <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+																    <input type="radio" id="star1" name="rating" value="1" />
+																    <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+																    <input type="radio" id="starhalf" name="rating" value="half" />
+																    <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+																</fieldset>
+															</span>																					
+														</span>	
+													</div>
+													<div class="user-info info-right">
+														<span class="date">YYYY.MM.DD</span>
+														<span class="btn-box"><a href="" class="btn btn-delete">삭제</a></span>
+													</div>	
+												</div>
+												<div class="item-text">
+													<p>
+													Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+													</p>
+												</div>
+												<div class="item-actions fl-r">
+													<div class="btn-group">
+													    <a href="" class="btn btn-default">답글달기  10</a>
+													    <div class="btn-group fl-r btn-like on">
+															<button type="button" class="btn btn-default "><i class="icon icon-heart"></i> <span class="count">2</span></button>
+														</div>
+													</div>												
+												</div>
+											</div>									
+										</div>										
+									</div>	
+								</div>
+							</div>
+							
+							<div class="list-item">
+								<div class="movie-info-area">
+									<figure class="thumbnail_ratio list-thumb">
+									    <a href="#" class="link-img">
+									    	<div class="poster_ratio">
+									    		<div class="poster_img">
+									    			<img src="https://movie-phinf.pstatic.net/20181109_245/1541740985337rsPka_JPEG/movie_image.jpg">
+									    		</div>
+									    	</div>
+									    </a>										
+									</figure>
+									<div class="content-info">
+									    <div class="content-title"><a href="#">호두까기 인형과 4개의 왕국 ( The Nutcracker and the Four Realms, 2018 )</a></div>
+									    <div class="info-box">
+									        <span class="rate-area">
+									            <span class="average-rate">
+									                <i class="icon icon-star"></i>
+									                <span class="grade">8.5</span>
+									            </span>														
+									            <span class="movie-rate">
+									                <span class="rating r-all">All</span>
+									                <span class="rating r-12 hidden">+12</span>
+									                <span class="rating r-15 hidden">+15</span>
+									                <span class="rating r-19 hidden">+19</span>
+									            </span>												
+									        </span>											 
+									    </div>
+									    <div class="info-box">
+									    	<span class="movie-info divi-vertical pl-n"><span class="link-area"><a href="#">드라마</a>, <a href="#">판타지</a></span></span>
+									        <span class="movie-info divi-vertical br-last"><span>99min</span></span>									        	
+									    </div>
+									    <div class="meta-info">
+									        <span class="area-block buy-date">구매 일시 <span class="meta-text">2018.12.12</span></span>
+									        <span class="area-block Remaining-time">시청 일시 <span class="meta-text">2018.10.12</span></span>
+									    </div>
+									</div>
+								</div>
+								<div class="comment-area">
+									<div class="comment-list">
+										<div class="comment-item">
+											<div class="profile-img">
+												<img src="./images/profile-img.png" class="img-pf">
+											</div>
+											<div class="comment-content">
+												<div class="user-info-area">
+													<div class="user-info">
+														<span class="nickname"><a href="" class="">User Nickname</a></span>
+														<span class="rating-area review-rating">																							
+															<span class="star-rating">
+																<fieldset class="rating">
+																    <input type="radio" id="star5" name="rating" value="5" />
+																    <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+																    <input type="radio" id="star4half" name="rating" value="4 and a half" />
+																    <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+																    <input type="radio" id="star4" name="rating" value="4" />
+																    <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+																    <input type="radio" id="star3half" name="rating" value="3 and a half" />
+																    <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+																    <input type="radio" id="star3" name="rating" value="3" />
+																    <label class = "full" for="star3" title="Meh - 3 stars"></label>
+																    <input type="radio" id="star2half" name="rating" value="2 and a half" />
+																    <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+																    <input type="radio" id="star2" name="rating" value="2" />
+																    <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+																    <input type="radio" id="star1half" name="rating" value="1 and a half" />
+																    <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+																    <input type="radio" id="star1" name="rating" value="1" />
+																    <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+																    <input type="radio" id="starhalf" name="rating" value="half" />
+																    <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+																</fieldset>
+															</span>																					
+														</span>	
+													</div>
+													<div class="user-info info-right">
+														<span class="date">YYYY.MM.DD</span>
+														<span class="btn-box"><a href="" class="btn btn-delete">삭제</a></span>
+													</div>	
+												</div>
+												<div class="item-text">
+													<p>
+													Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+													</p>
+												</div>
+												<div class="item-actions fl-r">
+													<div class="btn-group">
+													    <a href="" class="btn btn-default">답글달기  10</a>
+													    <div class="btn-group fl-r btn-like on">
+															<button type="button" class="btn btn-default "><i class="icon icon-heart"></i> <span class="count">2</span></button>
+														</div>
+													</div>												
+												</div>
+											</div>									
+										</div>
+										
+										<div class="comment-item">
+											<div class="profile-img">
+												<img src="./images/profile-img.png" class="img-pf">
+											</div>
+											<div class="comment-content">
+												<div class="user-info-area">
+													<div class="user-info">
+														<span class="nickname"><a href="" class="">User Nickname</a></span>
+														<span class="rating-area review-rating">																							
+															<span class="star-rating">
+																<fieldset class="rating">
+																    <input type="radio" id="star5" name="rating" value="5" />
+																    <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+																    <input type="radio" id="star4half" name="rating" value="4 and a half" />
+																    <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+																    <input type="radio" id="star4" name="rating" value="4" />
+																    <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+																    <input type="radio" id="star3half" name="rating" value="3 and a half" />
+																    <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+																    <input type="radio" id="star3" name="rating" value="3" />
+																    <label class = "full" for="star3" title="Meh - 3 stars"></label>
+																    <input type="radio" id="star2half" name="rating" value="2 and a half" />
+																    <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+																    <input type="radio" id="star2" name="rating" value="2" />
+																    <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+																    <input type="radio" id="star1half" name="rating" value="1 and a half" />
+																    <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+																    <input type="radio" id="star1" name="rating" value="1" />
+																    <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+																    <input type="radio" id="starhalf" name="rating" value="half" />
+																    <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+																</fieldset>
+															</span>																					
+														</span>	
+													</div>
+													<div class="user-info info-right">
+														<span class="date">YYYY.MM.DD</span>
+														<span class="btn-box"><a href="" class="btn btn-delete">삭제</a></span>
+													</div>	
+												</div>
+												<div class="item-text">
+													<p>
+													Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+													</p>
+												</div>
+												<div class="item-actions fl-r">
+													<div class="btn-group">
+													    <a href="" class="btn btn-default">답글달기  1</a>
+													    <div class="btn-group fl-r btn-like">
+															<button type="button" class="btn btn-default "><i class="icon icon-heart"></i> <span class="count">2</span></button>
+														</div>
+													</div>												
+												</div>
+											</div>									
+										</div>
+										
+										<div class="comment-item reply-item">
+											<div class="profile-img">
+												<img src="./images/profile-img.png" class="img-pf">
+											</div>
+											<div class="comment-content">
+												<div class="user-info-area">
+													<div class="user-info">
+														<span class="nickname"><a href="" class="">User Nickname</a></span>														
+													</div>
+													<div class="user-info info-right">
+														<span class="date">YYYY.MM.DD</span>
+													</div>	
+												</div>
+												<div class="item-text">
+													<p>
+													Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+													</p>
+												</div>
+												<div class="item-actions fl-r">
+													<div class="btn-group">
+													    <a href="" class="btn btn-default">답글달기  0</a>
+													    <div class="btn-group fl-r btn-like">
+															<button type="button" class="btn btn-default "><i class="icon icon-heart"></i> <span class="count">2</span></button>
+														</div>
+													</div>												
+												</div>
+											</div>
+											<div class="write_comment">
+												<form>
+													<textarea class="form-control textarea-style" name="text" placeholder="시청 영화에만 리뷰 작성이 가능합니다."></textarea>									
+												</form>								
+												<div class="btn-area fl-r">
+													<a href="" class="btn btn-corner"><span></span>등록</a>
+												</div>
+											</div>
+											<div class="contents_readmore-area">
+											    <a href="" class="link-text btn-readmore">답글 닫기</a>
+											</div>									
+										</div>
+																			
+										<div class="comment-item">
+											<div class="profile-img">
+												<img src="./images/profile-img.png" class="img-pf">
+											</div>
+											<div class="comment-content">
+												<div class="user-info-area">
+													<div class="user-info">
+														<span class="nickname"><a href="" class="">User Nickname</a></span>
+														<span class="rating-area review-rating">																							
+															<span class="star-rating">
+																<fieldset class="rating">
+																    <input type="radio" id="star5" name="rating" value="5" />
+																    <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+																    <input type="radio" id="star4half" name="rating" value="4 and a half" />
+																    <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+																    <input type="radio" id="star4" name="rating" value="4" />
+																    <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+																    <input type="radio" id="star3half" name="rating" value="3 and a half" />
+																    <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+																    <input type="radio" id="star3" name="rating" value="3" />
+																    <label class = "full" for="star3" title="Meh - 3 stars"></label>
+																    <input type="radio" id="star2half" name="rating" value="2 and a half" />
+																    <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+																    <input type="radio" id="star2" name="rating" value="2" />
+																    <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+																    <input type="radio" id="star1half" name="rating" value="1 and a half" />
+																    <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+																    <input type="radio" id="star1" name="rating" value="1" />
+																    <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+																    <input type="radio" id="starhalf" name="rating" value="half" />
+																    <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+																</fieldset>
+															</span>																					
+														</span>	
+													</div>
+													<div class="user-info info-right">
+														<span class="date">YYYY.MM.DD</span>
+														<span class="btn-box"><a href="" class="btn btn-delete">삭제</a></span>
+													</div>	
+												</div>
+												<div class="item-text">
+													<p>
+													Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+													</p>
+												</div>
+												<div class="item-actions fl-r">
+													<div class="btn-group">
+													    <a href="" class="btn btn-default">답글달기  1</a>
+													    <div class="btn-group fl-r btn-like on">
+															<button type="button" class="btn btn-default "><i class="icon icon-heart"></i> <span class="count">2</span></button>
+														</div>
+													</div>												
+												</div>
+											</div>									
+										</div>
+										<div class="contents_readmore-area">
+										    <a href="" class="link-text btn-readmore">더보기</a>
+										</div>	
+									</div>
+								</div>
+							</div>						
+						</div>
+											
+					</article>
+					
+					
+					<article class="content-box">
+						<div class="content-header">
+						    <h3 class="content_heading">실시간 리뷰</h3>
+						</div>
+						<div class="message-item">
+							<div class="message-item">
+								<p>작성된 리뷰가 아직 없습니다.</p>
+								<p>친구 맺기를 통해 나와 친구의 리뷰를 함께 공유해 보세요.</p>
+							</div>
+						</div>
+					</article>
+				</section>
+			
+			</div>
+		</div>
+	</body>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+	<script src="./js/common.js"></script>
+	<footer class="footer">
+		<article class="container">
+			<div class="row footer-contents">
+				<div class="col-2">
+					<ul class="footer-list">
+						<li class="pl-n"><a href="#">회사소개</a></li>
+						<li class=""><a href="#">이용약관</a></li>
+						<li class=""><a href="#">개인정보처리방침</a></li>
+						<li class="">support@verz.com</li>
+					</ul>
+				</div>
+				<div class="col-2">
+					<ul class="footer-list fl-r">
+						<li class=""><a href="#">공지사항</a></li>
+						<li class=""><a href="#">1:1문의</a></li>
+						<li class=""><a href="#">FAQ</a></li>
+						<li class="pr-n">
+							<label class="lang_select">
+								<select class="form-control select-style">
+									<option value="kr" selected>한국어</option>
+									<option value="en">ENGLISH</option>
+									<option value="jp">日本語</option>
+								</select>
+							</label>						
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="copyright">2018©VREZ INNOVATION INC. All rights reservedv</div>
+		</article>
+		
+	</footer>
+</html>

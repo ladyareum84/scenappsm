@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="title" content="HTML5 Video Player">
+		<meta name="keywords" content="">
+		<meta name="Description" content="">		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">		
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no"/> 
+		<title>개념원리</title>
+		<link rel="stylesheet" type="text/css" href="./resource/font/NotoSans/notosans.css">
+		<link rel="stylesheet" type="text/css" href="./resource/css/common.css">
+		<link rel="stylesheet" type="text/css" href="./resource/css/jquery.datetimepicker.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="top_banner">
+				<div class="inner">
+					<a href="#" target="_blank">
+						<img src="https://img2.tmon.kr/floatingbanner/202010/floatingbanner_87dfc.jpg" alt="할로윈파티">
+					</a>
+				</div>
+			</div>
+			<header class="header">
+				<div class="">
+					<div class="container">
+						<div class="top_gnb pull-right">
+							<div class="personal_area">
+								<div class="login hide">
+									<span>
+										<a href="#">로그인</a>
+									</span>
+									<span class="divi-vertical"></span>
+									<span>
+										<a href="#">회원가입</a>
+									</span>
+								</div>
+								<div class="logout">
+									<span>
+										<a href="#">
+											<span class="user-name">홍길동님</span>
+											<span>환영합니다.</span>
+										</a>
+									</span>
+									<span class="divi-vertical"></span>
+									<span>
+										<a href="#">마이페이지</a>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="gnb">
+							<div class="banner_area banner_left pull-left">
+								<a href="#" class="">
+									<img src="">
+								</a>
+							</div>
+							<div class="brand_center">
+								<a href="#" class="gnb-logo">
+									<img src="./resource/images/header-logo.png" width="200" height="64" alt="개념원리">
+								</a>
+							</div>
+							<div class="banner_area banner_event pull-right">
+								<a href="#" class="">
+									<img src="">
+								</a>
+							</div>
+						</div>										
+					</div>
+				</div>
+				<div class="nav-bar menu_style01">
+					<div class="container">
+						<ul class="menu-list">
+							<li class="list-item"><a href="#">내 진단 테스트</a></li>
+							<li class="list-item active"><a href="#">내 공부방</a></li>
+							<li class="list-item"><a href="#">수강신청</a></li>
+							<li class="list-item"><a href="#">온라인서점</a></li>
+						</ul>
+						<div class="support_area pull-right">
+							<span>
+								<a href="#">학습지원센터</a>
+							</span>
+							<span class="divi-vertical"></span>
+							<span>
+								<a href="#">코치지원센터</a>
+							</span>
+						</div>	
+					</div>
+				</div>
+			</header>
+			<div class="container">
+				<section class="main_contents test_contents">
+					<div class="contents-header">
+						<h2 class="contents_heading">무료 온라인 진단 테스트</h2>
+					</div>
+					<article class="content_box">
+                        <div class="test_step">
+                            <div class="row-contents">
+                                <div class="col-1">
+                                    <ul class="steps">
+                                        <li class="active">
+                                            <span class="step_num">Step 1</span>
+                                            <span class="step_title">회원가입</span>
+                                        </li>
+                                        <li class="">
+                                            <span class="step_num">Step 2</span>
+                                            <span class="step_title">무료 진단 테스트</span>
+                                        </li>
+                                        <li class="">
+                                            <span class="step_num">Step 3</span>
+                                            <span class="step_title">진단 결과 보기</span>
+                                        </li>
+                                        <li class="">
+                                            <span>Step 4</span>
+                                            <span class="step_title">무료 코칭 신청하기</span>
+                                        </li>
+                                        <li class="">
+                                            <span class="step_num">Step 5</span>
+                                            <span class="step_title">무료 코칭 완료</span>
+                                        </li>
+                                    </ul>   
+                                </div>
+                            </div>
+                            <form class="multistep-form">
+                                <!-- Step1 -->
+                                <fieldset class="section active">
+                                     <div class="content-item">
+                                         <div class="content-header">
+                                             <h3 class="content_heading">회원가입</h3>
+                                         </div>
+                                         <div class="form-contents">
+                                         	<div class="form-contents">
+												<div class="form-info-box">
+													<div class="content-item mr-t20">
+														<div class="form-group">
+															<div class="row-contents">
+																<label for="id" class="label-control col-4"><span class="required">*</span> 아이디</label>
+																<div class="col-9">
+																	<div class="input-group">
+																		<input type="text" id="id" class="form-control input-width-sm" required="required" placeholder="아이디를 입력해 주세요.">
+																		<span class="btn_input-group">
+																			<button type="button" class="btn btn-default btn-input">중복확인</button>
+																		</span>
+																		<span class="help-block help-text"> 5~12자로 한글/특수문자 입력이 안됩니다.</span>
+																	</div>
+																	
+																</div>
+															</div>
+														</div>
+														<div class="form-group">
+															<div class="row-contents">
+																<label for="pw" class="label-control col-4"><span class="required">*</span> 비밀번호</label>
+																<div class="col-9">
+																	<div class="input-group">
+																		<input type="password" id="pw" class="form-control input-width-sm" required="required" placeholder="새비밀번호를 입력해 주세요.">
+																		<span class="error-text">비밀번호 형식이 맞지 않습니다.</span>
+																		<span class="help-block help-text">비밀번호(숫자, 영문 조합으로 7자이상을 사용해야 합니다.)</span>	
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="form-group">
+															<div class="row-contents">
+																<label for="pwCheck" class="label-control col-4"><span class="required">*</span> 비밀번호 확인</label>
+																<div class="col-9">
+																	<div class="input-group">
+																		<input type="password" id="pwCheck" class="form-control input-width-sm" required="required" placeholder="비밀번호를 확인해 주세요.">
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="form-group">
+															<div class="row-contents">
+																<label for="name" class="label-control col-4"><span class="required">*</span> 이름</label>
+																<div class="col-9">
+																	<div class="input-group">
+																		<input type="text" id="name" class="form-control input-width-sm" required="required" placeholder="이름를 입력해 주세요.">
+																	</div>
+																	
+																</div>
+															</div>
+														</div>
+														<div class="form-group">
+															<div class="row-contents">
+																<label for="birth" class="label-control col-4"><span class="required">*</span> 생년월일</label>
+																<div class="col-9">
+																	<div class="form-input-area form_birth">
+																	    <label class="form_selectbox">
+						   													<select name="birth_year" class="form-control select-style input-width-xs">
+																				<option value="2010">2010</option>
+																				<option value="2009">2009</option>
+																				<option value="2008">2008</option>
+																				<option value="2007">2007</option>
+																				<option value="2006">2006</option>
+																				<option value="2005">2005</option>
+																				<option value="2004">2004</option>
+																				<option value="2003">2003</option>
+																				<option value="2002">2002</option>
+																				<option value="2001">2001</option>
+																				<option value="2000">2000</option>
+																				<option value="1999">1999</option>
+																				<option value="1998">1998</option>
+																				<option value="1997">1997</option>
+																				<option value="1996">1996</option>
+																				<option value="1995">1995</option>
+																				<option value="1994">1994</option>
+																				<option value="1993">1993</option>
+																				<option value="1992">1992</option>
+																				<option value="1991">1991</option>
+																				<option value="1990">1990</option>
+																				<option value="1989">1989</option>
+																				<option value="1988">1988</option>
+																				<option value="1987">1987</option>
+																				<option value="1986">1986</option>
+																				<option value="1985">1985</option>
+																				<option value="1984">1984</option>
+																				<option value="1983">1983</option>
+																				<option value="1982">1982</option>
+																				<option value="1981">1981</option>
+																				<option value="1980">1980</option>
+																				<option value="1979">1979</option>
+																				<option value="1978">1978</option>
+																				<option value="1977">1977</option>
+																				<option value="1976">1976</option>
+																				<option value="1975">1975</option>
+																				<option value="1974">1974</option>
+																				<option value="1973">1973</option>
+																				<option value="1972">1972</option>
+																				<option value="1971">1971</option>
+																				<option value="1970">1970</option>
+																				<option value="1969">1969</option>
+																				<option value="1968">1968</option>
+																				<option value="1967">1967</option>
+																				<option value="1966">1966</option>
+																				<option value="1965">1965</option>
+																				<option value="1964">1964</option>
+																				<option value="1963">1963</option>
+																				<option value="1962">1962</option>
+																				<option value="1961">1961</option>
+																				<option value="1960">1960</option>
+																				<option value="1959">1959</option>
+																				<option value="1958">1958</option>
+																				<option value="1957">1957</option>
+																				<option value="1956">1956</option>
+																				<option value="1955">1955</option>
+																				<option value="1954">1954</option>
+																				<option value="1953">1953</option>
+																				<option value="1952">1952</option>
+																				<option value="1951">1951</option>
+																				<option value="1950">1950</option>
+																			</select>
+																			년
+																		</label>
+																	    <label class="form_selectbox">
+						   													<select name="birth_month" class="form-control select-style input-width-xs" placeholder="">
+																				<option value="01">01</option>
+																				<option value="02">02</option>
+																				<option value="03">03</option>
+																				<option value="04">04</option>
+																				<option value="05">05</option>
+																				<option value="06">06</option>
+																				<option value="07">07</option>
+																				<option value="08">08</option>
+																				<option value="09">09</option>
+																				<option value="10">10</option>
+																				<option value="11">11</option>
+																				<option value="12">12</option>
+																			</select>
+																			월
+																		</label>
+																	    <label class="form_selectbox">
+						   													<select name="birth_day" class="form-control select-style input-width-xs" placeholder="">
+																				<option value="01">01</option>
+																				<option value="02">02</option>
+																				<option value="03">03</option>
+																				<option value="04">04</option>
+																				<option value="05">05</option>
+																				<option value="06">06</option>
+																				<option value="07">07</option>
+																				<option value="08">08</option>
+																				<option value="09">09</option>
+																				<option value="10">10</option>
+																				<option value="11">11</option>
+																				<option value="12">12</option>
+																				<option value="13">13</option>
+																				<option value="14">14</option>
+																				<option value="15">15</option>
+																				<option value="16">16</option>
+																				<option value="17">17</option>
+																				<option value="18">18</option>
+																				<option value="19">19</option>
+																				<option value="20">20</option>
+																				<option value="21">21</option>
+																				<option value="22">22</option>
+																				<option value="23">23</option>
+																				<option value="24">24</option>
+																				<option value="25">25</option>
+																				<option value="26">26</option>
+																				<option value="27">27</option>
+																				<option value="28">28</option>
+																				<option value="29">29</option>
+																				<option value="30">30</option>
+																				<option value="31">31</option>
+																			</select>
+																			일
+																		</label>							    
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="form-group">
+															<div class="row-contents">
+																<label for="id" class="label-control col-4"><span class="required">*</span> 주소</label>
+																<div class="col-9">
+																	<div class="input-group">
+																		<input type="text" id="id" class="form-control input-width-sm" required="required" placeholder="">
+																		<span class="btn_input-group">
+																			<button type="button" class="btn btn-default btn-input">주소찾기</button>
+																		</span>
+																	</div>
+																	<div class="input-group">
+																		<input type="text" id="id" class="form-control input-width-md" required="required" placeholder="">
+																		<input type="text" id="id" class="form-control input-width-sm" required="required" placeholder="">
+																		<span class="help-block help-text"> 정확한 주소가 아닐 경우 오배송 혹은 반송처리 될 수 있습니다. 정확한 정보를 부탁드립니다.</span>
+																	</div>
+																	
+																</div>
+															</div>
+														</div>
+														<div class="form-group">
+															<div class="row-contents">
+																<label for="school" class="label-control col-4"><span class="required">*</span> 학교/학년</label>
+																<div class="col-9">
+																	<div class="form-input-area form_school">
+																	    <label class="form_selectbox">
+						   													<select class="form-control select-style input-width-xs" placeholder="학교">
+																				<option value="higth" selected="">고등학교</option>
+																				<option value="middel">중학교</option>
+																				<option value="ect">기타</option>
+																			</select>
+																		</label>
+																	     <label class="form_selectbox">
+						   													<select class="form-control select-style input-width-xs" placeholder="학년">
+																				<option value="first-grader" selected="">1학년</option>
+																				<option value="second-grader">2학년</option>
+																				<option value="3rdt-grader">3학년</option>
+																			</select>
+																		</label>
+																	    <input type="text" id="number" maxlength="20" class="form-control input-width-sm" placeholder="학교이름">	
+																	    <label class="m-checkbox">
+																			<input type="checkbox" value="">직접입력
+																			<span></span>
+																		</label>							    
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="form-group">
+															<div class="row-contents">
+																<label for="school" class="label-control col-4"><span class="required">*</span> 학생 전화번호</label>
+																<div class="col-9">
+																	<div class="form-input-area">
+																	    <label class="form_selectbox">
+						   													<select class="form-control select-style input-width-xs font_num">
+																				<option value="1" selected="">010</option>
+																				<option value="2">011</option>
+																				<option value="3">016</option>
+																				<option value="4">017</option>
+																				<option value="5">018</option>
+																				<option value="6">019</option>
+																			</select>
+																		</label>
+																	    <span class="pl-5 pr-5">-</span>
+																	    <input type="text" id="number" maxlength="4" class="form-control input-width-xs" value=""> <span class="pl-5 pr-5">-</span>
+																	    <input type="text" id="number" maxlength="4" class="form-control input-width-xs" value="">								    
+																	</div>
+																	<div class=" check_usage-greement">
+																		<label class="m-checkbox">
+																			<input type="checkbox" value="">새소식, 강좌 안내, 이벤트, 쿠폰 등의 정보를 받아보는데 동의합니다.
+																			<span></span>
+																		</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="form-group">
+															<div class="row-contents">
+																<label for="school" class="label-control col-4"><span class="required">*</span> 학생 이메일</label>
+																<div class="col-9">
+																	<div class="form-input-area">
+																		<input type="text" id="email_id" maxlength="20" class="form-control input-width-sm" value=""> <span class="pl-5 pr-5">@</span>
+																	    <input type="text" id="email_com" maxlength="20" class="form-control input-width-sm" value="" placeholder="naver.com" disabled="disabled">
+																	    <label class="form_selectbox">
+						   													<select name="email_com" class="form-control select-style input-width-sm">
+																				<option value="1">직접입력</option>
+																				<option value="naver.com" selected="">naver.com</option>
+																				<option value="hanmail.net">hanmail.net</option>
+																				<option value="hotmail.com">hotmail.com</option>
+																				<option value="nate.com">nate.com</option>
+																				<option value="yahoo.co.kr">yahoo.co.kr</option>
+																				<option value="empas.com">empas.com</option>
+																				<option value="dreamwiz.com">dreamwiz.com</option>
+																				<option value="freechal.com">freechal.com</option>
+																				<option value="lycos.co.kr">lycos.co.kr</option>
+																				<option value="korea.com">korea.com</option>
+																				<option value="gmail.com">gmail.com</option>
+																				<option value="hanmir.com">hanmir.com</option>
+																				<option value="paran.com">paran.com</option>
+																			</select>
+																		</label>							    
+																	</div>
+																	<div class=" check_usage-greement">
+																		<label class="m-checkbox">
+																			<input type="checkbox" value="">새소식, 강좌 안내, 이벤트, 쿠폰 등의 정보를 받아보는데 동의합니다.
+				
+																			<span></span>
+																		</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="form-group">
+															<div class="row-contents">
+																<label for="school" class="label-control col-4"><span class="required">*</span> 부모님 전화번호</label>
+																<div class="col-9">
+																	<div class="form-input-area">
+																	    <label class="form_selectbox">
+						   													<select class="form-control select-style input-width-xs font_num">
+																				<option value="1" selected="">010</option>
+																				<option value="2">011</option>
+																				<option value="3">016</option>
+																				<option value="4">017</option>
+																				<option value="5">018</option>
+																				<option value="6">019</option>
+																			</select>
+																		</label>
+																	    <span class="pl-5 pr-5">-</span>
+																	    <input type="text" id="number" maxlength="4" class="form-control input-width-xs" value=""> <span class="pl-5 pr-5">-</span>
+																	    <input type="text" id="number" maxlength="4" class="form-control input-width-xs" value="">								    
+																	</div>
+																	<div class=" check_usage-greement">
+																		<label class="m-checkbox">
+																			<input type="checkbox" value="">새소식, 강좌 안내, 이벤트, 쿠폰 등의 정보를 받아보는데 동의합니다.
+				
+																			<span></span>
+																		</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>   
+                                            
+                                        </div>
+                                        <div class="btn-actions">
+                                            <button type="submit" class="btn btn-primary btn-md btn-next">회원가입</button>
+                                        </div>
+                                     </div> 
+                                </fieldset>
+
+                                <!-- Step2 -->
+                                <fieldset class="section">
+                                     <div class="content-item">
+                                        <div class="content-header">
+                                            <h3 class="content_heading">무료 진단 테스트</h3>
+                                        </div>
+                                        <table class="table_board-list table-style_test">
+                                            <caption>무료 진단 테스트</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" class="subject">과목명</th>
+                                                    <th scope="col" class="diagnostic-test">진단 테스트</th>
+                                                    <th scope="col" class="teacher">작성자</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="">수학(상)<span class="text-block sub-text">무료</span></td>
+                                                    <td><a href="#" class="btn btn-test btn-solve">무료 진단 테스트 </a></td>
+                                                    <td>개념원리 본사</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="lecture_title">수학(하)<span class="text-block sub-text">무료</span></td>
+                                                    <td><a href="#" class="btn btn-test btn-solve">무료 진단 테스트 </a></td>
+                                                    <td>개념원리 본사</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="lecture_title">수학 I<span class="text-block sub-text">무료</span></td>
+                                                    <td><a href="#" class="btn btn-test btn-solve">무료 진단 테스트 </a></td>
+                                                    <td>개념원리 본사</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="btn-actions">
+                                            <button type="submit" class="btn btn-primary btn-md btn-next">진단 결과 보기</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <!-- Step3 -->
+                                <fieldset class="section result_section">
+                                    <div class="content-item">
+                                        <div class="content-header">
+                                            <h3 class="content_heading">수학(상) 진단 테스트 (무료)</h3>
+                                        </div>
+                                        <table class="table_board-list table-style_test">
+                                            <caption>수학(상) 진단 테스트 (무료)</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" class="subject">과목명</th>
+                                                    <th scope="col" class="diagnostic-test">진단 테스트</th>
+                                                    <th scope="col" class="diagnostic-test">진단 결과</th>
+                                                    <th scope="col" class="date">수행일</th>
+                                                    <th scope="col" class="teacher">작성자</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="">수학(상)<span class="text-block sub-text">무료</span></td>
+                                                    <td><a href="#" class="btn btn-test btn-complete">채점 결과 보기</a></td>
+                                                    <td><a href="#" class="btn btn-test btn-complete">진단 결과 보기</a></td>
+                                                    <td>2020.11.11</td>
+                                                    <td>개념원리 본사</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="">수학(상)<span class="text-block sub-text">무료</span></td>
+                                                    <td><a href="#" class="btn btn-test btn-complete">채점 결과 보기</a></td>
+                                                    <td><a href="#" class="btn btn-test btn-complete">진단 결과 보기</a></td>
+                                                    <td>2020.11.11</td>
+                                                    <td>개념원리 본사</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="lecture_title">수학(하)<span class="text-block sub-text">무료</span></td>
+                                                    <td><a href="#" class="btn btn-test btn-solve">무료 진단 테스트 </a></td>
+                                                    <td></td>
+                                                    <td>2020.11.11</td>
+                                                    <td>개념원리 본사</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="btn-actions">
+                                            <button type="submit" class="btn btn-primary btn-md btn-next">무료 코칭 신청하기</button>
+                                        </div> 
+                                    </div> 
+                                </fieldset>
+
+                                <!-- Step4 -->
+                                <fieldset class="section">
+                                     <div class="content-item">
+                                         <div class="content-header">
+                                             <h3 class="content_heading">무료 코칭 신청하기</h3>
+                                         </div>
+                                         <div class="form-contents">
+	                                         <div class="form-info-box">
+	                                             <div class="content-item">
+	                                                 <div class="form-group">
+	                                                     <div class="row-contents">
+	                                                         <label for="name" class="label-control col-4"> 무료코칭 예약</label>
+	                                                         <div class="col-9">
+	                                                             <div class="inner-group">
+	                                                                <div class="form-group">
+	                                                                     <div class="row-contents">
+	                                                                         <label for="bank" class="label-control col-6">예약일</label>
+	                                                                         <div class="col-9">
+	                                                                             <div class="form-input-area">
+	                                                                                 <input type="text" id="datetimepicker" class="form-control input-width-sm font_num" value="">
+	                                                                             </div>	
+	                                                                         </div>
+	                                                                     </div>
+	                                                                 </div>
+	                                                                 <div class="form-group">
+	                                                                     <div class="row-contents">
+	                                                                         <label for="bank" class="label-control col-6">오전</label>
+	                                                                         <div class="col-9">
+	                                                                             <div class="form-input-area">
+	                                                                                 <div class="checkbox_time">
+	                                                                                     <input type="checkbox" id="9to10" name="time">
+	                                                                                     <label for="9to10">9시~10시</label>
+	                                                                                     <input type="checkbox" id="10to11" name="time">
+	                                                                                     <label for="10to11">10시~11시</label>
+	                                                                                     <input type="checkbox" id="11to12" name="time">
+	                                                                                     <label for="11to12">11시~12시</label>
+	                                                                                 </div>
+	                                                                             </div>	
+	                                                                         </div>
+	                                                                     </div>
+	                                                                 </div>
+	                                                                 <div class="form-group">
+	                                                                     <div class="row-contents">
+	                                                                         <label for="name" class="label-control col-6">오후</label>
+	                                                                         <div class="col-9">
+	                                                                             <div class="form-input-area">
+	                                                                                 <div class="checkbox_time">
+	                                                                                     <input type="checkbox" id="1to2" name="time">
+	                                                                                     <label for="1to2">1시~2시</label>
+	                                                                                     <input type="checkbox" id="2to3" name="time">
+	                                                                                     <label for="2to3">2시~3시</label>
+	                                                                                     <input type="checkbox" id="3to4" name="time">
+	                                                                                     <label for="3to4">3시~4시</label>
+	                                                                                     <input type="checkbox" id="4to5" name="time">
+	                                                                                     <label for="4to5">4시~5시</label>
+	                                                                                     <input type="checkbox" id="5to6" name="time">
+	                                                                                     <label for="5to6">5시~6시</label>
+	                                                                                     <input type="checkbox" id="6to7" name="time">
+	                                                                                     <label for="6to7">6시~7시</label>
+	                                                                                     <input type="checkbox" id="7to8" name="time">
+	                                                                                     <label for="7to8">7시~8시</label>
+	                                                                                 </div>
+	                                                                             </div>	
+	                                                                         </div>
+	                                                                     </div>
+	                                                                 </div>
+	                                                             </div>
+	                                                         </div>
+	                                                     </div>
+	                                                 </div>
+	                                             </div>
+	                                         </div>
+	                                     </div>
+                                        <div class="btn-actions">
+                                            <button type="submit" class="btn btn-primary btn-md btn-next">신청 완료</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <!-- Step5 -->
+                                <fieldset class="section confirm-page">
+                                     <article class="content_box">
+                                        <div class="message-item">
+                                            <h1 class="message_title">무료 코칭 상담을 신청해주셔서 감사합니다.</h1>
+                                            <div class="guide-box">
+                                            <p class="mb-10">신청하신 0000년 0월 0일 4~5시에<br>
+                                            고등수학 학습 코칭 서비스를 제공해드리겠습니다.
+                                            </p>
+                                            <p>서비스 참여 방법은 <br>
+                                            문자와 전화로 안내해 드리겠습니다. 
+                                            </p>
+                                            </div>
+                                            <div class="btn-actions">
+                                                <button type="submit" class="btn btn-primary btn-md btn-next">메인으로 가기</button>
+                                            </div>
+                                        </div>
+                                    </article> 
+                                </fieldset>
+                            </form>
+                        </div>
+					</article>
+				</section>
+			</div>
+		</div>
+	</body>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+	<script src="./resource/js/common.js"></script>
+	<script src="./resource/js/jquery.datetimepicker.full.min.js"></script>
+
+    <script>
+        $.datetimepicker.setLocale('kr');
+        $('#datetimepicker').datetimepicker({
+            timepicker:false,
+            format:'Y-m-d'
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".multistep-form button").click(function(){
+            var button = $(this);
+            var currentSection = button.parents(".section");
+            var currentSectionIndex = currentSection.index();
+            var headerSection = $('.steps li').eq(currentSectionIndex);
+            currentSection.removeClass("active").next().addClass("active");
+            headerSection.removeClass("active").next().addClass("active");
+
+            $(".multistep-form").submit(function(e) {
+                e.preventDefault();
+            });
+
+            });
+        });
+    </script>
+	<footer class="footer">
+		<article class="container">
+			<div class="row footer_contents company_polices">
+				<div class="col-1">
+					<ul class="footer-list">
+						<li class="pl-n"><a href="#">회사소개</a></li>
+						<li class=""><a href="#">이용약관</a></li>
+						<li class=""><a href="#">개인정보처리방침</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="row footer_contents_small company_info">
+				<div class="col-10">
+					<address>
+                    (주) 개념원리 | 대표이사: 고사무열 | 주소: 서울특별시 강남구 강남대로 262 캠코타워 14층 (주) 개념원리 | 고객센터 : <a href="tel:16441248">1644-1248</a> &nbsp; <a href="mailto:wonri_with@wonriedu.com">wonri_with@wonriedu.com</a><br>
+                    사업자등록번호: 220-86-64126 | 통신판매업 신고번호: 제 2017-서울강남-03043호 <a class="notify" href="http://www.ftc.go.kr/www/bizCommView.do?key=232&amp;apv_perm_no=2017322016230203043&amp;pageUnit=10&amp;searchCnd=wrkr_no&amp;searchKrwd=2208664126&amp;pageIndex=1" target="_blank">정보확인</a><br>
+                    학원설립 운영등록번호: 제 10106호 개념원리원격학원 <a class="notify" href="javascript:void(0)" onclick="window_notify('/design/images/footer/institute_license.png','개념원리 학원 운용 등록증', '490', '700');">정보확인</a> | 신고기관명: 서울특별시 강남교육지원청<br>
+                    개인정보관리책임자: 이영훈 | 개인정보관리담당자: 남정우 | 호스팅 서비스 사업자 : Amazon Web Services<br>
+					</address>
+					<div class="copyright">Copyright(c) by ㈜개념원리 All Right Reserved</div>
+				</div>
+				<div class="col-6">
+					<a href="http://escrow1.kbstar.com/quics?page=B009111&amp;cc=b010807%3Ab008491&amp;mHValue=b6c60b92b63b709a76b8782609d50d04201711201716188" target="_blank" class="escrow">
+						<img src="./resource/images/img_kbescrw.png" alt="KB에스크로" title="">
+					</a>
+				</div>
+			</div>
+			
+		</article>
+		
+	</footer>
+</html>2

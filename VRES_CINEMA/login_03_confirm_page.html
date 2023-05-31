@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="title" content="HTML5 Video Player">
+		<meta name="keywords" content="">
+		<meta name="Description" content="">		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">		
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no"/> 
+		<title>VREZ CINEMA</title>
+	    <link rel="stylesheet" href="./css/common.css">	
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="main-mneu">
+					<div class="container">
+						<div class="nav-bar">
+							<a href="#" class="header-logo">
+								<img src="./images/header-logo.png">
+							</a>
+							<div class="menu-nav hide">
+								<ul class="menu-list">
+									<li class=""><a href="#movie">영화</a></li>
+									<li><a href="#review">리뷰</a></li>
+									<li><a href="#news">소식</a></li>
+								</ul>
+							</div>
+							<div class="pull-right personal-area">
+								<div class="btn-longin">
+									<div class="btn-area">
+										<a href="#" class="btn btn-corner"><span></span>로그인</a>
+									</div>
+								</div>
+								<div class="personal-info hide">
+									<a href="#" class="profile-img">
+										<img src="./images/profile-img.png" class="img-pf">
+									</a>
+								</div>															
+							</div>								
+						</div>
+						<div class="layer_personal-info">
+							<ul class="info-list">
+								<li class="info-item item-header">
+									<div class="profile-img">
+									    <img src="./images/profile-img.png" class="img-pf">
+									</div>
+									<div class="item-content user-info">
+										<div class="nickname ellipsis"><a href="" class="">My Nickname</a></div>
+										<div class="item-text">vrezcustom@email.com</div>
+									</div>
+								</li>
+								<li class="info-item serial-number">
+									<span class="info-heading">기기번호</span>
+									<span class="item-right">1234-56-7890</span>
+								</li>
+								<li class="info-item membership">
+									<span class="info-heading">멤버십</span>
+									<span class="item-right">월 회원</span>
+								</li>
+								<li class="info-item point">
+									<span class="info-heading">포인트</span>
+									<span class="item-right">999,999 P</span>
+								</li>
+								<li class="info-item item-footer">
+									<span class="item-text"><a href="link-text">마이페이지</a></span>
+									<span class="item-right"><a href="link-text">로그아웃</a></span>
+								</li>
+							</ul>							
+						</div>										
+					</div>
+				</div>
+				<div class="sub-menu hide">
+					<div class="container">
+						<ul class="menu-list_2depth">
+							<li class="active"><a href="#">MY THEATER</a></li>
+							<li class="list-item"><a href="#">최신</a></li>
+							<li class="list-item"><a href="#">인기</a></li>
+							<li class="list-item"><a href="#">추천</a></li>
+							<li class="list-item"><a href="#">장르</a></li>
+							<li id="searchBar" class="list-item fl-r">
+								<div class="search-btn"><i class="icon icon-search"></i></div>
+							</li>
+						</ul>
+						<div class="search-bar_area">
+							<div class="form_search-bar">
+								<form>
+									<span class="search-icon"><i class="icon icon-search"></i></span>
+									<input type="search" class="search-field" placeholder="Search for..">
+								</form>							
+							</div>
+							<div class="close-btn">
+								<i class="icon icon-close"></i>
+							</div>
+							
+						</div>
+					</div>
+				</div>	
+			</header>
+			<div class="container">
+			<section class="contents half-contents info-page">
+				<article class="content-box">
+					<div class="content-header">
+					    <h2 class="content_heading ">발송 완료</h2>
+					</div>
+					<div class="message-item">
+						<p>
+						<span class="point-color">sample@email.com</span> 로 비밀번호 재설정 안내 이메일을 보내 드렸습니다. <br />
+						재설정 이메일을 찾을 수 없는경우, 스팸이나 정크 메일함도 확인 해주세요.
+						</p>
+						<div class="help-block">이 이메일 계정에 접속 하실 수 없는 경우, <u>고객센터 (1234-5678)</u> 로 문의 해 주세요.</div>	
+					</div>
+					
+				</article>		
+			</section>		
+			</div>
+		</div>
+	</body>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+	<script src="./js/common.js"></script>
+	<footer class="footer">
+		<article class="container">
+			<div class="row footer-contents">
+				<div class="col-2">
+					<ul class="footer-list">
+						<li class="pl-n"><a href="#">회사소개</a></li>
+						<li class=""><a href="#">이용약관</a></li>
+						<li class=""><a href="#">개인정보처리방침</a></li>
+						<li class="">support@verz.com</li>
+					</ul>
+				</div>
+				<div class="col-2">
+					<ul class="footer-list fl-r">
+						<li class=""><a href="#">공지사항</a></li>
+						<li class=""><a href="#">1:1문의</a></li>
+						<li class=""><a href="#">FAQ</a></li>
+						<li class="pr-n">
+							<label class="lang_select">
+								<select class="form-control select-style">
+									<option value="kr" selected>한국어</option>
+									<option value="en">ENGLISH</option>
+									<option value="jp">日本語</option>
+								</select>
+							</label>						
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="copyright">2018©VREZ INNOVATION INC. All rights reservedv</div>
+		</article>
+		
+	</footer>
+</html>

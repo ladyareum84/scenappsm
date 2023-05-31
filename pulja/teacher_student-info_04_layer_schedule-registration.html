@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="title" content="">
+		<meta name="keywords" content="">
+		<meta name="Description" content="">		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">		
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no"/> 
+		<title>개념원리 풀자</title>
+		<link rel="stylesheet" type="text/css" href="./resource/font/NotoSans/notosans.css">
+		<link rel="stylesheet" type="text/css" href="./resource/css/common.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="shortcut icon" href="./resource/images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="./resource/images/favicon.ico" type="image/x-icon">
+	</head>
+	
+	<body>
+		<div class="wrapper wrap_teacher">
+			<!-- 코치모드 로그인 후  -->
+			<header class="header_style03 header_coach">
+			    <div class="gnb">
+			        <div class="inner">
+                        <a href="#" class="gnb-logo">
+                            <img src="./resource/images/header-logo.png" width="104" alt="개념원리">
+                        </a>
+                        <div class="nav_category">
+							<ul class="menu-list">
+								<li class="list-item "><a href="#">내 학생정보</a></li>
+								<li class="list-item active"><a href="#">학습관리</a></li>
+								<li class="list-item"><a href="#">내 수익</a></li>
+								<li class="list-item"><a href="#">학습자료실</a></li>
+							</ul>
+						</div>
+                        <div class="navbar-right">
+                            <div class="top_nav">
+                                <span>
+                                    <a class="about-style" href="#">About 풀자</a>
+                                </span>
+                                <span class="divi-vertical"></span>
+                                <span>
+                                    <a href="#">온라인서점</a>
+                                </span>
+                                <span class="divi-vertical"></span>
+                                <span>
+                                    <a href="#">고객센터</a>
+                                </span>  
+                            </div> 
+                            <div class="personal_area login hide">
+                                <ul class="login personal-list">
+                                    <li class="list-item">
+                                        <a href="#">로그인</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#">회원가입</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="personal_area logout">
+		                    	<ul class="personal-list">
+		                    		<li class="list-item">
+		                    			<div class="user-info">
+		                    				<img class="img-profile" src="./resource/images/img_reviewer.png">
+			                               <span class="user-id">이순신님 <i class="icon-arr arr-down"></i></span>
+			                                <div class="layer_box">
+			                                	<ul class=" user-list">
+				                            		<li class="list-text"><a href="#" class="">나의 정보</a></li>
+				                            		<li class="list-text"><a href="#" class="">프로필 정보</a></li>
+				                            		<li class="list-text"><a href="#" class="">로그아웃</a></li>
+				                            	</ul>
+			                                </div>
+			                            </div>
+		                    		</li>
+		                    	</ul>
+		                    </div>
+                        </div>
+                    </div>
+				</div>
+			</header>
+			<div class="container">
+				<section class="coach_contents my-studyroom my-student">
+					<div class="contents-header">
+						<h2 class="contents_heading">내 학생정보</h2>
+					</div>	
+					<article class="content_box">
+						<div class="content-item">
+							<div class="content-header">
+								<h3 class="content_heading"><span class="weight-700_bold font_num">총 32명</span>의 학생을 담당하고 있습니다.</h3>
+								<div class="option-area fl-r">
+									<div class="sorting form-input-area">
+										<label class="form_selectbox">
+											<select class="form-control select-style input-width-xs font_num">
+												<option value="date" selected>시간순</option>
+												<option value="name">이름순</option>
+											</select>
+										</label>
+										<input type="text" id="searchName" class="form-control input-width-sm search-form" placeholder="이름검색">
+										<span class="search-icon"><i class="icon icon-search"></i></span>
+									</div>
+								</div>
+							</div>
+							<div class="form-group board_list">
+								<form role="form">
+									<table class="table_board-list table-style_management">
+										<caption>내 학생정보</caption>
+										<thead>
+											<tr>
+												<th scope="col" style="width: 85px;">이름</th>
+												<th scope="col" style="min-width: 90px;">학습날짜</th>
+												<th scope="col" colspan="3" style="mwidth: 38%;">학습 진척도</th>
+												<th scope="col">미팅일정</th>
+												<th scope="col" style="width: 15%;">학습관리</th>
+												<th scope="col" style="width: 15%;">학습하기</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<div class="name_student"><a href="./teacher_student-info_02_consult-record.html">홍길동</a> </div>
+													<div class="state_course">
+														<span class="state_ing point-color">수강중</span>
+													</div>
+												</td>
+												<td class="font_num fa-l">2020.11.01 ~2020.11.31</td>
+												<td>
+													<div class="state_title">총강의 </div>
+													<div class="state_progress">
+														<span class="state_percent font_num">10강</span>
+													</div>
+												</td>
+												<td>
+													<div class="state_title">영상학습 </div>
+													<div class="state_progress">
+														<span class="state_percent font_num">90%</span>
+													</div>
+												</td>
+												<td>
+													<div class="state_title">문제풀기 </div>
+													<div class="state_progress">
+														<span class="state_percent font_num">70%</span>
+													</div>
+												</td>
+												<td>
+													<div class="separate font weight-500_medium">[상담] </div>
+													<div class="state_meet-date">
+														<span class="font_num fa-l">2020년11월30일<br /> 오후 4시 30분</span>
+													</div> </td>
+												<td>
+													<div class="btn-box">
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">진단 테스트</a>
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">학생 공부방</a>
+													</div>
+												</td>
+												<td>
+													<div class="btn-box">
+														<a href="#" class="btn btn-table btn-brand_outline" onclick="go_popup_registration()">학습일정 등록</a>
+														<a href="#" class="btn btn-table btn-brand_outline">1:1 학습하기</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="name_student"><a href="#">이동욱</a> </div>
+													<div class="state_course">
+														<span class="state_ing point-color">수강중</span>
+													</div>
+												</td>
+												<td class="font_num fa-l">2020.11.01 ~2020.11.31</td>
+												<td>
+													<div class="state_title">총강의 </div>
+													<div class="state_progress">
+														<span class="state_percent font_num">10강</span>
+													</div>
+												</td>
+												<td>
+													<div class="state_title">영상학습 </div>
+													<div class="state_progress">
+														<span class="state_percent font_num">90%</span>
+													</div>
+												</td>
+												<td>
+													<div class="state_title">문제풀기 </div>
+													<div class="state_progress">
+														<span class="state_percent font_num">70%</span>
+													</div>
+												</td>
+												<td>
+													<div class="separate font weight-500_medium">[학습] </div>
+													<div class="state_meet-date">
+														<span class="font_num">2020년11월30일<br /> 오후 4시 30분</span>
+													</div> </td>
+												<td>
+													<div class="btn-box">
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">진단 테스트</a>
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">학생 공부방</a>
+													</div>
+												</td>
+												<td>
+													<div class="btn-box">
+														<a href="#" class="btn btn-table btn-brand_outline">학습일정 등록</a>
+														<a href="#" class="btn btn-table btn-brand_outline">1:1 학습하기</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="name_student"><a href="#">김범</a> </div>
+													<div class="state_course">
+														<span class="state_stop text-gray">수강중지</span>
+													</div>
+												</td>
+												<td class="font_num">2020.11.01 ~2020.11.31</td>
+												<td>
+													<div class="state_title">총강의 </div>
+													<div class="state_progress">
+														<span class="state_percent font_num">10강</span>
+													</div>
+												</td>
+												<td>
+													<div class="state_title">영상학습 </div>
+													<div class="state_progress">
+														<span class="state_percent font_num">90%</span>
+													</div>
+												</td>
+												<td>
+													<div class="state_title">문제풀기 </div>
+													<div class="state_progress">
+														<span class="state_percent font_num">70%</span>
+													</div>
+												</td>
+												<td>
+													<div class="separate font weight-500_medium">[상담] </div>
+													<div class="state_meet-date">
+														<span class="font_num">2020년11월30일<br /> 오후 4시 30분</span>
+													</div> </td>
+												<td>
+													<div class="btn-box">
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">진단 테스트</a>
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">학생 공부방</a>
+													</div>
+												</td>
+												<td>
+													<div class="btn-box">
+														<a href="#" class="btn btn-table btn-brand_outline btn-disibled">학습일정 등록</a>
+														<a href="#" class="btn btn-table btn-brand_outline btn-disibled">1:1 학습하기</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="name_student"><a href="#">조보아</a></div>
+													<div class="state_course">
+														<span class="state_stop text-gray">수강중지</span>
+													</div>
+												</td>
+												<td class="font_num">2020.11.01 ~2020.11.31</td>
+												<td>
+													<div class="state_title">총강의 </div>
+													<div class="state_progress">
+														<span class="state_percent font_num">10강</span>
+													</div>
+												</td>
+												<td>
+													<div class="state_title">영상학습 </div>
+													<div class="state_progress">
+														<span class="state_percent font_num">90%</span>
+													</div>
+												</td>
+												<td>
+													<div class="state_title">문제풀기 </div>
+													<div class="state_progress">
+														<span class="state_percent font_num">70%</span>
+													</div>
+												</td>
+												<td>
+													<div class="separate font weight-500_medium">[학습] </div>
+													<div class="state_meet-date">
+														<span class="font_num">2020년11월30일<br /> 오후 4시 30분</span>
+													</div> </td>
+												<td>
+													<div class="btn-box">
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">진단 테스트</a>
+														<a href="#" class="btn btn-table btn-width btn-brand_outline">학생 공부방</a>
+													</div>
+												</td>
+												<td>
+													<div class="btn-box">
+														<a href="#" class="btn btn-table btn-brand_outline btn-disibled">학습일정 등록</a>
+														<a href="#" class="btn btn-table btn-brand_outline btn-disibled">1:1 학습하기</a>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</form>
+								<div class="board-pagination">
+									<div class="pagination pagination_style01">
+										<div class="paginate_counter font_num">1/5 of 20</div>
+										<ul class="paginate">
+											<li><a href="#" class="previous"></a></li>
+											<li><a href="#" class="next"></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div><!-- // 수강중인 강의 -->
+					</article>
+					<!-- 컨텐츠가 없을때, 테이블 버전 -->
+					<article class="content_box">
+						<div class="content-item">
+							<div class="content-header">
+								<h3 class="content_heading"><span class="weight-700_bold font_num">총 0명</span>의 학생을 담당하고 있습니다.</h3>
+								<div class="option-area fl-r">
+									<div class="sorting form-input-area">
+										<label class="form_selectbox">
+											<select class="form-control select-style input-width-xs font_num">
+												<option value="date" selected>시간순</option>
+												<option value="name">이름순</option>
+											</select>
+										</label>
+										<input type="text" id="searchName" class="form-control input-width-sm search-form" placeholder="이름검색">
+										<span class="search-icon"><i class="icon icon-search"></i></span>
+									</div>
+								</div>
+							</div>
+							<div class="form-group board_list">
+								<form role="form">
+									<table class="table_board-list table-style_lecture">
+										<caption>내 학생정보</caption>
+										<thead>
+											<tr>
+												<th scope="col" style="width: 85px;">이름</th>
+												<th scope="col" style="min-width: 90px;">학습날짜</th>
+												<th scope="col" colspan="3" style="min-width: 175px;">학습 진척도</th>
+												<th scope="col" style="min-width: 130px;">미팅일정</th>
+												<th scope="col" style="width: 110px;">학습관리</th>
+												<th scope="col" style="width: 110px;">학습하기</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<!-- 해당 영역만 가져다 쓰시면 됩니다. -->
+												<td class="table_empty" colspan="7">
+													<div class="list-empty">
+													    <span>아직 배정된 학생이 없습니다.</span>
+													</div>
+												</td>
+												<!-- // 해당 영역만 가져다 쓰시면 됩니다. -->
+											</tr>
+										</tbody>
+									</table>
+								</form>
+							</div>
+						</div>	
+					</article>
+					<!-- 팝업 시작 -->
+                    <div id="popup_registration" class="layer-popup-style01">	
+                        <div class="layer-popup-content popup-width-sm" style="height: auto; width: auto;">
+                            <div class="popup-header-area">
+                                <h3 class="popup-header">학습일정 등록하기</h3>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-close b-close" name="close">
+                                        <span class="close icon-close"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="popup-content">
+                                <div class="content-area">
+                                    <div class="form-area option-area">
+                                        <div class="form-input-area">
+										    <label class="form_selectbox">
+												<select name="level" class="form-control select-style input-width-xs">
+													<option value="">학생이름</option>
+													<option value="name1">홍길동</option>
+													<option value="name2">심청이</option>
+													<option value="name3">김개똥이</option>
+												</select>
+											</label>
+										    <label class="form_selectbox">
+												<select name="readTime" class="form-control select-style input-width-xs">
+													<option value="consult">상담</option>
+													<option value="Learning">학습</option>
+												</select>
+											</label>
+											<input type="text" id="datetimepicker" class="form-control input-width-sm font_num"  value=""/>							    
+										</div>
+                                    </div>
+                                    <div class="form-area">
+                                        <form role="form" class="">
+                                            <textarea class="form-control textarea-style" name="text" placeholder=""></textarea>
+                                        </form>
+                                        <div class="btn-actions">
+                                            <button type="submit" class="btn btn-default btn-sm b-close">확인</button>	
+                                            <button type="submit" class="btn btn-default btn-sm b-close">취소</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- //팝업 끝 -->
+				</section>
+			
+			</div>
+		</div>
+	</body>
+	<footer class="footer">
+		<article class="container">
+			<div class="row footer_contents company_polices">
+				<div class="col-1">
+					<ul class="footer-list">
+						<li class="pl-n"><a href="#">회사소개</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#">개인정보처리방침</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="row footer_contents_small company_info">
+				<div class="col-10">
+					<address>
+					(주) 개념원리 | 대표이사: 고사무열 | 주소: 서울특별시 강남구 강남대로 262 캠코타워 14층 (주) 개념원리 | 고객센터 : <a href="tel:16441248">1644-1248</a> &nbsp; <a href="mailto:wonri_with@wonriedu.com">wonri_with@wonriedu.com</a><br>
+					사업자등록번호: 220-86-64126 | 통신판매업 신고번호: 제 2017-서울강남-03043호 <a class="notify" href="http://www.ftc.go.kr/www/bizCommView.do?key=232&amp;apv_perm_no=2017322016230203043&amp;pageUnit=10&amp;searchCnd=wrkr_no&amp;searchKrwd=2208664126&amp;pageIndex=1" target="_blank">정보확인</a><br>
+					학원설립 운영등록번호: 제 10106호 개념원리원격학원 <a class="notify" href="javascript:void(0)" onclick="window_notify('/design/images/footer/institute_license.png','개념원리 학원 운용 등록증', '490', '700');">정보확인</a> | 신고기관명: 서울특별시 강남교육지원청<br>
+					개인정보관리책임자: 이영훈 | 개인정보관리담당자: 남정우 | 호스팅 서비스 사업자 : Amazon Web Services<br>
+					</address>
+					<div class="copyright">Copyright(c) by ㈜개념원리 All Right Reserved</div>
+				</div>
+				<div class="col-6">
+					<a href="http://escrow1.kbstar.com/quics?page=B009111&amp;cc=b010807%3Ab008491&amp;mHValue=b6c60b92b63b709a76b8782609d50d04201711201716188" target="_blank" class="escrow">
+						<img src="./resource/images/img_kbescrw.png" alt="KB에스크로" title="">
+					</a>
+				</div>
+			</div>
+		</article>
+	</footer>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+	<script src="./resource/js/common.js"></script>
+	<script src="./resource/js/jquery.bpopup.min.js"></script>
+	<script src="./resource/js/jquery.datetimepicker.full.min.js"></script>
+	<script>
+	    //Layer Popup
+		function go_popup_registration() {	   
+		  $('#popup_registration').bPopup({
+			  modalClose: false,
+			  easing: 'easeOutBack', //uses jQuery easing plugin
+		      speed: 450,
+		      transition: 'slideDown'
+		  });	   
+		};
+	</script>
+	<script>
+    $.datetimepicker.setLocale('kr');
+    $('#datetimepicker').datetimepicker();
+    </script>
+</html>

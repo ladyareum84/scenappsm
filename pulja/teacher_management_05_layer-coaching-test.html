@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="title" content="">
+		<meta name="keywords" content="">
+		<meta name="Description" content="">		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">		
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no"/> 
+		<title>개념원리 풀자</title>
+		<link rel="stylesheet" type="text/css" href="./resource/font/NotoSans/notosans.css">
+		<link rel="stylesheet" type="text/css" href="./resource/css/common.css">	
+		<link rel="stylesheet" type="text/css" href="./resource/css/jquery.datetimepicker.min.css">	
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="shortcut icon" href="./resource/images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="./resource/images/favicon.ico" type="image/x-icon">
+		<style>
+		.popup_button li{position:relative; border-bottom: 1px solid #efefef; padding: 10px 0;}
+		</style>
+	</head>
+	
+	<body>
+		<div class="wrapper wrap_teacher">
+			<!-- 코치모드 로그인 후  -->
+			<header class="header_style03 header_coach">
+			    <div class="gnb">
+			        <div class="inner">
+                        <a href="#" class="gnb-logo">
+                            <img src="./resource/images/header-logo.png" width="104" alt="개념원리">
+                        </a>
+                        <div class="nav_category">
+							<ul class="menu-list">
+								<li class="list-item "><a href="#">내 학생정보</a></li>
+								<li class="list-item active"><a href="#">학습관리</a></li>
+								<li class="list-item"><a href="#">내 수익</a></li>
+								<li class="list-item"><a href="#">학습자료실</a></li>
+							</ul>
+						</div>
+                        <div class="navbar-right">
+                            <div class="top_nav">
+                                <span>
+                                    <a class="about-style" href="#">About 풀자</a>
+                                </span>
+                                <span class="divi-vertical"></span>
+                                <span>
+                                    <a href="#">온라인서점</a>
+                                </span>
+                                <span class="divi-vertical"></span>
+                                <span>
+                                    <a href="#">고객센터</a>
+                                </span>  
+                            </div> 
+                            <div class="personal_area login hide">
+                                <ul class="login personal-list">
+                                    <li class="list-item">
+                                        <a href="#">로그인</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a href="#">회원가입</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="personal_area logout">
+		                    	<ul class="personal-list">
+		                    		<li class="list-item">
+		                    			<div class="user-info">
+		                    				<img class="img-profile" src="./resource/images/img_reviewer.png">
+			                               <span class="user-id">이순신님 <i class="icon-arr arr-down"></i></span>
+			                                <div class="layer_box">
+			                                	<ul class=" user-list">
+				                            		<li class="list-text"><a href="#" class="">나의 정보</a></li>
+				                            		<li class="list-text"><a href="#" class="">프로필 정보</a></li>
+				                            		<li class="list-text"><a href="#" class="">로그아웃</a></li>
+				                            	</ul>
+			                                </div>
+			                            </div>
+		                    		</li>
+		                    	</ul>
+		                    </div>
+                        </div>
+                    </div>
+				</div>
+			</header>
+			
+			<div class="container">
+				<section class="coach_contents">
+					<article class="content_box">
+						<div class="content-header">
+							<h3 class="content_heading">코칭 테스트문제 출제</h3>
+						</div>
+						<ul class="popup_button">
+							<li>
+								<span>전체범위 > 범위 선택</span>
+								<button type="button" class="btn btn-brand_outline btn-sm" onclick="popup_test_question()">코칭 테스트 문제 선택</button>
+							</li>
+						</ul>
+						<!-- 팝업 시작 코칭 테스트 문제 선택 -->
+						<div id="popup" class="layer-popup-style01">	
+							<div class="layer-popup-content popup-test-question" style="height: auto; width: auto;">
+								<div class="popup-header-area">
+							  	    <h3 class="popup-header">코칭 테스트 문제 선택</h3>
+							  	    <div class="btn-area">
+									 	<button type="button" class="btn-close b-close" name="close">
+									 		<span class="close icon-close"></span>
+									 	</button>
+								 	</div>
+								</div>
+								<div class="popup-content">
+									<div class="content_box">
+										<div class="filter-area">
+											<div class="option-input">
+												<span class="option_name">출제일</span>
+		                                        <input type="text" id="datetimepicker" class="datepicker_control input-width-xs font_num ta-c" value="선택">
+		                                    </div>
+											<div class="option-input">
+												<span class="option_name">검색기간</span>
+		                                        <input type="text" id="date_timepicker_start" class="datepicker_control input-width-xs font_num" value="시작일">
+		                                        <span class="pl-5 pr-5">-</span>
+		                                        <input type="text" id="date_timepicker_end" class="datepicker_control input-width-xs font_num" value="종료일">
+		                                    </div>
+		                                    <div class="option-input">
+		                                    	<span class="option_name">검색 조건</span>
+		                                    	<div class="m-radio-inline" style="padding-top: 3px;">	
+													<label class="m-radio"> 
+														<input type="radio" name="condition" id="problemAll" value="problemAll" checked="checked" data-parsley-multiple="condition"> 전체 
+														<span></span>
+													</label> 
+													<label class="m-radio"> 
+														<input type="radio" name="condition" id="problemWrongAnswer" value="problemWrongAnswer" data-parsley-multiple="condition"> 오답만
+														<span></span>
+													</label> 
+												</div>
+		                                    </div>
+		                                    <div class="option-input">
+		                                    	<span class="option_name">난이도</span>
+			                                    <label class="form_selectbox">
+													<select name="level" class="form-control select-style">
+														<option value="level1">1</option>
+														<option value="level2">2</option>
+														<option value="level3">3</option>
+														<option value="level4">4</option>
+														<option value="level5">5</option>
+														<option value="level6">6</option>
+														<option value="level7">7</option>
+													</select>
+												</label> 
+												이상 
+		                                    </div>		
+										</div>
+									</div>
+									<div class="content_box">
+										<div class="content-list_grid">
+											<div class="row-contents">
+												<div class="col-2 grid-item">
+													<div class="sub-header">
+														<h2 class="content_heading sub_heading">
+															<span class="sub_title">전체 문제 리스트 </span>
+														</h2>
+													</div>	
+													<div class="panel_content">
+														<div class="question_item answer_item item_select select">
+															<div class="question_num answer_x answer_o">
+																<label class="m-checkbox">
+																	<input type="checkbox" name="check" value="" checked="checked">
+																	<span></span>
+																</label>
+																<span class="num">1.</span>
+															</div>
+															<div class="question_area">
+																<span class="question_img hidden">
+																	<img src="">
+																</span>
+																<div class="question_text">
+																	<span>다음 중 거듭제곱을 사용하여 나타낸 것이 옳지 않은 것은?</span>
+																</div>
+															</div>
+															<div class="objective_item">
+																<ol class="multiple-choice">
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_1-1">
+																			<span>①</span>
+																		</div>
+																		<p class="answer_text">exmple_1</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num checked" id="answer_num_1-2">
+																			<span>②</span>
+																			<strong class="mine_choice">내가 선택한 답</strong>
+																		</div>
+																		<p class="answer_text">exmple_2</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_1-3">
+																			<span>③</span>
+																		</div>
+																		<p class="answer_text">exmple_3</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_1-4">
+																			<span>④</span>
+																		</div>
+																		<p class="answer_text">exmple_4</p>
+																	</li>
+																</ol>
+															</div>
+														</div>
+														<div class="question_item answer_item item_select">
+															<div class="question_num answer_x answer_o">
+																<label class="m-checkbox">
+																	<input type="checkbox" name="check" value="">
+																	<span></span>
+																</label>
+																<span class="num">2.</span>
+															</div>
+															<div class="question_area">
+																<span class="question_img ">
+																	<img src="./resource/images/img_math_problem_01.jpg">
+																</span>
+																<div class="question_text hidden">
+																	<span>다음 중 거듭제곱을 사용하여 나타낸 것이 옳지 않은 것은?</span>
+																</div>
+															</div>
+															<div class="objective_item">
+																<ol class="multiple-choice">
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_2-1">
+																			<span>①</span>
+																		</div>
+																		<p class="answer_text">2</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_2-2">
+																			<span>②</span>
+																		</div>
+																		<p class="answer_text">4</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_2-3">
+																			<span>③</span>
+																		</div>
+																		<p class="answer_text">6</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num checked" id="answer_num_2-4">
+																			<span>④</span>
+																			<strong class="mine_choice">내가 선택한 답</strong>
+																		</div>
+																		<p class="answer_text">8</p>
+																	</li>
+																</ol>
+															</div>
+														</div>
+														<div class="question_item answer_item item_select">
+															<div class="question_num answer_x answer_o">
+																<label class="m-checkbox">
+																	<input type="checkbox" name="check" value="">
+																	<span></span>
+																</label>
+																<span class="num">3.</span>
+															</div>
+															<div class="question_area">
+																<span class="question_img hidden">
+																	<img src="">
+																</span>
+																<div class="question_text ">
+																	<span>다음 중 2³ 대한 설명으로 옳지 않은 것은?</span>
+																</div>
+															</div>
+															<div class="objective_item">
+																<ol class="multiple-choice">
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_2-1">
+																			<span>①</span>
+																		</div>
+																		<p class="answer_text">8과 같다.</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_2-2">
+																			<span>②</span>
+																		</div>
+																		<p class="answer_text">밑은 2이다.</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_2-3">
+																			<span>③</span>
+																		</div>
+																		<p class="answer_text">지수는 3이다.</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num checked" id="answer_num_2-4">
+																			<span>④</span>
+																			<strong class="mine_choice">내가 선택한 답</strong>
+																		</div>
+																		<p class="answer_text">2+2+2를 나타낸 것이다.</p>
+																	</li>
+																</ol>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-9">
+													<div class="panel_btn-box">
+														<div class="box">
+														<button type="button" id="multiselect_rightSelected" class="btn-move btn-default"><span class="icon_add"></span></button>
+														<button type="button" id="multiselect_leftSelected" class="btn-move btn-default"><span class="icon_remove"></span></button>
+														</div>
+													</div>
+												</div>
+												<div class="col-2 grid-item">	
+													<div class="sub-header">
+														<h2 class="content_heading sub_heading">
+															<span class="sub_title">선택 된 문제 리스트</span>
+														</h2>
+													</div>	
+													<div class="panel_content">
+														<div class="question_item answer_item item_select">
+															<div class="question_num answer_x answer_o">
+																<label class="m-checkbox">
+																	<input type="checkbox" name="check" value="">
+																	<span></span>
+																</label>
+																<span class="num">1.</span>
+															</div>
+															<div class="question_area">
+																<span class="question_img hidden">
+																	<img src="">
+																</span>
+																<div class="question_text">
+																	<span>다음 중 거듭제곱을 사용하여 나타낸 것이 옳지 않은 것은?</span>
+																</div>
+															</div>
+															<div class="objective_item">
+																<ol class="multiple-choice">
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_1-1">
+																			<span>①</span>
+																		</div>
+																		<p class="answer_text">exmple_1</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num checked" id="answer_num_1-2">
+																			<span>②</span>
+																			<strong class="mine_choice">내가 선택한 답</strong>
+																		</div>
+																		<p class="answer_text">exmple_2</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_1-3">
+																			<span>③</span>
+																		</div>
+																		<p class="answer_text">exmple_3</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_1-4">
+																			<span>④</span>
+																		</div>
+																		<p class="answer_text">exmple_4</p>
+																	</li>
+																</ol>
+															</div>
+														</div>
+														
+														<div class="question_item answer_item item_select">
+															<div class="question_num answer_x answer_o">
+																<label class="m-checkbox">
+																	<input type="checkbox" name="check" value="">
+																	<span></span>
+																</label>
+																<span class="num">3.</span>
+															</div>
+															<div class="question_area">
+																<span class="question_img hidden">
+																	<img src="">
+																</span>
+																<div class="question_text ">
+																	<span>다음 중 2³ 대한 설명으로 옳지 않은 것은?</span>
+																</div>
+															</div>
+															<div class="objective_item">
+																<ol class="multiple-choice">
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_2-1">
+																			<span>①</span>
+																		</div>
+																		<p class="answer_text">8과 같다.</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_2-2">
+																			<span>②</span>
+																		</div>
+																		<p class="answer_text">밑은 2이다.</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num" id="answer_num_2-3">
+																			<span>③</span>
+																		</div>
+																		<p class="answer_text">지수는 3이다.</p>
+																	</li>
+																	<li class="checkbox">
+																		<div class="answer_num checked" id="answer_num_2-4">
+																			<span>④</span>
+																			<strong class="mine_choice">내가 선택한 답</strong>
+																		</div>
+																		<p class="answer_text">2+2+2를 나타낸 것이다.</p>
+																	</li>
+																</ol>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>							
+										</div>
+										<div class="btn-actions">
+											<button type="submit" class="btn btn-primary btn-sm b-close">확인</button>	
+											<button type="submit" class="btn btn-default btn-sm b-close">취소</button>
+										</div>	
+									</div>
+								</div>
+							</div>
+						</div> <!-- //팝업 끝 코칭 테스트 문제 선택 -->
+						
+					</article>
+				</section>
+			</div>
+		</div>
+	</body>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+	<script src="./resource/js/common.js"></script>
+	<script src="./resource/js/jquery.bpopup.min.js"></script>
+	<script src="./resource/js/jquery.datetimepicker.full.min.js"></script>
+	<script>
+	    //Layer Popup
+		function popup_test_question() {	   
+		  $('#popup').bPopup({
+			  modalClose: false,
+			  easing: 'easeOutBack', //uses jQuery easing plugin
+		      speed: 450,
+		      transition: 'slideDown'
+		  });	   
+		};
+	</script>
+	<script>
+    $.datetimepicker.setLocale('kr');
+    $(function(){
+        $('#date_timepicker_start').datetimepicker({
+            format:'Y/m/d',
+            onShow:function( ct ){
+                this.setOptions({
+                maxDate:jQuery('#date_timepicker_end').val()?jQuery('#date_timepicker_end').val():false
+                })
+            },
+            timepicker:false
+        });
+        $('#date_timepicker_end').datetimepicker({
+            format:'Y/m/d',
+            onShow:function( ct ){
+            this.setOptions({
+            minDate:jQuery('#date_timepicker_start').val()?jQuery('#date_timepicker_start').val():false
+            })
+            },
+            timepicker:false
+        });
+    });
+    </script>
+	<footer class="footer">
+		<article class="container">
+			<div class="row footer_contents company_polices">
+				<div class="col-1">
+					<ul class="footer-list">
+						<li class="pl-n"><a href="#">회사소개</a></li>
+						<li class=""><a href="#">이용약관</a></li>
+						<li class=""><a href="#">개인정보처리방침</a></li>
+						<li class="weight-500_medium text-default"><a href="#">코치지원센터</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="row footer_contents_small company_info">
+				<div class="col-10">
+					<address>
+                    (주) 개념원리 | 대표이사: 고사무열 | 주소: 서울특별시 강남구 강남대로 262 캠코타워 14층 (주) 개념원리 | 고객센터 : <a href="tel:16441248">1644-1248</a> &nbsp; <a href="mailto:wonri_with@wonriedu.com">wonri_with@wonriedu.com</a><br>
+		                    사업자등록번호: 220-86-64126 | 통신판매업 신고번호: 제 2017-서울강남-03043호 <a class="notify" href="http://www.ftc.go.kr/www/bizCommView.do?key=232&amp;apv_perm_no=2017322016230203043&amp;pageUnit=10&amp;searchCnd=wrkr_no&amp;searchKrwd=2208664126&amp;pageIndex=1" target="_blank">정보확인</a><br>
+		                    학원설립 운영등록번호: 제 10106호 개념원리원격학원 <a class="notify" href="javascript:void(0)" onclick="window_notify('/design/images/footer/institute_license.png','개념원리 학원 운용 등록증', '490', '700');">정보확인</a> | 신고기관명: 서울특별시 강남교육지원청<br>
+		                    개인정보관리책임자: 이영훈 | 개인정보관리담당자: 남정우 | 호스팅 서비스 사업자 : Amazon Web Services<br>
+					</address>
+					<div class="copyright">Copyright(c) by ㈜개념원리 All Right Reserved</div>
+				</div>
+				<div class="col-6 hide">
+					<a href="http://escrow1.kbstar.com/quics?page=B009111&amp;cc=b010807%3Ab008491&amp;mHValue=b6c60b92b63b709a76b8782609d50d04201711201716188" target="_blank" class="escrow">
+						<img src="./resource/images/img_kbescrw.png" alt="KB에스크로" title="">
+					</a>
+				</div>
+			</div>
+		</article>
+	</footer>
+</html>

@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="title" content="HTML5 Video Player">
+		<meta name="keywords" content="">
+		<meta name="Description" content="">		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">		
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no"/> 
+		<title>VREZ CINEMA</title>
+		<link rel="stylesheet" href="./css/common.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="./plugin/slick/slick.css">	
+		<link rel="stylesheet" href="./plugin/slick/slick-theme.css">
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="main-mneu">
+					<div class="container">
+						<div class="nav-bar">
+							<a href="#" class="header-logo">
+								<img src="./images/header-logo.png">
+							</a>
+							<div class="menu-nav">
+								<ul class="menu-list">
+									<li class="active"><a href="#movie">영화</a></li>
+									<li><a href="#review">리뷰</a></li>
+									<li><a href="#news">소식</a></li>
+								</ul>
+							</div>
+							<div class="pull-right personal-area">
+								<div class="btn-longin hide">
+									<div class="btn-area">
+										<a href="#" class="btn btn-corner"><span></span>로그인</a>
+									</div>
+								</div>
+								<div class="personal-info ">
+									<a href="#" class="profile-img">
+										<img src="./images/profile-img.png" class="img-pf">
+									</a>
+								</div>															
+							</div>								
+						</div>
+						<div class="layer_personal-info">
+							<ul class="info-list">
+								<li class="info-item item-header">
+									<div class="profile-img">
+									    <img src="./images/profile-img.png" class="img-pf">
+									</div>
+									<div class="item-content user-info">
+										<div class="nickname ellipsis"><a href="" class="">My Nickname</a></div>
+										<div class="item-text">vrezcustom@email.com</div>
+									</div>
+								</li>
+								<li class="info-item serial-number">
+									<span class="info-heading">기기번호</span>
+									<span class="item-right">1234-56-7890</span>
+								</li>
+								<li class="info-item membership">
+									<span class="info-heading">멤버십</span>
+									<span class="item-right">월 회원</span>
+								</li>
+								<li class="info-item point">
+									<span class="info-heading">포인트</span>
+									<span class="item-right">999,999 P</span>
+								</li>
+								<li class="info-item item-footer">
+									<span class="item-text"><a href="link-text">마이페이지</a></span>
+									<span class="item-right"><a href="link-text">로그아웃</a></span>
+								</li>
+							</ul>							
+						</div>										
+					</div>
+				</div>
+				<div class="sub-menu hide">
+					<div class="container">
+						<ul class="menu-list_2depth">
+							<li class="active"><a href="#">MY THEATER</a></li>
+								<li class="list-item"><a href="#">최신</a></li>
+								<li class="list-item"><a href="#">인기</a></li>
+								<li class="list-item"><a href="#">추천</a></li>
+								<li class="list-item"><a href="#">장르</a></li>
+							<li id="searchBar" class="list-item fl-r">
+								<div class="search-btn"><i class="icon icon-search"></i></div>
+							</li>
+						</ul>
+						<div class="search-bar_area">
+							<div class="form_search-bar">
+								<form>
+									<span class="search-icon"><i class="icon icon-search"></i></span>
+									<input type="search" class="search-field" placeholder="Search for..">
+								</form>							
+							</div>
+							<div class="close-btn">
+								<i class="icon icon-close"></i>
+							</div>
+							
+						</div>
+					</div>
+				</div>	
+			</header>
+			<div class="detils-page">
+				<section class="detail-contents detail-media">
+					<article class="slider viewer">
+						<div class="slide-item fade viewer-img">
+							 <img src="http://cfile228.uf.daum.net/image/223954415603CD6B0C8BA4" class="img-center" data-src="" alt="First slide">
+						</div>
+						<div class="slide-item fade viewer-img">
+							 <img src="https://movie-phinf.pstatic.net/20120821_82/1345550471679DF92k_JPEG/movie_image.jpg?type=m665_443_2" class="img-center" data-src="" alt="Seond slide">
+						</div>
+						<div class="slide-item fade viewer-img">
+							 <img src="https://movie-phinf.pstatic.net/20120821_214/1345533494512m4M65_JPEG/movie_image.jpg?type=m665_443_2" class="img-center" data-src="" alt="Third slide">
+						</div>
+						<a class="slide-arrow btn-prev" onclick="plusSlides(-1)"><i class="icon material-icons">arrow_back_ios</i></a>
+						<a class="slide-arrow btn-next" onclick="plusSlides(1)"><i class="icon material-icons">arrow_forward_ios</i></a>
+						<div class="slide-indicators">
+							<span class="dot" onclick="currentSlide(1)"></span> 
+							<span class="dot" onclick="currentSlide(2)"></span> 
+							<span class="dot" onclick="currentSlide(3)"></span>  
+						</div>
+					</article>					
+				</section>
+				
+				<section class="detail-contents">
+					<div class="container">
+						<article class="content-box">
+							<div class="content-header">
+								<h2 class="content_heading content-title">레디 플레이어 원</h2>
+								<span class="lang-title">(Ready Player One,2018)</span>
+							</div>
+						</article>
+						<article class="content-box content-list_list">
+							<div class="row">
+								<div class="col-md-9 col-xs-12">
+									<div class="list-item detail-item">
+										<figure class="thumbnail_ratio list-thumb movie-poster"> <!-- 포스터 이미지 수정 -->
+											<a href="#" class="link-img disabled">
+												<div class="poster_ratio">
+													<div class="poster_img">
+														<img src="./images/movie_poster.jpg">
+													</div>
+												</div>												
+											</a>																			
+										</figure>
+										<div class="content-info detail-info">
+											<div class="rate-area">
+												<div class="average-rate">
+													<i class="icon icon-star"></i>
+													<span class="grade">8.1</span>
+												</div>														
+												<span class="vote-count">
+													/<span class="pr-5"> 999명</span><span>참여</span>
+												</span>
+												<div class="btn-group fl-r btn-like">
+													<button type="button" class="btn btn-circle btn-default "><i class="icon icon-heart" ></i></button>
+												</div>												
+											</div>
+											<div class="rating-area">
+												<span class="rating-text">이 영화 평가하기</span>																							
+												<div class="star-rating">
+													<fieldset class="rating">
+													    <input type="radio" id="star5" name="rating" value="5" />
+													    <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+													    <input type="radio" id="star4half" name="rating" value="4 and a half" />
+													    <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+													    <input type="radio" id="star4" name="rating" value="4" />
+													    <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+													    <input type="radio" id="star3half" name="rating" value="3 and a half" />
+													    <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+													    <input type="radio" id="star3" name="rating" value="3" />
+													    <label class = "full" for="star3" title="Meh - 3 stars"></label>
+													    <input type="radio" id="star2half" name="rating" value="2 and a half" />
+													    <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+													    <input type="radio" id="star2" name="rating" value="2" />
+													    <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+													    <input type="radio" id="star1half" name="rating" value="1 and a half" />
+													    <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+													    <input type="radio" id="star1" name="rating" value="1" />
+													    <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+													    <input type="radio" id="starhalf" name="rating" value="half" />
+													    <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+													</fieldset>
+												</div>																					
+											</div>
+											<div class="movie-rate">
+												<span class="rating r-all">All</span>
+												<span class="rating r-12 hidden">+12</span>
+												<span class="rating r-15 hidden">+15</span>
+												<span class="rating r-19 hidden">+19</span>
+											</div>
+											<div class="info-box">
+												<div class="movie-info">Release year : <span>2018</span></div>
+												<div class="movie-info">Genre : <span class="link-area"><a href="#">액션</a>, <a href="#">SF</a>, <a href="#">모험</a></span></div>
+												<div class="movie-info">Director : <span class="link-area"><a href="#">스티븐 스필버그</a></span></div>
+												<div class="movie-info">Actor : <span class="link-area"><a href="#">Helen Harris</a>, <a href="#">Samantha Evelyn Cook</a>, <a href="#">모리사키 윈</a>, <a href="#">웨이드 오웬 왓츠</a>, <a href="#">제임스 도노반 할리데이</a></span></div>
+												<div class="movie-info">Running time : <span>110min</span></div>													 
+											</div>
+											<div class="info-box btn-group">
+												<a href="#reviewr" class="btn btn-default">리뷰 (999)</a>
+												<a href="#" class="btn btn-default btn-success">다운로드</a>
+											</div>
+										</div>
+									</div>
+									<div class="detail-item movie-story">
+										<h3 class="content_heading">Movie Story</h3>
+										<p class="synopsis">
+											2045년, 암울한 현실과 달리 가상현실 오아시스(OASIS)에서는 누구든 원하는 캐릭터로 어디든지 갈 수 있고, 뭐든지 할 수 있고 상상하는 모든 게 가능하다.
+											웨이드 와츠(타이 쉐리던) 역시 유일한 낙은 대부분의 사람들이 하루를 보내는 오아시스에 접속하는 것이다.어느 날 오아시스의 창시자인 괴짜 천재 제임스 할리데이(마크 라이런스)는 
+											자신이 가상현실 속에 숨겨둔 3개의 미션에서 우승하는 사람에게 오아시스의 소유권과 막대한 유산을 상속한다는 유언을 남기고, 그가 사랑했던 80년대 대중문화 속에 힌트가 있음을 알린다.
+											제임스 할리데이를 선망했던 소년 ‘웨이드 와츠’가 첫 번째 수수께끼를 푸는 데 성공하자 이를 저지하기 위해 현실에서 살인도 마다하지 않는 ‘IOI’라는 거대 기업이 뛰어든다.
+											모두의 꿈과 희망이 되는 오아시스를 지키기 위해서는 반드시 우승해야 한다!그리고 우승을 위해서는 가상현실이 아닌 현실세계의 우정과 사랑의 힘이 필요하기만 한데…										
+										</p>
+										<div class="contents_readmore-area">
+											<a href="" class="link-text btn-readmore">더보기</a>
+										</div>	
+									</div>
+								</div>
+								<div class="col-md-3 col-xs-12">
+									<div class="side-area">
+										<ul class="additional-info_list">
+											<li class="additional-item">
+												<div class="item-img"><img src="./images/icon-point.png" alt="Point"></div>
+												<span class="item-text">구매 금액 5% 적립</span>
+											</li>
+											<li  class="additional-item">
+												<div class="item-img"><img src="./images/icon-sd-card.png" alt="Point"></div>
+												<span class="item-text">[HD] 1.8GB</span>
+											</li>
+											<li  class="additional-item">
+												<div class="item-img"><img src="./images/icon-vrez-cinema.png" alt="Point"></div>
+												<span class="item-text">VREZ CINEMA</span>
+											</li>
+											<li  class="additional-item">
+												<div class="item-img"><img src="./images/icon-wifi.png" alt="Point"></div>
+												<span class="item-text">인터넷 연결 필요</span>
+											</li>
+										</ul>
+									</div>
+									<div class="side-area">
+										<div class="btn-box"> <!-- 유료인경우, [구매하기] 버튼 활성 -->
+											<a href="" class="btn btn-success btn-lg btn-block">구매하기</a>
+										</div>
+										<div class="btn-box"> <!-- 무료인경우, [구매하기] 버튼 비활성 -->
+											<a href="#" class="btn btn-success btn-lg btn-block btn-disabled">구매하기</a>
+										</div>
+										<div class="btn-box">  <!-- 구매완료시 액션없는 버튼 -->
+											<a href="#"class="btn-buy-complete btn-lg btn-block">구매완료</a>
+										</div>
+										<div class="pricing-info-list">
+											<div class="pricing-info-row">
+												<div class="info-item info_left">일반회원</div>
+												<div class="info-item info_right">
+													<div class="price">10,000원</div>
+													<span>구매 후 24시간 시청</span>
+												</div>
+											</div>
+											<div class="pricing-info-row text-grey">
+												<div class="info-item info_left">월 회원</div>
+												<div class="info-item info_right">
+													<div class="price">무료</div>
+												</div>
+											</div>
+											<div class="pricing-info-row text-grey">
+												<div class="info-item info_left">연회원</div>
+												<div class="info-item info_right">
+													<div class="price">무료</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
+						
+						<article class="content-box list-slider">
+							<div class="content-header">
+								<h3 class="content_heading">비슷한 영화</h3>
+							</div>						
+							<div class="content-list_grid">
+								<div class="row-contents">
+									<div class="multiple-items">
+										<div class="col-5 grid-item">
+											<!-- 포스터 이미지 수정 -->
+											<figure class="thumbnail_ratio">
+												<a href="#" class="link-img">
+													<div class="poster_ratio">
+														<div class="poster_img">
+															<img src="http://cfile228.uf.daum.net/image/223954415603CD6B0C8BA4">
+															<div class="thumb_content-info thumb_overlay">
+																<div class="inner-info-box">
+																	<span class="area-block rate-area">	
+																		<span class="average-rate">
+																			<i class="icon icon-star"></i>
+																			<span class="grade">8.1</span>
+																		</span>														
+																		<span class="movie-rate">
+																			<span class="rating r-all">All</span>
+																			<span class="rating r-12 hidden">+12</span>
+																			<span class="rating r-15 hidden">+15</span>
+																			<span class="rating r-19 hidden">+19</span>
+																		</span>
+																	</span>
+																	<span class="area-block movie-info">Release year : <span>2018</span></span>
+																	<span class="area-block movie-info">Genre : <span class="">Action, Sci-Fi, Adventure</span></span>
+																	<span class="area-block movie-info">Running time : <span>141min</span></span>													 
+																</div>												
+															</div>
+														</div>
+													</div>												
+												</a>																			
+											</figure>
+										</div>
+										
+										<div class="col-5 grid-item">
+											<figure class="thumbnail">
+												<a href="#" class="link-img">
+													<img src="http://themelayer.net/html/bioscope/images/theater/7.png">
+													<div class="thumb_content-info thumb_overlay">
+														<div class="inner-info-box">
+															<h4 class="content-title">레디 플레이어 원 (Ready Player One, 2018)</h4>
+															<span class="area-block rate-area">	
+																<span class="average-rate">
+																	<i class="icon icon-star"></i>
+																	<span class="grade">8.1</span>
+																</span>														
+																<span class="movie-rate">
+																	<span class="rating r-all">All</span>
+																	<span class="rating r-12 hidden">+12</span>
+																	<span class="rating r-15 hidden">+15</span>
+																	<span class="rating r-19 hidden">+19</span>
+																</span>
+															</span>
+															<span class="area-block movie-info">Release year : <span>2018</span></span>
+															<span class="area-block movie-info">Genre : <span class="">Action, Sci-Fi, Adventure</span></span>
+															<span class="area-block movie-info">Running time : <span>141min</span></span>													 
+														</div>												
+													</div>												
+												</a>																			
+											</figure>
+										</div>
+										
+										<div class="col-5 grid-item">
+											<figure class="thumbnail">
+												<a href="#" class="link-img">
+													<img src="http://themelayer.net/html/bioscope/images/theater/2.png">
+													<div class="thumb_content-info thumb_overlay">
+														<div class="inner-info-box">
+															<h4 class="content-title">VOLT:Chaos Gem</h4>
+															<span class="area-block rate-area">	
+																<span class="average-rate">
+																	<i class="icon icon-star"></i>
+																	<span class="grade">8.1</span>
+																</span>														
+																<span class="movie-rate">
+																	<span class="rating r-all">All</span>
+																	<span class="rating r-12 hidden">+12</span>
+																	<span class="rating r-15 hidden">+15</span>
+																	<span class="rating r-19 hidden">+19</span>
+																</span>
+															</span>
+															<span class="area-block movie-info">Release year : <span>2018</span></span>
+															<span class="area-block movie-info">Genre : <span class="">Action, Sci-Fi, Adventure</span></span>
+															<span class="area-block movie-info">Running time : <span>141min</span></span>													 
+														</div>												
+													</div>												
+												</a>																			
+											</figure>
+										</div>
+										
+										<div class="col-5 grid-item">
+											<figure class="thumbnail_ratio">
+												<a href="#" class="link-img">
+													<div class="poster_ratio">
+														<div class="poster_img">
+															<img src="http://cfile228.uf.daum.net/image/223954415603CD6B0C8BA4">
+															<div class="thumb_content-info thumb_overlay">
+																<div class="inner-info-box">
+																	<span class="area-block rate-area">	
+																		<span class="average-rate">
+																			<i class="icon icon-star"></i>
+																			<span class="grade">8.1</span>
+																		</span>														
+																		<span class="movie-rate">
+																			<span class="rating r-all">All</span>
+																			<span class="rating r-12 hidden">+12</span>
+																			<span class="rating r-15 hidden">+15</span>
+																			<span class="rating r-19 hidden">+19</span>
+																		</span>
+																	</span>
+																	<span class="area-block movie-info">Release year : <span>2018</span></span>
+																	<span class="area-block movie-info">Genre : <span class="">Action, Sci-Fi, Adventure</span></span>
+																	<span class="area-block movie-info">Running time : <span>141min</span></span>													 
+																</div>												
+															</div>
+														</div>
+													</div>												
+												</a>																			
+											</figure>
+										</div>
+										
+										<div class="col-5 grid-item">
+											<figure class="thumbnail_ratio">
+												<a href="#" class="link-img">
+													<div class="poster_ratio">
+														<div class="poster_img">
+															<img src="http://cfile228.uf.daum.net/image/223954415603CD6B0C8BA4">
+															<div class="thumb_content-info thumb_overlay">
+																<div class="inner-info-box">
+																	<span class="area-block rate-area">	
+																		<span class="average-rate">
+																			<i class="icon icon-star"></i>
+																			<span class="grade">8.1</span>
+																		</span>														
+																		<span class="movie-rate">
+																			<span class="rating r-all">All</span>
+																			<span class="rating r-12 hidden">+12</span>
+																			<span class="rating r-15 hidden">+15</span>
+																			<span class="rating r-19 hidden">+19</span>
+																		</span>
+																	</span>
+																	<span class="area-block movie-info">Release year : <span>2018</span></span>
+																	<span class="area-block movie-info">Genre : <span class="">Action, Sci-Fi, Adventure</span></span>
+																	<span class="area-block movie-info">Running time : <span>141min</span></span>													 
+																</div>												
+															</div>
+														</div>
+													</div>												
+												</a>																			
+											</figure>
+										</div>
+										<div class="col-5 grid-item">
+											<figure class="thumbnail_ratio">
+												<a href="#" class="link-img">
+													<div class="poster_ratio">
+														<div class="poster_img">
+															<img src="http://cfile228.uf.daum.net/image/223954415603CD6B0C8BA4">
+															<div class="thumb_content-info thumb_overlay">
+																<div class="inner-info-box">
+																	<span class="area-block rate-area">	
+																		<span class="average-rate">
+																			<i class="icon icon-star"></i>
+																			<span class="grade">8.1</span>
+																		</span>														
+																		<span class="movie-rate">
+																			<span class="rating r-all">All</span>
+																			<span class="rating r-12 hidden">+12</span>
+																			<span class="rating r-15 hidden">+15</span>
+																			<span class="rating r-19 hidden">+19</span>
+																		</span>
+																	</span>
+																	<span class="area-block movie-info">Release year : <span>2018</span></span>
+																	<span class="area-block movie-info">Genre : <span class="">Action, Sci-Fi, Adventure</span></span>
+																	<span class="area-block movie-info">Running time : <span>141min</span></span>													 
+																</div>												
+															</div>
+														</div>
+													</div>												
+												</a>																			
+											</figure>
+										</div>
+										
+										<div class="col-5 grid-item">
+											<figure class="thumbnail_ratio">
+												<a href="#" class="link-img">
+													<div class="poster_ratio"> 
+														<div class="poster_img">
+															<img src="http://cfile228.uf.daum.net/image/223954415603CD6B0C8BA4">
+															<div class="thumb_content-info thumb_overlay">
+																<div class="inner-info-box">
+																	<span class="area-block rate-area">	
+																		<span class="average-rate">
+																			<i class="icon icon-star"></i>
+																			<span class="grade">8.1</span>
+																		</span>														
+																		<span class="movie-rate">
+																			<span class="rating r-all">All</span>
+																			<span class="rating r-12 hidden">+12</span>
+																			<span class="rating r-15 hidden">+15</span>
+																			<span class="rating r-19 hidden">+19</span>
+																		</span>
+																	</span>
+																	<span class="area-block movie-info">Release year : <span>2018</span></span>
+																	<span class="area-block movie-info">Genre : <span class="">Action, Sci-Fi, Adventure</span></span>
+																	<span class="area-block movie-info">Running time : <span>141min</span></span>													 
+																</div>												
+															</div>
+														</div>
+													</div>												
+												</a>																			
+											</figure>
+										</div>
+										<div class="col-5 grid-item">
+											<figure class="thumbnail_ratio">
+												<a href="#" class="link-img">
+													<div class="poster_ratio">
+														<div class="poster_img">
+															<img src="http://cfile228.uf.daum.net/image/223954415603CD6B0C8BA4">
+															<div class="thumb_content-info thumb_overlay">
+																<div class="inner-info-box">
+																	<span class="area-block rate-area">	
+																		<span class="average-rate">
+																			<i class="icon icon-star"></i>
+																			<span class="grade">8.1</span>
+																		</span>														
+																		<span class="movie-rate">
+																			<span class="rating r-all">All</span>
+																			<span class="rating r-12 hidden">+12</span>
+																			<span class="rating r-15 hidden">+15</span>
+																			<span class="rating r-19 hidden">+19</span>
+																		</span>
+																	</span>
+																	<span class="area-block movie-info">Release year : <span>2018</span></span>
+																	<span class="area-block movie-info">Genre : <span class="">Action, Sci-Fi, Adventure</span></span>
+																	<span class="area-block movie-info">Running time : <span>141min</span></span>													 
+																</div>												
+															</div>
+														</div>
+													</div>												
+												</a>																			
+											</figure>
+										</div>
+										
+										<div class="col-5 grid-item">
+											<figure class="thumbnail_ratio">
+												<a href="#" class="link-img">
+													<div class="poster_ratio">
+														<div class="poster_img">
+															<img src="http://cfile228.uf.daum.net/image/223954415603CD6B0C8BA4">
+															<div class="thumb_content-info thumb_overlay">
+																<div class="inner-info-box">
+																	<span class="area-block rate-area">	
+																		<span class="average-rate">
+																			<i class="icon icon-star"></i>
+																			<span class="grade">8.1</span>
+																		</span>														
+																		<span class="movie-rate">
+																			<span class="rating r-all">All</span>
+																			<span class="rating r-12 hidden">+12</span>
+																			<span class="rating r-15 hidden">+15</span>
+																			<span class="rating r-19 hidden">+19</span>
+																		</span>
+																	</span>
+																	<span class="area-block movie-info">Release year : <span>2018</span></span>
+																	<span class="area-block movie-info">Genre : <span class="">Action, Sci-Fi, Adventure</span></span>
+																	<span class="area-block movie-info">Running time : <span>141min</span></span>													 
+																</div>												
+															</div>
+														</div>
+													</div>												
+												</a>																			
+											</figure>
+										</div>
+										
+										<div class="col-5 grid-item">
+											<figure class="thumbnail_ratio">
+												<a href="#" class="link-img">
+													<div class="poster_ratio">
+														<div class="poster_img">
+															<img src="http://cfile228.uf.daum.net/image/223954415603CD6B0C8BA4">
+															<div class="thumb_content-info thumb_overlay">
+																<div class="inner-info-box">
+																	<span class="area-block rate-area">	
+																		<span class="average-rate">
+																			<i class="icon icon-star"></i>
+																			<span class="grade">8.1</span>
+																		</span>														
+																		<span class="movie-rate">
+																			<span class="rating r-all">All</span>
+																			<span class="rating r-12 hidden">+12</span>
+																			<span class="rating r-15 hidden">+15</span>
+																			<span class="rating r-19 hidden">+19</span>
+																		</span>
+																	</span>
+																	<span class="area-block movie-info">Release year : <span>2018</span></span>
+																	<span class="area-block movie-info">Genre : <span class="">Action, Sci-Fi, Adventure</span></span>
+																	<span class="area-block movie-info">Running time : <span>141min</span></span>													 
+																</div>												
+															</div>
+														</div>
+													</div>												
+												</a>																			
+											</figure>
+										</div>								
+									</div>
+								</div>					
+							</div>				
+						</article>
+						
+						<article id="reviewr" class="content-box comments">
+							<div class="content-header">
+								<h3 class="content_heading">리뷰  <span>(999)</span></h3>
+							</div>
+							<div class="write_comment">
+								<form>
+									<textarea class="form-control textarea-style" name="text" placeholder="시청 영화에만 리뷰 작성이 가능합니다."></textarea>									
+								</form>
+								<div class="rating-area">
+									<span class="rating-text">이 영화 평가하기</span>																							
+									<div class="star-rating">
+										<fieldset class="rating">
+										    <input type="radio" id="star5" name="rating" value="5" />
+										    <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+										    <input type="radio" id="star4half" name="rating" value="4 and a half" />
+										    <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+										    <input type="radio" id="star4" name="rating" value="4" />
+										    <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+										    <input type="radio" id="star3half" name="rating" value="3 and a half" />
+										    <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+										    <input type="radio" id="star3" name="rating" value="3" />
+										    <label class = "full" for="star3" title="Meh - 3 stars"></label>
+										    <input type="radio" id="star2half" name="rating" value="2 and a half" />
+										    <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+										    <input type="radio" id="star2" name="rating" value="2" />
+										    <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+										    <input type="radio" id="star1half" name="rating" value="1 and a half" />
+										    <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+										    <input type="radio" id="star1" name="rating" value="1" />
+										    <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+										    <input type="radio" id="starhalf" name="rating" value="half" />
+										    <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+										</fieldset>
+									</div>																					
+								</div>
+								<div class="btn-area fl-r">
+									<a href="" class="btn btn-corner"><span></span>등록</a>
+								</div>
+							</div>
+							<div class="comment-area">
+								<div class="content-header header_line-style">
+									<h3 class="content_heading">최신순</h3>
+									<div class="option-area fl-r">
+										<label class="sorting_select">
+											<select class="form-control select-style">
+												<option value="1" selected>최신순</option>
+												<option value="2">좋아요</option>
+											</select>
+										</label>
+										<button class="btn btn-refresh"><i class="material-icons">refresh</i></button>
+									</div>
+								</div>
+								<div class="comment-list">
+									<div class="comment-item">
+										<div class="profile-img">
+											<img src="./images/profile-img.png" class="img-pf">
+										</div>
+										<div class="comment-content">
+											<div class="user-info-area">
+												<div class="user-info">
+													<span class="nickname"><a href="" class="">My Nickname</a></span>
+													<span class="rating-area review-rating">																							
+														<span class="star-rating">
+															<fieldset class="rating">
+															    <input type="radio" id="star5" name="rating" value="5" />
+															    <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+															    <input type="radio" id="star4half" name="rating" value="4 and a half" />
+															    <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+															    <input type="radio" id="star4" name="rating" value="4" />
+															    <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+															    <input type="radio" id="star3half" name="rating" value="3 and a half" />
+															    <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+															    <input type="radio" id="star3" name="rating" value="3" />
+															    <label class = "full" for="star3" title="Meh - 3 stars"></label>
+															    <input type="radio" id="star2half" name="rating" value="2 and a half" />
+															    <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+															    <input type="radio" id="star2" name="rating" value="2" />
+															    <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+															    <input type="radio" id="star1half" name="rating" value="1 and a half" />
+															    <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+															    <input type="radio" id="star1" name="rating" value="1" />
+															    <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+															    <input type="radio" id="starhalf" name="rating" value="half" />
+															    <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+															</fieldset>
+														</span>																					
+													</span>	
+												</div>
+												<div class="user-info info-right">
+													<span class="date">YYYY.MM.DD</span>
+													<span class="btn-box"><a href="" class="btn btn-delete">삭제</a></span>
+												</div>	
+											</div>
+											<div class="item-text">
+												<p>
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+												</p>
+											</div>
+											<div class="item-actions fl-r">
+												<div class="btn-group">
+												    <a href="" class="btn btn-default">답글달기  10</a>
+												    <div class="btn-group fl-r btn-like on">
+														<button type="button" class="btn btn-default "><i class="icon icon-heart"></i> <span class="count">2</span></button>
+													</div>
+												</div>												
+											</div>
+										</div>									
+									</div>
+									
+									<div class="comment-item">
+										<div class="profile-img">
+											<img src="./images/profile-img.png" class="img-pf">
+										</div>
+										<div class="comment-content">
+											<div class="user-info-area">
+												<div class="user-info">
+													<span class="nickname"><a href="" class="">My Nickname</a></span>
+													<span class="rating-area review-rating">																							
+														<span class="star-rating">
+															<fieldset class="rating">
+															    <input type="radio" id="star5" name="rating" value="5" />
+															    <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+															    <input type="radio" id="star4half" name="rating" value="4 and a half" />
+															    <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+															    <input type="radio" id="star4" name="rating" value="4" />
+															    <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+															    <input type="radio" id="star3half" name="rating" value="3 and a half" />
+															    <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+															    <input type="radio" id="star3" name="rating" value="3" />
+															    <label class = "full" for="star3" title="Meh - 3 stars"></label>
+															    <input type="radio" id="star2half" name="rating" value="2 and a half" />
+															    <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+															    <input type="radio" id="star2" name="rating" value="2" />
+															    <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+															    <input type="radio" id="star1half" name="rating" value="1 and a half" />
+															    <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+															    <input type="radio" id="star1" name="rating" value="1" />
+															    <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+															    <input type="radio" id="starhalf" name="rating" value="half" />
+															    <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+															</fieldset>
+														</span>																					
+													</span>	
+												</div>
+												<div class="user-info info-right">
+													<span class="date">YYYY.MM.DD</span>
+													<span class="btn-box"><a href="" class="btn btn-delete">삭제</a></span>
+												</div>	
+											</div>
+											<div class="item-text">
+												<p>
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+												</p>
+											</div>
+											<div class="item-actions fl-r">
+												<div class="btn-group">
+												    <a href="" class="btn btn-default">답글달기  1</a>
+												    <div class="btn-group fl-r btn-like">
+														<button type="button" class="btn btn-default "><i class="icon icon-heart"></i> <span class="count">2</span></button>
+													</div>
+												</div>												
+											</div>
+										</div>									
+									</div>
+									
+									<div class="comment-item reply-item">
+										<div class="profile-img">
+											<img src="./images/profile-img.png" class="img-pf">
+										</div>
+										<div class="comment-content">
+											<div class="user-info-area">
+												<div class="user-info">
+													<span class="nickname"><a href="" class="">User Nickname</a></span>														
+												</div>
+												<div class="user-info info-right">
+													<span class="date">YYYY.MM.DD</span>
+												</div>	
+											</div>
+											<div class="item-text">
+												<p>
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+												</p>
+											</div>
+											<div class="item-actions fl-r">
+												<div class="btn-group">
+												    <a href="" class="btn btn-default">답글달기  0</a>
+												    <div class="btn-group fl-r btn-like">
+														<button type="button" class="btn btn-default "><i class="icon icon-heart"></i> <span class="count">2</span></button>
+													</div>
+												</div>												
+											</div>
+										</div>
+										<div class="write_comment">
+											<form>
+												<textarea class="form-control textarea-style" name="text" placeholder="시청 영화에만 리뷰 작성이 가능합니다."></textarea>									
+											</form>								
+											<div class="btn-area fl-r">
+												<a href="" class="btn btn-corner"><span></span>등록</a>
+											</div>
+										</div>
+										<div class="contents_readmore-area">
+										    <a href="" class="link-text btn-readmore">답글 닫기</a>
+										</div>									
+									</div>
+																		
+									<div class="comment-item">
+										<div class="profile-img">
+											<img src="./images/profile-img.png" class="img-pf">
+										</div>
+										<div class="comment-content">
+											<div class="user-info-area">
+												<div class="user-info">
+													<span class="nickname"><a href="" class="">My Nickname</a></span>
+													<span class="rating-area review-rating">																							
+														<span class="star-rating">
+															<fieldset class="rating">
+															    <input type="radio" id="star5" name="rating" value="5" />
+															    <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+															    <input type="radio" id="star4half" name="rating" value="4 and a half" />
+															    <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+															    <input type="radio" id="star4" name="rating" value="4" />
+															    <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+															    <input type="radio" id="star3half" name="rating" value="3 and a half" />
+															    <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+															    <input type="radio" id="star3" name="rating" value="3" />
+															    <label class = "full" for="star3" title="Meh - 3 stars"></label>
+															    <input type="radio" id="star2half" name="rating" value="2 and a half" />
+															    <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+															    <input type="radio" id="star2" name="rating" value="2" />
+															    <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+															    <input type="radio" id="star1half" name="rating" value="1 and a half" />
+															    <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+															    <input type="radio" id="star1" name="rating" value="1" />
+															    <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+															    <input type="radio" id="starhalf" name="rating" value="half" />
+															    <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+															</fieldset>
+														</span>																					
+													</span>	
+												</div>
+												<div class="user-info info-right">
+													<span class="date">YYYY.MM.DD</span>
+													<span class="btn-box"><a href="" class="btn btn-delete">삭제</a></span>
+												</div>	
+											</div>
+											<div class="item-text">
+												<p>
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+												</p>
+											</div>
+											<div class="item-actions fl-r">
+												<div class="btn-group">
+												    <a href="" class="btn btn-default">답글달기  1</a>
+												    <div class="btn-group fl-r btn-like on">
+														<button type="button" class="btn btn-default "><i class="icon icon-heart"></i> <span class="count">2</span></button>
+													</div>
+												</div>												
+											</div>
+										</div>									
+									</div>
+									<div class="contents_readmore-area">
+									    <a href="" class="link-text btn-readmore">답글 닫기</a>
+									</div>	
+								</div>
+							
+							</div>
+						</article>
+					</div>
+				</section>				
+			</div>
+		</div>
+	</body>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="./js/common.js"></script>
+	<script src="./js/rating.js"></script>
+	<script src="./js/readmore.js"></script>
+	<script src="./plugin/slick/slick.js"></script>
+	<script>
+		$(document).ready(function() {
+			showSlides(slideIndex);
+			
+		    $('.list-slider .multiple-items').slick({
+		        arrows: false,		        
+		        draggable: true,
+		        infinite: true,
+		        speed: 300,
+		        slidesToShow: 5,
+		        slidesToScroll: 5, 
+		        dots:true,
+		        dotsClass:'dots',
+		        responsive: [ // breakpoints array5
+		        	{
+		                breakpoint: 1024,
+		                settings: {
+		                    slidesToShow: 3,
+		                    slidesToScroll: 3
+		                }
+		            },
+		            {
+		                breakpoint: 769,
+		                settings: {
+		                    slidesToShow: 3,
+		                    slidesToScroll: 3
+		                }
+		            },
+		            {
+		                breakpoint: 480,
+		                settings: {
+		                    slidesToShow: 2,
+		                    slidesToScroll: 2
+		                }
+		            }
+		        ]
+		    });
+		});
+	</script>
+
+	<footer class="footer">
+		<article class="container">
+			<div class="row-contents footer-contents">
+				<div class="col-2">
+					<ul class="footer-list">
+						<li class="pl-n"><a href="#">회사소개</a></li>
+						<li class=""><a href="#">이용약관</a></li>
+						<li class=""><a href="#">개인정보처리방침</a></li>
+						<li class="">support@verz.com</li>
+					</ul>
+				</div>
+				<div class="col-2">
+					<ul class="footer-list fl-r">
+						<li class=""><a href="#">공지사항</a></li>
+						<li class=""><a href="#">1:1문의</a></li>
+						<li class=""><a href="#">FAQ</a></li>
+						<li class="pr-n">
+							<label class="lang_select">
+								<select class="form-control select-style">
+									<option value="kr" selected>한국어</option>
+									<option value="en">ENGLISH</option>
+									<option value="jp">日本語</option>
+								</select>
+							</label>						
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="copyright">2018©VREZ INNOVATION INC. All rights reservedv</div>
+		</article>
+		
+	</footer>
+</html>

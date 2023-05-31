@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="title" content="HTML5 Video Player">
+		<meta name="keywords" content="">
+		<meta name="Description" content="">		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">		
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no"/> 
+		<title>개념원리</title>
+		<link rel="stylesheet" type="text/css" href="./resource/css/common.css">	
+		<link rel="stylesheet" type="text/css" href="./resource/font/NotoSans/notosans.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div class="wrapper support_wrap">
+			<div class="top_banner">
+				<div class="inner">
+					<a href="#" target="_blank">
+						<img src="https://img2.tmon.kr/floatingbanner/202010/floatingbanner_87dfc.jpg" alt="할로윈파티">
+					</a>
+				</div>
+			</div>
+			<header class="header">
+				<div class="">
+					<div class="container">
+						<div class="top_gnb pull-right">
+							<div class="personal_area">
+								<div class="login hide">
+									<span>
+										<a href="#">로그인</a>
+									</span>
+									<span class="divi-vertical"></span>
+									<span>
+										<a href="#">회원가입</a>
+									</span>
+								</div>
+								<div class="logout">
+									<span>
+										<a href="#">
+											<span class="user-name">홍길동님</span>
+											<span>환영합니다.</span>
+										</a>
+									</span>
+									<span class="divi-vertical"></span>
+									<span>
+										<a href="#">마이페이지</a>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="gnb">
+							<div class="banner_area banner_left pull-left">
+								<a href="#" class="">
+									<img src="">
+								</a>
+							</div>
+							<div class="brand_center">
+								<a href="#" class="gnb-logo">
+									<img src="./resource/images/header-logo.png" width="200" height="64" alt="개념원리">
+								</a>
+							</div>
+							<div class="banner_area banner_event pull-right">
+								<a href="#" class="">
+									<img src="">
+								</a>
+							</div>
+						</div>										
+					</div>
+				</div>
+				<div class="nav-bar menu_style01">
+					<div class="container">
+						<ul class="menu-list">
+							<li class="list-item"><a href="#">내 진단 테스트</a></li>
+							<li class="list-item"><a href="#">내 공부방</a></li>
+							<li class="list-item"><a href="#">수강신청</a></li>
+							<li class="list-item"><a href="#">온라인서점</a></li>
+						</ul>
+						<div class="support_area pull-right">
+							<span>
+								<a href="#">학습지원센터</a>
+							</span>
+							<span class="divi-vertical"></span>
+							<span>
+								<a href="#">코치지원센터</a>
+							</span>
+						</div>	
+					</div>
+				</div>
+			</header>
+			<div class="container">
+				<section class="main_contents support-center faq">
+					<div class="contents-header">
+						<h2 class="contents_heading">학습지원센터</h2>
+						<div class="option-area support_meun fl-r">
+							<ul class="">
+								<li class=""><a href="#">공지사항</a></li>
+								<li class="active"><a href="#">자주하는 질문</a></li>
+								<li class=""><a href="#">1:1 문의</a></li>
+							</ul>
+						</div>
+					</div>
+					<article class="content_box">
+						<div class="content-header">
+							<h1 class="content_heading">자주하는 질문 </h1>
+						</div>
+						<div class="search-area">
+							<div class="col-12">
+								<div class="search-title-area">
+									<h2 class="search-title">자주하는 질문 <em class="text-orange">FAQ</em></h2>
+								</div>
+								<form class="search-form">
+									<div class="search-control-area">
+										<input type="text" class="form-control" name="search" id="search" placeholder="찾고 싶은 단어 또는 문장을 입력해주세요.">
+									</div>
+									<div class="search-btn-area">
+										<button type="button" class="btn btn-search">검색</button>
+									</div>
+								</form>
+							</div>
+						</div>
+						
+						<div class="tabs-area tabs_multi">
+							<ul class="tabs tabs-nav">
+								<li rel="tab_01_1" class="active">회원</li>
+								<li rel="tab_01_2" class="">학습</li>
+								<li rel="tab_01_3" class="">결제</li>
+								<li rel="tab_01_4" class="">시스템</li>
+								<li rel="tab_01_5" class="">기타</li>
+							</ul>
+							<div class="tab-container">
+								<!-- tab content 01 -->
+								<div class="tab-content " id="tab_01_1">
+									<div class="sub-tabs-area">
+										<ul class="tabs sub-tabs-nav">
+											<li rel="sub_01_1" class="active">전체 <span class="divi"></span></li>
+											<li rel="sub_01_2" class="">회원가입<span class="divi"></span></li>
+											<li rel="sub_01_3" class="">회원탈퇴<span class="divi"></span></li>
+											<li rel="sub_01_3" class="">개인정보<span class="divi"></span></li>
+										</ul>
+										<!-- Sub Content 01  -->
+										<div class="sub-content" id="sub_01_1">
+											<div class="form-group board_list">
+                                                <form role="form">
+                                                    <table class="table_board-list">
+                                                        <caption>자주하는 질물</caption>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" class="num">분류</th>
+                                                                <th scope="col" class="">제목</th>
+                                                                <th scope="col" class="date">날짜</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="">회원가입</td>
+                                                                <td class="board-title"><a href="#">[무이자할부] 11월 무이자 할부 안내</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">회원탈퇴</td>
+                                                                <td class="board-title"><a href="#">$게시판 제목 한줄입니다...</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">개인정보</td>
+                                                                <td class="board-title"><a href="#">$게시판 제목 한줄입니다...</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">회원가입</td>
+                                                                <td class="board-title"><a href="#">[무이자할부] 11월 무이자 할부 안내</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">회원탈퇴</td>
+                                                                <td class="board-title"><a href="#">$게시판 제목 한줄입니다...</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">개인정보</td>
+                                                                <td class="board-title"><a href="#">$게시판 제목 한줄입니다...</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </form>
+                                                <div class="board-pagination">
+                                                    <div class="pagination pagination_style01">
+                                                        <div class="paginate_counter font_num">1/5 of 20</div>
+                                                        <ul class="paginate">
+                                                            <li><a href="#" class="previous"></a></li>
+                                                            <li><a href="#" class="next"></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+										</div>
+										<!-- Sub Content 02  -->
+										<div class="sub-content" id="sub_01_2" style="display: none;">
+											<div class="form-group board_list">
+                                                <form role="form">
+                                                    <table class="table_board-list">
+                                                        <caption>자주하는 질문</caption>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" class="num">분류</th>
+                                                                <th scope="col" class="">제목</th>
+                                                                <th scope="col" class="date">날짜</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="">회원가입</td>
+                                                                <td class="board-title"><a href="#">[무이자할부] 11월 무이자 할부 안내</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">회원가입</td>
+                                                                <td class="board-title"><a href="#">$게시판 제목 한줄입니다...</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">회원가입</td>
+                                                                <td class="board-title"><a href="#">$게시판 제목 한줄입니다...</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">회원가입</td>
+                                                                <td class="board-title"><a href="#">[무이자할부] 11월 무이자 할부 안내</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">회원가입</td>
+                                                                <td class="board-title"><a href="#">$게시판 제목 한줄입니다...</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">회원가입</td>
+                                                                <td class="board-title"><a href="#">$게시판 제목 한줄입니다...</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </form>
+                                                <div class="board-pagination">
+                                                    <div class="pagination pagination_style01">
+                                                        <div class="paginate_counter font_num">1/5 of 20</div>
+                                                        <ul class="paginate">
+                                                            <li><a href="#" class="previous"></a></li>
+                                                            <li><a href="#" class="next"></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+										</div>
+										<!-- Sub Content 03  -->
+										<div class="sub-content" id="sub_01_3" style="display: none;">
+											<div class="form-group board_list">
+												<form role="form">
+													<table class="table_board-list">
+                                                        <caption>자주하는 질문</caption>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" class="num">분류</th>
+                                                                <th scope="col" class="">제목</th>
+                                                                <th scope="col" class="date">날짜</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="">개인정보</td>
+                                                                <td class="board-title"><a href="#">[무이자할부] 11월 무이자 할부 안내</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">개인정보</td>
+                                                                <td class="board-title"><a href="#">$게시판 제목 한줄입니다...</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">개인정보</td>
+                                                                <td class="board-title"><a href="#">$게시판 제목 한줄입니다...</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">개인정보</td>
+                                                                <td class="board-title"><a href="#">[무이자할부] 11월 무이자 할부 안내</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">개인정보</td>
+                                                                <td class="board-title"><a href="#">$게시판 제목 한줄입니다...</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">개인정보</td>
+                                                                <td class="board-title"><a href="#">$게시판 제목 한줄입니다...</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+												</form>
+												<div class="board-pagination">
+													<div class="pagination pagination_style01">
+														<div class="paginate_counter font_num">1/10 of 50</div>
+														<ul class="paginate">
+															<li><a href="#" class="previous"></a></li>
+															<li><a href="#" class="next"></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- tab content 02 --> 
+								<div class="tab-content " id="tab_01_2" style="display: none;">
+									<div class="sub-tabs-area">
+										<ul class="tabs sub-tabs-nav">
+											<li rel="sub_02_1" class="active">전체<span class="divi"></span></li>
+											<li rel="sub_02_2" class="">수강신청<span class="divi"></span></li>
+											<li rel="sub_02_2" class="">수강방법<span class="divi"></span></li>
+											<li rel="sub_02_2" class="">교재<span class="divi"></span></li>
+											<li rel="sub_02_2" class="">코칭<span class="divi"></span></li>
+										</ul>
+										<!-- Sub Content 01  -->
+										<div class="sub-content" id="sub_02_1">
+											<div class="form-group board_list">
+												<form role="form">
+													<table class="table_board-list">
+                                                        <caption>자주하는 질문</caption>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" class="num">분류</th>
+                                                                <th scope="col" class="">제목</th>
+                                                                <th scope="col" class="date">날짜</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="">수강신청</td>
+                                                                <td class="board-title"><a href="#">[무이자할부] 11월 무이자 할부 안내</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">수강방법</td>
+                                                                <td class="board-title"><a href="#">$게시판 제목 한줄입니다...</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">교재</td>
+                                                                <td class="board-title"><a href="#">$게시판 제목 한줄입니다...</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">코칭</td>
+                                                                <td class="board-title"><a href="#">[무이자할부] 11월 무이자 할부 안내</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+												</form>
+												<div class="board-pagination">
+													<div class="pagination pagination_style01">
+														<div class="paginate_counter font_num">1/10 of 50</div>
+														<ul class="paginate">
+															<li><a href="#" class="previous"></a></li>
+															<li><a href="#" class="next"></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- Sub Content 02  -->
+										<div class="sub-content" id="sub_02_2" style="display: none;">
+										tab content 02-2	
+											
+										</div>
+										<div class="sub-content" id="sub_02_2" style="display: none;">
+										tab content 02-3	
+											
+										</div>
+										<div class="sub-content" id="sub_02_2" style="display: none;">
+										tab content 02-4	
+											
+										</div>
+										<div class="sub-content" id="sub_02_2" style="display: none;">
+										tab content 02-5	
+											
+										</div>
+									</div>
+								</div>
+								
+								<!-- tab content 03 -->
+								<div class="tab-content" id="tab_01_3" style="display: none;">
+								    <div class="sub-tabs-area">
+										<ul class="tabs sub-tabs-nav">
+											<li rel="sub_02_1" class="active">전체<span class="divi"></span></li>
+											<li rel="sub_02_2" class="">결제방법<span class="divi"></span></li>
+											<li rel="sub_02_2" class="">신용카드<span class="divi"></span></li>
+											<li rel="sub_02_2" class="">계좌이체<span class="divi"></span></li>
+											<li rel="sub_02_2" class="">무통장<span class="divi"></span></li>
+											<li rel="sub_02_2" class="">혜택<span class="divi"></span></li>
+											<li rel="sub_02_2" class="">환불<span class="divi"></span></li>
+										</ul>
+										<!-- Sub Content 01  -->
+										<div class="sub-content" id="sub_03_1">
+											<div class="form-group board_list">
+												<form role="form">
+													<table class="table_board-list">
+                                                        <caption>자주하는 질문</caption>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" class="num">분류</th>
+                                                                <th scope="col" class="">제목</th>
+                                                                <th scope="col" class="date">날짜</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="">결제방법</td>
+                                                                <td class="board-title"><a href="#">[무이자할부] 11월 무이자 할부 안내</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">신용카드</td>
+                                                                <td class="board-title"><a href="#">$게시판 제목 한줄입니다...</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">계좌이체</td>
+                                                                <td class="board-title"><a href="#">$게시판 제목 한줄입니다...</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">무통장</td>
+                                                                <td class="board-title"><a href="#">[무이자할부] 11월 무이자 할부 안내</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+												</form>
+												<div class="board-pagination">
+													<div class="pagination pagination_style01">
+														<div class="paginate_counter font_num">1/10 of 50</div>
+														<ul class="paginate">
+															<li><a href="#" class="previous"></a></li>
+															<li><a href="#" class="next"></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- Sub Content 02  -->
+										<div class="sub-content" id="sub_03_2">
+                                        </div>
+                                        <!-- Sub Content 03  -->
+										<div class="sub-content" id="sub_03_3">
+                                        </div>
+                                        <!-- Sub Content 04  -->
+										<div class="sub-content" id="sub_03_4">
+                                        </div>
+                                        <!-- Sub Content 05  -->
+										<div class="sub-content" id="sub_03_5">
+                                        </div>
+                                        <!-- Sub Content 06  -->
+										<div class="sub-content" id="sub_03_6">
+                                        </div>
+                                        <!-- Sub Content 07  -->
+										<div class="sub-content" id="sub_03_7">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- tab content 04 -->
+								<div class="tab-content" id="tab_01_4" style="display: none;">
+								    <div class="sub-tabs-area">
+										<ul class="tabs sub-tabs-nav">
+                                            <li rel="sub_02_1" class="active">전체<span class="divi"></span></li>
+                                            <li rel="sub_02_2" class="">시스템<span class="divi"></span></li>
+                                            <li rel="sub_02_2" class="">화상통화<span class="divi"></span></li>
+                                            <li rel="sub_02_2" class="">동영상<span class="divi"></span></li>
+                                            <li rel="sub_02_2" class="">모바일<span class="divi"></span></li>
+                                        </ul>
+										<!-- Sub Content 01  -->
+										<div class="sub-content" id="sub_04_1">
+											<div class="form-group board_list">
+												<form role="form">
+													<table class="table_board-list">
+                                                        <caption>자주하는 질문</caption>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" class="num">분류</th>
+                                                                <th scope="col" class="">제목</th>
+                                                                <th scope="col" class="date">날짜</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="">결제방법</td>
+                                                                <td class="board-title"><a href="#">[무이자할부] 11월 무이자 할부 안내</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">신용카드</td>
+                                                                <td class="board-title"><a href="#">$게시판 제목 한줄입니다...</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">계좌이체</td>
+                                                                <td class="board-title"><a href="#">$게시판 제목 한줄입니다...</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">무통장</td>
+                                                                <td class="board-title"><a href="#">[무이자할부] 11월 무이자 할부 안내</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+												</form>
+												<div class="board-pagination">
+													<div class="pagination pagination_style01">
+														<div class="paginate_counter font_num">1/10 of 50</div>
+														<ul class="paginate">
+															<li><a href="#" class="previous"></a></li>
+															<li><a href="#" class="next"></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- Sub Content 02  -->
+										<div class="sub-content" id="sub_04_2">
+                                            Sub Content 04-2   
+                                        </div>
+                                        <!-- Sub Content 03  -->
+										<div class="sub-content" id="sub_04_3">
+                                       Sub Content 04-3
+                                        </div>
+                                        <!-- Sub Content 04  -->
+										<div class="sub-content" id="sub_04_4">
+                                       Sub Content 04-5
+                                        </div>
+                                    </div>
+                                </div>
+								<!-- tab content 05 -->
+								<div class="tab-content" id="tab_01_5" style="display: none;">
+								    <div class="sub-tabs-area">
+										<ul class="tabs sub-tabs-nav">
+                                            <li rel="sub_02_1" class="active">전체<span class="divi"></span></li>
+                                        </ul>
+										<!-- Sub Content 01  -->
+										<div class="sub-content" id="sub_04_1">
+											<div class="form-group board_list">
+												<form role="form">
+													<table class="table_board-list">
+                                                        <caption>자주하는 질문</caption>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" class="num">분류</th>
+                                                                <th scope="col" class="">제목</th>
+                                                                <th scope="col" class="date">날짜</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="">전체</td>
+                                                                <td class="board-title"><a href="#">[무이자할부] 11월 무이자 할부 안내</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">전체</td>
+                                                                <td class="board-title"><a href="#">$게시판 제목 한줄입니다...</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">전체</td>
+                                                                <td class="board-title"><a href="#">$게시판 제목 한줄입니다...</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">전체</td>
+                                                                <td class="board-title"><a href="#">[무이자할부] 11월 무이자 할부 안내</a></td>
+                                                                <td class="font_num">YYYY.MM.DD</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+												</form>
+												<div class="board-pagination">
+													<div class="pagination pagination_style01">
+														<div class="paginate_counter font_num">1/10 of 50</div>
+														<ul class="paginate">
+															<li><a href="#" class="previous"></a></li>
+															<li><a href="#" class="next"></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+                                    </div>
+                                </div>
+								
+							</div>
+						</div>
+					</article>
+						
+				</section>
+			</div>
+		</div>
+	</body>
+	<footer class="footer">
+		<article class="container">
+			<div class="row footer_contents company_polices">
+				<div class="col-1">
+					<ul class="footer-list">
+						<li class="pl-n"><a href="#">회사소개</a></li>
+						<li class=""><a href="#">이용약관</a></li>
+						<li class=""><a href="#">개인정보처리방침</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="row footer_contents_small company_info">
+				<div class="col-10">
+					<address>
+					(주) 개념원리 | 대표이사: 고사무열 | 주소: 서울특별시 강남구 강남대로 262 캠코타워 14층 (주) 개념원리 | 고객센터 : <a href="tel:16441248">1644-1248</a> &nbsp; <a href="mailto:wonri_with@wonriedu.com">wonri_with@wonriedu.com</a><br>
+					사업자등록번호: 220-86-64126 | 통신판매업 신고번호: 제 2017-서울강남-03043호 <a class="notify" href="http://www.ftc.go.kr/www/bizCommView.do?key=232&amp;apv_perm_no=2017322016230203043&amp;pageUnit=10&amp;searchCnd=wrkr_no&amp;searchKrwd=2208664126&amp;pageIndex=1" target="_blank">정보확인</a><br>
+					학원설립 운영등록번호: 제 10106호 개념원리원격학원 <a class="notify" href="javascript:void(0)" onclick="window_notify('/design/images/footer/institute_license.png','개념원리 학원 운용 등록증', '490', '700');">정보확인</a> | 신고기관명: 서울특별시 강남교육지원청<br>
+					개인정보관리책임자: 이영훈 | 개인정보관리담당자: 남정우 | 호스팅 서비스 사업자 : Amazon Web Services<br>
+					</address>
+					<div class="copyright">Copyright(c) by ㈜개념원리 All Right Reserved</div>
+				</div>
+				<div class="col-6">
+					<a href="http://escrow1.kbstar.com/quics?page=B009111&amp;cc=b010807%3Ab008491&amp;mHValue=b6c60b92b63b709a76b8782609d50d04201711201716188" target="_blank" class="escrow">
+						<img src="./resource/images/img_kbescrw.png" alt="KB에스크로" title="">
+					</a>
+				</div>
+			</div>
+		</article>
+	</footer>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+	<script src="./resource/js/common.js"></script>
+</html>
